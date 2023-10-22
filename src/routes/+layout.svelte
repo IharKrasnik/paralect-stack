@@ -48,6 +48,7 @@
 			/>
 		</svg>
 	</div>
+	<div class=" mt-2">Startup Stack</div>
 
 	<slot />
 </div>
