@@ -35,7 +35,7 @@
 <SvelteToast />
 
 <div class="container mx-auto lg:mt-8 h-full max-w-[1200px]">
-	<div class="w-[100px]">
+	<a href="/" class="block w-[100px]">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1431 443" fill="none"
 			><script xmlns=""></script>
 			<path
@@ -49,7 +49,7 @@
 				fill="white"
 			/>
 		</svg>
-	</div>
+	</a>
 	<div class=" mt-2">Startup Stack</div>
 
 	<slot />
