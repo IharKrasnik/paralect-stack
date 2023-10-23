@@ -50,7 +50,7 @@
 		},
 		{
 			key: 'low-code',
-			name: 'Low-code App Builders'
+			name: 'Low-Code App Builders'
 		},
 		{
 			key: 'seo',

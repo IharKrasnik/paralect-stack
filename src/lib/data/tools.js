@@ -32,6 +32,7 @@ export default [
 		key: 'carrd',
 		name: 'Carrd',
 		url: 'https://carrd.co/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057747017-image.png',
 		description:
 			'A free platform for building simple, fully responsive one-page sites for pretty much anything.'
 	},
@@ -119,7 +120,7 @@ export default [
 		key: 'rows',
 		name: 'Rows',
 		url: 'https://row.com/',
-		img: '',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057872836-telegram-cloud-photo-size-4-6024741022455672550-w.jpg',
 		description: ''
 	},
 	{
@@ -161,14 +162,14 @@ export default [
 		description:
 			'Bonjoro lets you send quick personal videos to new leads and customers, to stand out, build trust, and make more sales.'
 	},
-	{
-		category: 'forms-data',
-		key: 'algolia',
-		name: 'Algolia',
-		url: 'https://algolia.com/',
-		img: '',
-		description: ''
-	},
+	// {
+	// 	category: 'forms-data',
+	// 	key: 'algolia',
+	// 	name: 'Algolia',
+	// 	url: 'https://algolia.com/',
+	// 	img: '',
+	// 	description: ''
+	// },
 	{
 		category: 'customer-communication',
 		key: 'crisp',
@@ -225,7 +226,7 @@ export default [
 		key: 'featurebase-app',
 		name: 'Featurebase',
 		url: 'https://featurebase.app/',
-		img: '',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057990540-telegram-cloud-photo-size-4-5909919250800292193-y.jpg',
 		description: ''
 	},
 	{
@@ -273,7 +274,7 @@ export default [
 		key: 'discord',
 		name: 'Discord',
 		url: 'https://discord.com/',
-		img: 'https://discord.com/assets/652f40427e1f5186ad54836074898279.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057947565-telegram-cloud-photo-size-4-5950866416733368631-y.jpg',
 		description:
 			'Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.',
 		favicon: '/assets/847541504914fd33810e70a0ea73177e.ico'
@@ -283,7 +284,7 @@ export default [
 		key: 'circle',
 		name: 'Circle',
 		url: 'https://circle.so/',
-		img: '',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057970272-telegram-cloud-photo-size-4-6015902177329000278-y.jpg',
 		description: ''
 	},
 	{
@@ -372,17 +373,19 @@ export default [
 		category: 'low-code',
 		key: 'uibakery',
 		name: 'UiBakery',
-		url: 'https://uibakery.com/',
-		img: '',
-		description: ''
+		url: 'https://uibakery.io/',
+		img: 'https://assets-global.website-files.com/5d2739e4cf8d9538f80af0a6/6242c961b5a6866f6ed35396_home-min.png',
+		description:
+			'Create an admin panel, dashboards and user portals using the UI Bakery internal tools builder'
 	},
 	{
 		category: 'low-code',
 		key: 'glide',
 		name: 'Glide',
-		url: 'http://glide.com/',
+		url: 'https://www.glideapps.com',
+		img: 'https://glideapps.com/images/homepage-2023/og-cover.png',
 		description:
-			'Glide offers free tools for agents, brokers, & teams to streamline their transactions. Get free offer management, eSign, iOS app, & more.'
+			'Glide makes it easy to build and deploy powerful custom apps powered by AI with no code. '
 	},
 	{
 		category: 'low-code',
@@ -399,8 +402,10 @@ export default [
 		category: 'low-code',
 		key: 'bubble',
 		name: 'Bubble',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058502189-telegram-cloud-photo-size-4-5932490910258540681-w.jpg',
 		url: 'https://bubble.io/',
-		description: ''
+		description:
+			'Bubble introduces a new way to build software. It’s a no-code tool that lets you build SaaS platforms, marketplaces and CRMs without code. Bubble hosts all web apps on its cloud platform.'
 	},
 	{
 		category: 'low-code',
@@ -465,7 +470,7 @@ export default [
 		key: 'beehiiv',
 		name: 'Beehiiv',
 		url: 'https://www.beehiiv.com/',
-		img: '',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057919495-telegram-cloud-photo-size-4-5786234792654778706-w.jpg',
 		description: ''
 	},
 	{
@@ -642,17 +647,17 @@ export default [
 		key: 'canva',
 		name: 'Canva',
 		url: 'https://canva.com/',
-		img: '',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058071713-telegram-cloud-photo-size-4-5964047190328455643-y.jpg',
 		description: ''
 	},
-	{
-		category: 'design',
-		key: 'after-effects',
-		name: 'Adobe AfterEffects',
-		url: 'https://adobe.com/products/aftereffects.html',
-		img: '',
-		description: ''
-	},
+	// {
+	// 	category: 'design',
+	// 	key: 'after-effects',
+	// 	name: 'Adobe AfterEffects',
+	// 	url: 'https://adobe.com/products/aftereffects.html',
+	// 	img: '',
+	// 	description: ''
+	// },
 	{
 		category: 'design',
 		key: 'maze',
@@ -734,8 +739,9 @@ export default [
 		key: 'make',
 		name: 'Make',
 		url: 'https://make.com/en',
-		img: '',
-		description: ''
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058305907-telegram-cloud-photo-size-4-5768547391480377415-y.jpg',
+		description:
+			'Automate your work. Make allows you to visually create, build and automate workflows. User friendly no-code integration tool.'
 	},
 	{
 		category: 'automation',
@@ -762,9 +768,9 @@ export default [
 		key: 'memberstack',
 		name: 'Memberstack',
 		url: 'https://memberstack.com/',
-		img: 'https://assets-global.website-files.com/5bbfaf3252489b4c484ba9b9/5c7478a4a272b1f33b7ee0b0_Favicon2.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058352417-telegram-cloud-photo-size-4-5790831764871162320-y.jpg',
 		description:
-			'Authentication & payments for companies who love Webflow, Stripe, & React. Try it for free. Gate content, create free accounts, sell a digital service, premium member community, and more!',
+			'Memberstack is a SaaS product that helps Webflow developers add secure user accounts and payments in a fraction of the time.',
 		favicon:
 			'https://assets-global.website-files.com/5bbfaf3252489b4c484ba9b9/5c7478a4a272b1f33b7ee0b0_Favicon2.png'
 	},
@@ -809,14 +815,14 @@ export default [
 			"ActiveCampaign's category-defining Customer Experience Automation platform helps over 180,000 businesses build meaningful connections with their customers.",
 		favicon: 'https://www.activecampaign.com/wp-content/uploads/2023/10/cropped-favicon-192x192.png'
 	},
-	{
-		category: 'crm',
-		key: 'salesforce',
-		name: 'SalesForce',
-		url: 'https://salesforce.com/',
-		img: '',
-		description: ''
-	},
+	// {
+	// 	category: 'crm',
+	// 	key: 'salesforce',
+	// 	name: 'SalesForce',
+	// 	url: 'https://salesforce.com/',
+	// 	img: '',
+	// 	description: ''
+	// },
 	{
 		category: 'crm',
 		key: 'pipedrive',
@@ -854,7 +860,7 @@ export default [
 		key: 'clearbit',
 		name: 'Clearbit',
 		url: 'https://clearbit.com/',
-		img: '/sharing/social-share-2.jpg',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058026085-telegram-cloud-photo-size-4-5793008011915144582-y.jpg',
 		description:
 			'Clearbit provides go-to-market teams with the industry’s most comprehensive B2B dataset across company, contact, and IP intelligence. Use our full dataset to enrich key systems, build products, and power personalization.',
 		favicon: '/favicon-192.png'
@@ -940,8 +946,9 @@ export default [
 		key: 'carta',
 		name: 'Carta',
 		url: 'https://carta.com/',
-		img: '',
-		description: ''
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058536493-telegram-cloud-photo-size-4-5829106834080903459-y.jpg',
+		description:
+			'Carta is an ownership and equity management platform trusted by thousands of founders, investors, and employees.'
 	},
 	{
 		category: 'formation',
@@ -963,20 +970,20 @@ export default [
 			'DocuSign ensures the security & mobility to digitally transform businesses. Sign docs for free.',
 		favicon: '/themes/custom/cubic/favicon/favicon-96x96.png'
 	},
-	{
-		category: 'formation',
-		key: 'docsend',
-		name: 'DocSend',
-		url: 'https://docsend.com/',
-		img: '',
-		description: ''
-	},
+	// {
+	// 	category: 'formation',
+	// 	key: 'docsend',
+	// 	name: 'DocSend',
+	// 	url: 'https://docsend.com/',
+	// 	img: '',
+	// 	description: 'Instantly know when documents are opened & what pages are read. Easy-to-use eSignatures.'
+	// },
 	{
 		category: 'formation',
 		key: 'pandadoc',
 		name: 'PandaDoc',
 		url: 'https://demo.pandadoc.com/',
-		img: '/images/share.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058609464-telegram-cloud-photo-size-4-5835724034359276000-w.jpg',
 		description:
 			'See PandaDoc in action with a live personalized demo, no commitments required. Learn how to automate your work with proposals and contracts. Request a demo.',
 		favicon: '/images/favicon.ico'
@@ -1013,6 +1020,7 @@ export default [
 		key: 'semrush',
 		name: 'SemRush',
 		url: 'https://semrush.com/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058124541-telegram-cloud-photo-size-4-5945881243897932833-w.jpg',
 		description: ''
 	},
 	{
@@ -1030,7 +1038,7 @@ export default [
 		key: 'ubersuggest',
 		name: 'UberSuggest',
 		url: 'https://ubersuggest.com/',
-		img: '',
+		img: 'https://neilpatel.com/wp-content/uploads/2020/04/1-keyword-overview.png',
 		description: ''
 	},
 	{
@@ -1038,16 +1046,16 @@ export default [
 		key: 'lowfruits',
 		name: 'LowFruits',
 		url: 'https://lowfruits.io/',
-		img: '',
-		description: ''
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058178188-telegram-cloud-photo-size-4-6018424530017561511-w.jpg',
+		description: 'Analyze SERPs easily and rank even with new domains'
 	},
-	{
-		category: 'seo',
-		key: 'keywordchief',
-		name: 'KeywordChief',
-		url: 'https://keywordchief.com/',
-		description: ''
-	},
+	// {
+	// 	category: 'seo',
+	// 	key: 'keywordchief',
+	// 	name: 'KeywordChief',
+	// 	url: 'https://keywordchief.com/',
+	// 	description: ''
+	// },
 	{
 		category: 'seo',
 		key: 'topicmojo',
@@ -1095,8 +1103,9 @@ export default [
 		key: 'buffer',
 		name: 'Buffer',
 		url: 'https://buffer.com/',
-		img: '',
-		description: ''
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058253172-telegram-cloud-photo-size-4-5792846937756642504-y.jpg',
+		description:
+			'Use Buffer to manage your social media so that you have more time for your business.'
 	},
 	{
 		category: 'smm',
