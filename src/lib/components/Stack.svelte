@@ -1,4 +1,5 @@
 <script>
+	import tools from '$lib/data/tools';
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
@@ -20,33 +21,16 @@
 			description: 'Collect data from your leads and customers'
 		},
 		{
+			key: 'blog-newsletter-emails',
+			name: 'Blogs & Newsletters'
+		},
+		{
 			key: 'product-management',
 			name: 'Product Management'
 		},
 		{
-			key: 'calendar',
-			name: 'Calendar'
-		},
-		{
-			key: 'communication',
+			key: 'customer-communication',
 			name: 'Customer Communications'
-		},
-		{
-			key: 'testimonials',
-			name: 'Testimonials'
-		},
-		{
-			key: 'analytics',
-			name: 'Analytics'
-		},
-		{
-			key: 'emails',
-			name: 'Emails'
-		},
-
-		{
-			key: 'automation',
-			name: 'Automation'
 		},
 		{
 			key: 'payments',
@@ -54,15 +38,40 @@
 		},
 		{
 			key: 'crm',
-			name: 'CRM'
-		},
-		{
-			key: 'legal',
-			name: 'Formation & Legal'
+			name: 'CRM and Sales Tools'
 		},
 		{
 			key: 'design',
-			name: 'Design'
+			name: 'Design & Creator tools'
+		},
+		{
+			key: 'automation',
+			name: 'Automation'
+		},
+		{
+			key: 'low-code',
+			name: 'Low-code App Builders'
+		},
+		{
+			key: 'seo',
+			name: 'SEO'
+		},
+		{
+			key: 'smm',
+			name: 'SMM'
+		},
+		{
+			key: 'analytics',
+			name: 'Analytics'
+		},
+
+		{
+			key: 'formation',
+			name: 'Formation & Legal'
+		},
+		{
+			key: 'startup-community',
+			name: 'Startup Communities'
 		}
 	];
 
@@ -71,41 +80,6 @@
 	$: if (categoryKey) {
 		activeCategory = categories.find((c) => c.key === categoryKey) || categories[0];
 	}
-
-	let tools = [
-		{
-			category: 'landing-page',
-			url: 'https://webflow.com',
-			key: 'webflow',
-			name: 'Webflow',
-			description: 'Powerful website builder for marketing teams',
-			img: 'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/651c796fcc43bbae9ae1c137_og-default.jpg'
-		},
-		{
-			category: 'landing-page',
-			url: 'https://www.framer.com',
-			key: 'framer',
-			name: 'Framer',
-			description: 'Create beautiful animated websites fast',
-			img: 'https://framerusercontent.com/images/2jcKVnNogkCVvxm6pdLJ37qk7w.jpg'
-		},
-		{
-			category: 'landing-page',
-			url: 'https://page.mmntm.build',
-			key: 'momentum-page',
-			name: 'Momentum Page',
-			description: 'Super simple editor with built-in email capture and analytics',
-			img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1691926283375-telegram-cloud-document-2-5386494382004252533.jpg'
-		},
-		{
-			category: 'forms-data',
-			url: 'https://tally.so',
-			key: 'tally',
-			name: 'Tally Forms',
-			description: 'Simple form editor in Notion style with generous free tier',
-			img: 'https://tally.so/images/og.jpg'
-		}
-	];
 </script>
 
 <div class="flex">
@@ -129,14 +103,14 @@
 				in:fly={{ duration: 150, y: -50 }}
 			>
 				{#each tools.filter((t) => t.category === activeCategory.key) as tool}
-					<div class="section">
-						<img src={tool.img} />
+					<div class="section min-w-full aspect-[1200/630]">
+						<img src={tool.img} class="w-full aspect-[1200/630] object-cover" />
 						<div class="p-4">
 							<h3 class="font-bold">
 								{tool.name}
 							</h3>
 
-							<div class="mt-2">{tool.description}</div>
+							<div class="mt-2 opacity-80">{tool.description}</div>
 						</div>
 					</div>
 				{/each}

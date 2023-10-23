@@ -8,8 +8,10 @@
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import { get } from '$lib/api';
+	import fillMetaTags from '$lib/services/fillMetaTags';
 
 	let scrollY;
+	// fillMetaTags();
 </script>
 
 <svelte:window bind:scrollY />
