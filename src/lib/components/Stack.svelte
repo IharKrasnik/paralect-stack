@@ -98,7 +98,7 @@
 	<div>
 		<div class="mt-8">
 			<h1>{activeCategory.name}</h1>
-			<h2>{activeCategory.description}</h2>
+			<h2>{activeCategory.description || ''}</h2>
 		</div>
 
 		{#key categoryKey}
