@@ -932,6 +932,15 @@ export default [
 	},
 	{
 		category: 'formation',
+		key: 'mercury',
+		name: 'Mercury',
+		url: 'https://mercury.com',
+		img: '',
+		description: '',
+		favicon: ''
+	},
+	{
+		category: 'formation',
 		key: 'pulley',
 		name: 'Pulley',
 		url: 'https://pulley.com/',
