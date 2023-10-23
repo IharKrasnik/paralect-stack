@@ -85,7 +85,11 @@
 <div class="flex">
 	<div class="mt-8 p-4 section flex-shrink-0 mr-8">
 		{#each categories as category}
-			<a href="/cat/{category.key}" class="block pb-4 text-lg">
+			<a
+				href="/cat/{category.key}"
+				class="block nav-link pb-4 text-lg"
+				class:active={categoryKey === category.key}
+			>
 				{category.name}
 			</a>
 		{/each}
@@ -118,3 +122,18 @@
 		{/key}
 	</div>
 </div>
+
+<style>
+	.nav-link {
+		@apply transition;
+	}
+
+	.nav-link:hover {
+		color: #fff400;
+	}
+
+	.active {
+		color: #fff400;
+		@apply font-bold;
+	}
+</style>

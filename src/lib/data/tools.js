@@ -1015,6 +1015,7 @@ export default [
 			'Grow on your terms with fast, flexible financing. Our modern capital platform offers embedded capital solutions and working capital for business owners.',
 		favicon: '/assets/img/favicon.png'
 	},
+
 	{
 		category: 'seo',
 		key: 'semrush',
