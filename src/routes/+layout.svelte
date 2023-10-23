@@ -29,7 +29,7 @@
 	<meta name="twitter:image" content={$page.data.ogImage} />
 
 	<meta name="og:image" content={$page.data.ogImage} />
-	<link rel="icon" href="paralect_favicon.png" />
+	<link rel="icon" href="/paralect_favicon.png" />
 </svelte:head>
 
 <SvelteToast />

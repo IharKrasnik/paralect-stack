@@ -1,4 +1,5 @@
 <script>
+	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
@@ -8,72 +9,6 @@
 
 	export let categoryKey = 'landing-page';
 	import currentUser, { isLoading as isCurrentUserLoading } from '$lib/stores/currentUser';
-
-	let categories = [
-		{
-			key: 'landing-page',
-			name: 'Landing Page',
-			description: 'Tools to build marketing websites'
-		},
-		{
-			key: 'forms-data',
-			name: 'Forms & Data',
-			description: 'Collect data from your leads and customers'
-		},
-		{
-			key: 'blog-newsletter-emails',
-			name: 'Blogs & Newsletters'
-		},
-		{
-			key: 'product-management',
-			name: 'Product Management'
-		},
-		{
-			key: 'customer-communication',
-			name: 'Customer Communications'
-		},
-		{
-			key: 'payments',
-			name: 'Payments'
-		},
-		{
-			key: 'crm',
-			name: 'CRM and Sales Tools'
-		},
-		{
-			key: 'design',
-			name: 'Design & Creator tools'
-		},
-		{
-			key: 'automation',
-			name: 'Automation'
-		},
-		{
-			key: 'low-code',
-			name: 'Low-Code App Builders'
-		},
-		{
-			key: 'seo',
-			name: 'SEO'
-		},
-		{
-			key: 'smm',
-			name: 'SMM'
-		},
-		{
-			key: 'analytics',
-			name: 'Analytics'
-		},
-
-		{
-			key: 'formation',
-			name: 'Formation & Legal'
-		},
-		{
-			key: 'startup-community',
-			name: 'Startup Communities'
-		}
-	];
 
 	let activeCategory = categories.find((c) => c.key === categoryKey) || categories[0];
 
@@ -97,7 +32,7 @@
 
 	<div>
 		<div class="mt-8">
-			<h1>{activeCategory.name}</h1>
+			<h1>Top {activeCategory.name} {activeCategory.noTools ? '' : 'Tools'}</h1>
 			<h2>{activeCategory.description || ''}</h2>
 		</div>
 

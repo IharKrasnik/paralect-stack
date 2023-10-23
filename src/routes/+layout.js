@@ -8,7 +8,9 @@ export async function load({ url, params, session, cookies }) {
 	return {
 		...authData,
 		ogTitle: 'Paralect Stack',
-		ogDescription: 'Curated List of No-Code, Low-Code and Full-Code tools',
-		ogImage: ''
+		ogDescription:
+			'Curated list of startup tools (No-Code and Full Code) from landing page and user acquisition to company exit.',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698066749325-telegram-cloud-photo-size-2-5312258333765389946-y.jpg'
 	};
 }
