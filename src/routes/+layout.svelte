@@ -34,7 +34,7 @@
 
 <SvelteToast />
 
-<div class="container mx-auto lg:mt-8 h-full max-w-[1200px]">
+<div class="container mx-auto lg:mt-8 h-full max-w-[1200px] mb-16">
 	<a href="/" class="block w-[100px]">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1431 443" fill="none"
 			><script xmlns=""></script>

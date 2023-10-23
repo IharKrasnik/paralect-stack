@@ -82,7 +82,7 @@
 	}
 </script>
 
-<div class="flex">
+<div class="flex mb-8 items-start">
 	<div class="mt-8 p-4 section flex-shrink-0 mr-8">
 		{#each categories as category}
 			<a
