@@ -94,6 +94,10 @@
 	// 	move();
 	// }, 500);
 
+	let iconLoaded = (icon) => {
+		icon.isLoaded = true;
+	};
+
 	let updatedOn = new Date();
 
 	$: if (scrollY && !(scrollY % 40)) {

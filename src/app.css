@@ -23,6 +23,10 @@ body {
 	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.aspect-og {
+	aspect-ratio: 1200/630 !important;
+}
+
 button,
 button[type='submit'] {
 	background-color: var(--color-brand);

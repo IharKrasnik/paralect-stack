@@ -1,6 +1,7 @@
 <script>
 	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
+	import Image from '$lib/components/Image.svelte';
 	import { browser } from '$app/environment';
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
@@ -15,6 +16,8 @@
 	$: if (categoryKey) {
 		activeCategory = categories.find((c) => c.key === categoryKey) || categories[0];
 	}
+
+	let isLoaded = {};
 </script>
 
 <div class="flex mb-8 items-start">
@@ -42,8 +45,11 @@
 				in:fly={{ duration: 150, y: -50 }}
 			>
 				{#each tools.filter((t) => t.category === activeCategory.key) as tool}
-					<div class="section min-w-full aspect-[1200/630]">
-						<img src={tool.img} class="w-full aspect-[1200/630] object-cover" />
+					<div class="section">
+						<div class="w-full aspect-og bg-zinc-900">
+							<Image src={tool.img} class="transition w-full object-cover aspect-og" />
+						</div>
+
 						<div class="p-4">
 							<h3 class="font-bold">
 								{tool.name}
