@@ -14,11 +14,11 @@
 	<Stack bind:categoryKey={$page.params.categoryKey} />
 </div>
 
-<svelte:head>
+<!-- <svelte:head>
 	<title>Top {category.name}{category.noTools ? '' : ' Tools'} — Paralect Stack</title>
 	<meta name="description" content={category.description} />
 	<meta name="og:description" content={category.description} />
 
 	<meta name="twitter:title" content={$page.data.ogTitle} />
 	<meta name="twitter:description" content={$page.data.ogDescription} />
-</svelte:head>
+</svelte:head> -->
