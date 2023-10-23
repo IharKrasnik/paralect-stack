@@ -42,7 +42,7 @@
 		{#key categoryKey}
 			<div
 				class="grid grid-cols-1 sm:grid-cols-3 mt-8 items-start gap-4"
-				in:fly={{ duration: 150, y: -50 }}
+				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each tools.filter((t) => t.category === activeCategory.key) as tool}
 					<div class="section">
