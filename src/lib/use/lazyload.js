@@ -13,7 +13,6 @@ export const lazyLoad = (image, src) => {
 
 	const observer = new IntersectionObserver((entries) => {
 		if (entries[0].isIntersecting) {
-			debugger;
 			console.log('an image has loaded'); // console log for REPL
 			image.src = src; // replace placeholder src with the image src on observe
 			if (image.complete) {

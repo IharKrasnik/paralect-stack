@@ -3,7 +3,7 @@
 	import _ from 'lodash';
 	import tools from '$lib/data/tools';
 	import { fade } from 'svelte/transition';
-
+	import isMobile from '$lib/helpers/isMobile';
 	import Stack from '$lib/components/Stack.svelte';
 
 	let startIcons = _.shuffle([
@@ -45,24 +45,10 @@
 		icons = [
 			...startIcons,
 			middleLeftIcons[0],
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
+			...(isMobile() ? [] : ['', '', '', '', '', '', '', '']),
 			middleRightIcons[0],
 			middleLeftIcons[1],
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
+			...(isMobile() ? [] : ['', '', '', '', '', '', '', '']),
 			middleRightIcons[1],
 			...endIcons
 		];
@@ -160,13 +146,13 @@
 	</div>
 
 	{#key updatedOn}
-		<div class="absolute top-0 left-0 grid grid-cols-10 w-full h-full z-0" in:fade>
+		<div class="absolute top-0 left-0 grid sm:grid-cols-10 grid-cols-4 w-full h-full z-0" in:fade>
 			{#each icons as icon}
 				<div>
 					{#if icon.name}
 						<a href="cat/{icon.category}">
 							<img
-								class="shrink-0 aspect-square grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
+								class="shrink-0 aspect-square w-[120px] grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
 								class:grayscale={activeCategory !== 'all' && activeCategory !== icon.category}
 								class:opacity-40={activeCategory !== 'all' && activeCategory !== icon.category}
 								src="/products/{icon.name}.png"
