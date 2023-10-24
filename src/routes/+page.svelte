@@ -124,7 +124,7 @@
 				>,
 
 				<a
-					href="cat/forms-data"
+					href="cat/blog-newsletter-emails"
 					on:mouseover={() => setCategory('blog-newsletter-emails')}
 					on:mouseleave={() => setCategory(null)}>Grow Audience</a
 				>,
@@ -134,7 +134,7 @@
 					on:mouseleave={() => setCategory(null)}>Engage Customers</a
 				>,
 				<a
-					href="cat/customer-communication"
+					href="cat/crm"
 					on:mouseover={() => setCategory('crm')}
 					on:mouseleave={() => setCategory(null)}>Sell</a
 				>
