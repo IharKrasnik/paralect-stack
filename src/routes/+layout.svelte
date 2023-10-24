@@ -52,10 +52,12 @@
 					fill="white"
 				/>
 			</svg>
-			<div class="font-semibold mt-2">Startup Stack</div>
+			<div class="mt-2">Startup Stack</div>
 		</a>
 		<div class="flex items-center">
-			<a href="/about"><div class="mr-8 hidden sm:block">About Stack</div></a>
+			<a href="/about"
+				><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
+			>
 			<a target="_blank" href="https://build.paralect.com">
 				<button class="rotated">Build My Product</button>
 			</a>
@@ -64,24 +66,26 @@
 	<slot />
 </div>
 
-<div class="bg-zinc-900 w-full p-4 sm:hidden">
-	<div class="font-bold text-xl mb-4">Tools Categories</div>
-	{#each categories as category}
-		<a
-			href="/cat/{category.key}"
-			class="block nav-link pb-4 text-lg shrink-0"
-			class:active={$page.params.categoryKey === category.key}
-		>
-			{category.name}
-		</a>
-	{/each}
-</div>
-<a href="/about"
-	><div class="bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition" in:slide>
-		Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
-		startup growth.
+{#if !$page.url.pathname.includes('/about')}
+	<div class="bg-zinc-900 w-full p-4 sm:hidden">
+		<div class="font-bold text-xl mb-4">Tools Categories</div>
+		{#each categories as category}
+			<a
+				href="/cat/{category.key}"
+				class="block nav-link pb-4 text-lg shrink-0"
+				class:active={$page.params.categoryKey === category.key}
+			>
+				{category.name}
+			</a>
+		{/each}
 	</div>
-</a>
+	<a href="/about"
+		><div class="bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition" in:slide>
+			Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
+			startup growth.
+		</div>
+	</a>
+{/if}
 
 <style>
 	.nav {
