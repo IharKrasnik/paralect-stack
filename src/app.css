@@ -82,7 +82,7 @@ button.orange:hover {
 button.secondary {
 	background: none;
 	outline: 2px var(--color-brand) solid;
-	@apply flex items-center text-white;
+	@apply text-white;
 }
 
 button.secondary:hover {

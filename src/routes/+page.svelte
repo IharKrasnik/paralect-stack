@@ -110,7 +110,10 @@
 
 <svelte:window bind:scrollY />
 
-<div class="relative flex items-center bg-zinc-900 overflow-hidden my-8" style="height: 480px">
+<div
+	class="relative flex items-center bg-zinc-900 overflow-hidden my-8 sm:mt-0 mt-24"
+	style="height: 480px"
+>
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">
 		<div class="flex justify-center items-center max-w-[600px] text-center mx-auto z-10 h-full">
 			<h1 class="text-3xl" style="text-shadow: 1px 1px #fffc65">

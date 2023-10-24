@@ -14,7 +14,6 @@
 
 	let scrollY;
 	// fillMetaTags();
-	console.log('mobil', isMobile());
 </script>
 
 <svelte:window bind:scrollY />
@@ -37,10 +36,11 @@
 
 <SvelteToast />
 
-<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px] mb-24">
+<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px]">
 	<div
-		class="top-0 transition mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
-		class:fixed={$page.url.pathname !== '/' && browser && !isMobile()}
+		class=" {$page.url.pathname !== '/'
+			? 'sm:fixed'
+			: ''} top-0 transition mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
 		style="margin-bottom: -32px;"
 	>
 		<a href="/" class="block w-[110px]">
@@ -71,7 +71,11 @@
 	</div>
 </div>
 
-<div class="container mx-auto h-full max-w-[1200px] mb-16 z-10 relative">
+<div
+	class="container mx-auto h-full max-w-[1200px] mb-16 z-10 relative {$page.url.pathname !== '/'
+		? 'mt-8'
+		: ''} sm:mt-24"
+>
 	<slot />
 </div>
 

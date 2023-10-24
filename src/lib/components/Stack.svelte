@@ -28,7 +28,7 @@
 
 <div class="relative flex mb-8 items-start" id="tools">
 	<div
-		class=" top-24 bottom-24 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto"
+		class=" top-24 bottom-16 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto"
 		class:fixed={$page.url.pathname !== '/'}
 	>
 		{#each categories as category}
@@ -48,6 +48,7 @@
 				<h1>Top {activeCategory.name} {activeCategory.noTools ? '' : 'Tools'}</h1>
 				<h2>{activeCategory.description || ''}</h2>
 			</div>
+
 			<button class="hidden sm:block secondary" on:click={copyUrl}>Share Stack</button>
 		</div>
 
