@@ -813,8 +813,7 @@ export default [
 		name: 'PipeDrive',
 		url: 'https://pipedrive.com/',
 		img: 'https://cdn.eu-central-1.pipedriveassets.com/www-main-renderer/_next/static/media/PipedriveV2.bc8d01f9.png',
-		description:
-			'Pipedrive ist leicht zu bedienen und die Nummer 1 unter den CRM-Tools. Generieren Sie mehr Leads und steigern Sie Ihren Umsatz. Starten Sie jetzt mit unserer 14-tägigen kostenlosen Testversion.',
+		description: 'Automate your sales pipeline and close more leads.',
 		favicon:
 			'https://cdn.eu-central-1.pipedriveassets.com/www-main-renderer/_next/static/media/favicon-196x196.98c71512.png'
 	},
@@ -825,7 +824,7 @@ export default [
 		url: 'https://apollo.io/',
 		img: 'https://netlify.apollo.io/_next/static/media/og-image.8828ee70.jpg',
 		description:
-			"Search, engage, and convert over 265 million contacts at over 70 million companies with Apollo's sales intelligence and engagement platform.",
+			'Disover contacts of your target audience. Search, engage, and convert over 265 million contacts at over 70 million companies with.',
 		favicon: '/favicon.png'
 	},
 	{
@@ -834,8 +833,7 @@ export default [
 		name: 'Hunter',
 		url: 'https://hunter.io/',
 		img: 'https://hunter.io/assets/social_card/default-d06ff682b93b61db6b56968567844e2cd33f7d6a832e7a2dbe1c830a55872c32.jpg',
-		description:
-			'Hunter is the leading solution to find and verify professional email addresses. Start using Hunter and connect with the people that matter for your business.',
+		description: 'Discover and verify business email addresses for your outreach campaigns.',
 		favicon:
 			'https://hunter.io/assets/favicon/favicon-35c267ca9f2a39f1c9d7118c8533e74385d9e7a4fad1ced75fd51442ecfbceb2.ico'
 	},
@@ -845,8 +843,7 @@ export default [
 		name: 'Clearbit',
 		url: 'https://clearbit.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058026085-telegram-cloud-photo-size-4-5793008011915144582-y.jpg',
-		description:
-			'Clearbit provides go-to-market teams with the industry’s most comprehensive B2B dataset across company, contact, and IP intelligence. Use our full dataset to enrich key systems, build products, and power personalization.',
+		description: 'Enhance anonymous customer data with their actual data and improve conversions.',
 		favicon: '/favicon-192.png'
 	},
 	{
@@ -855,8 +852,7 @@ export default [
 		name: 'LemList',
 		url: 'https://lemlist.com/',
 		img: 'https://assets-global.website-files.com/5de921a1902d8d8b7a99f774/64edfc22f87ef66b199f18e6_grahp%20(1).png',
-		description:
-			'Discover lemlist, the most advanced Sales engagement platform trusted by 37,284 users. Find, contact, and convert your ideal buyers across multiple channels, all in one place.',
+		description: 'Cold Email + LinkedIn automation platform.',
 		favicon:
 			'https://assets-global.website-files.com/5de921a1902d8d8b7a99f774/6388715a11d3acf577b879cc_logo%20lemlist.png'
 	},
@@ -866,8 +862,7 @@ export default [
 		name: 'SmartLead',
 		url: 'https://smartlead.ai/',
 		img: 'https://all-blog-assets.s3.ap-southeast-2.amazonaws.com/FB+add.jpg',
-		description:
-			'Send cold emails that land in the inbox at scale. Connect unlimited auto-rotating email accounts and use the best-in-class AI warm-up to stay out of spam.',
+		description: `Scale your outreach with unlimited mailboxes, unlimited warmups, a limitless multi-channel infrastructure from the first touch to revenue.`,
 		favicon:
 			'https://assets-global.website-files.com/6204a703ff61516512c04f55/631b014cb499da5bab949198_Group_6608_1_32x32.png'
 	},
@@ -878,7 +873,7 @@ export default [
 		url: 'https://smartwriter.ai/',
 		img: 'https://all-blog-assets.s3.ap-southeast-2.amazonaws.com/FB+add.jpg',
 		description:
-			'Use AI to create highly personalised cold emails or Linkedin messages that convert readers to customers. No experience needed. Find leads, create tailored personalised copy and make sales. AI Cold Emails',
+			'Send high-personalized cold emails with the help AI: use meaningful AI copywriting and customer research tools.',
 		favicon:
 			'https://assets-global.website-files.com/5ffd5ee7d7c77af3d1e2a894/60d16019be15fb3a36fb2005_favicon-32x32.png'
 	},
@@ -888,7 +883,8 @@ export default [
 		name: 'Fomo',
 		url: 'https://fomo.com/',
 		img: 'https://s3.amazonaws.com/fomo-static-assets/og/fomo-social-proof-homepage-og.jpg',
-		description: "Fomo is the world's first social proof marketing platform.",
+		description:
+			'Show social-proof live notifications on your website to generate FOMO and close leadds.',
 		favicon:
 			'https://fomo.com/assets/landing/favicons/favicon-16x16-639dc66a0e2fbfb6834421d5a7fda8f5d192bf3fffe27ca40e2142fde51537ae.png'
 	},
@@ -898,8 +894,7 @@ export default [
 		name: 'Proof',
 		url: 'https://useproof.com/',
 		img: 'https://uploads-ssl.webflow.com/59318798d83bff2781822428/5e1e3a8abb0f19d0390685ce_Social%20media%20repost%20(1).png',
-		description:
-			'Proof lets you easily personalize your website for every visitor to increase conversions. Learn how your B2B company use Proof to increase leads, demos, and sales.',
+		description: 'Personalize your website for every visitor to increase conversions.',
 		favicon:
 			'https://uploads-ssl.webflow.com/59318798d83bff2781822428/5e1de9c4c9b0a29444498dd6_Favicon%2032%20transparent%20(1).png'
 	},
@@ -910,7 +905,7 @@ export default [
 		url: 'https://stripe.com/atlas',
 		img: 'https://images.ctfassets.net/fzn2n1nzq965/3dQU4D4l2IxsfKUGtAlbNh/953801eebe8955c34d1774009007ce17/Atlas_social_card.jpg?q=80',
 		description:
-			'Mit Stripe Atlas können Sie ganz einfach ein Unternehmen in den USA gründen. Sie starten Ihr Unternehmen in wenigen Klicks – wir kümmern uns um den Papierkram.',
+			'The most common way to open Delaware C Corp company (type of incorparation common for startups).',
 		favicon:
 			'https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&h=180'
 	},
@@ -920,7 +915,7 @@ export default [
 		name: 'Mercury',
 		url: 'https://mercury.com',
 		img: '',
-		description: '',
+		description: 'Modern digital bank for startup with clean straightforward interface',
 		favicon: ''
 	},
 	{
@@ -929,8 +924,7 @@ export default [
 		name: 'Pulley',
 		url: 'https://pulley.com/',
 		img: 'https://assets-global.website-files.com/6075d9b97f07e4c3a1a21e7a/64383d73e9728338cf99e5c5_pulley-og%20(1).jpg',
-		description:
-			'Pulley has helped thousands of companies manage their cap table and equity. Onboard with us today.',
+		description: 'Manage cap table and equity.',
 		favicon:
 			'https://assets-global.website-files.com/6075d9b97f07e4c3a1a21e7a/6075d9b97f07e41283a21e99_603dd5605fd6f34e5e84e612_Frame%202.png'
 	},
@@ -940,8 +934,7 @@ export default [
 		name: 'Carta',
 		url: 'https://carta.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058536493-telegram-cloud-photo-size-4-5829106834080903459-y.jpg',
-		description:
-			'Carta is an ownership and equity management platform trusted by thousands of founders, investors, and employees.'
+		description: 'The common tool to manage cap table and equity.'
 	},
 	{
 		category: 'formation',
@@ -950,7 +943,7 @@ export default [
 		url: 'https://clerky.com/',
 		img: 'https://www.clerky.com/assets/images/social/facebook-c4af3538.png',
 		description:
-			'Most popular online service for startup legal paperwork, including Delaware C corporation incorporation. Recommended by the most startup attorneys. Designed exclusively for startups, as opposed to regular small businesses. Run by two startup attorneys obsessed with helping founders avoid problems with due diligence.',
+			'Popular service for designed for startups: legal paperwork, including Delaware C Corp incorporation.',
 		favicon: '/assets/images/favicon-16x16-da9bbf51.png'
 	},
 	{
@@ -959,8 +952,7 @@ export default [
 		name: 'DocuSign',
 		url: 'https://docusign.com/',
 		img: 'https://images.ctfassets.net/0jnmtsdzg6p5/4GSPcvcpIZpsXsZ7F0EXTW/14994b65b37fd0a9168725b4de994e98/OG_Image_Black.png',
-		description:
-			'DocuSign ensures the security & mobility to digitally transform businesses. Sign docs for free.',
+		description: 'Share your docs with your clients and securely sign them.',
 		favicon: '/themes/custom/cubic/favicon/favicon-96x96.png'
 	},
 	// {
@@ -977,8 +969,7 @@ export default [
 		name: 'PandaDoc',
 		url: 'https://demo.pandadoc.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058609464-telegram-cloud-photo-size-4-5835724034359276000-w.jpg',
-		description:
-			'See PandaDoc in action with a live personalized demo, no commitments required. Learn how to automate your work with proposals and contracts. Request a demo.',
+		description: 'Modern platform to create, manage and sign startup documents.',
 		favicon: '/images/favicon.ico'
 	},
 	{
@@ -987,8 +978,7 @@ export default [
 		name: 'Acquire',
 		url: 'https://acquire.com/',
 		img: 'https://acquire.com/assets/img/main-og.dc0b51.png',
-		description:
-			'Buy and sell startups in as little as 30 days. Connect with 200k+ qualified buyers & browse 1,000s of vetted listings. Free escrow, legal docs & more. Join now.',
+		description: 'Buy and sell startups in as little as 30 days.',
 		favicon: '/assets/img/favicon-16x16.e1dbac.png'
 	},
 	{
@@ -996,7 +986,8 @@ export default [
 		key: 'tinyacquisitions',
 		name: 'TinyAcquisitions',
 		url: 'https://tinyacquisitions.com/',
-		description: ''
+		description:
+			'Buy tiny startups with customers for a small price, instead of building on your own from scratch.'
 	},
 	{
 		category: 'formation',
@@ -1004,8 +995,7 @@ export default [
 		name: 'Pipe',
 		url: 'https://pipe.com/',
 		img: 'https://pipe.com/assets/img/open-graph/home.png',
-		description:
-			'Grow on your terms with fast, flexible financing. Our modern capital platform offers embedded capital solutions and working capital for business owners.',
+		description: 'Get the financing based on your MRR. Turn your MRR into ARR.',
 		favicon: '/assets/img/favicon.png'
 	},
 
@@ -1015,7 +1005,7 @@ export default [
 		name: 'SemRush',
 		url: 'https://semrush.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058124541-telegram-cloud-photo-size-4-5945881243897932833-w.jpg',
-		description: ''
+		description: 'One of the most popular enterprise-level SEO research tools.'
 	},
 	{
 		category: 'seo',
@@ -1023,8 +1013,7 @@ export default [
 		name: 'Ahrefs',
 		url: 'https://ahrefs.com/',
 		img: 'https://static.ahrefs.com/static/assets/ahrefs-YU6Y7RBK.png',
-		description:
-			"You don't have to be an SEO pro to rank higher and get more traffic. Join Ahrefs – we're a powerful but easy to learn SEO toolset with a passionate community.",
+		description: 'One of the most popular enterprise-level SEO research tools.',
 		favicon: 'https://static.ahrefs.com/favicon-16x16.png?v=2'
 	},
 	{
@@ -1033,7 +1022,7 @@ export default [
 		name: 'UberSuggest',
 		url: 'https://ubersuggest.com/',
 		img: 'https://neilpatel.com/wp-content/uploads/2020/04/1-keyword-overview.png',
-		description: ''
+		description: 'Simple tool to reserch keywords and topics.'
 	},
 	{
 		category: 'seo',
@@ -1057,7 +1046,7 @@ export default [
 		url: 'https://topicmojo.com/',
 		img: 'https://d21b0h47110qhi.cloudfront.net/old-free/group-3540-E88weKteT5jilx5.png',
 		description:
-			'Topic Mojo - Your Ultimate Topic and Question Research Tool. Uncover valuable insights into listener interests, preferences, and trends. Elevate content strategy now',
+			'Topic and Question Research Tool. Uncover valuable insights into listener interests, preferences, and trends.',
 		favicon: 'https://d21b0h47110qhi.cloudfront.net/internal/icon-bKCtmaNkLIbKJmQ.png'
 	},
 	{
@@ -1066,8 +1055,7 @@ export default [
 		name: 'HypeFurry',
 		url: 'https://hypefury.com/',
 		img: 'https://hypefury.com/wp-content/uploads/2021/02/Homepage-FB.png',
-		description:
-			'Save time on social media while creating more value, and growing your audience faster. Schedule & automate your social media experience!',
+		description: 'Schedule and automate your social media marketing content.',
 		favicon: 'https://hypefury.com/wp-content/uploads/2022/08/cropped-hypefury-favicon-192x192.webp'
 	},
 	{
@@ -1076,8 +1064,7 @@ export default [
 		name: 'Taplio',
 		url: 'https://taplio.com/',
 		img: 'https://assets-global.website-files.com/647daf37f31ac13e5d14bb03/64fef99a4049a05b307b7400_Taplio%20open%20graph%20image.webp',
-		description:
-			'Join 6000+ LinkedIn pros using the all-in-one, AI-powered LinkedIn tool. Content creation, scheduling, engaging, analytics and more.',
+		description: 'AI-powered LinkedIn scheduling, automation and growth tool.',
 		favicon:
 			'https://assets-global.website-files.com/647daf37f31ac13e5d14bb03/647daf37f31ac13e5d14bb72_picto.png'
 	},
@@ -1087,8 +1074,7 @@ export default [
 		name: 'TweetHunter',
 		url: 'https://tweethunter.io/',
 		img: 'https://assets-global.website-files.com/64ad1f808f894585c5c47c11/64c92bb6b43eb37ff06fb6fb_meta.jpg',
-		description:
-			'Get more results for your business and personal brand on Twitter than ever before. Powered by AI and automation. Try it for free.',
+		description: 'AI-powered Twitter scheduling, automation and growth tool.',
 		favicon:
 			'https://assets-global.website-files.com/64ad1f808f894585c5c47c11/64ad1f808f894585c5c47ca4_favicon%20tweet%20hunter.png'
 	},
@@ -1098,8 +1084,7 @@ export default [
 		name: 'Buffer',
 		url: 'https://buffer.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058253172-telegram-cloud-photo-size-4-5792846937756642504-y.jpg',
-		description:
-			'Use Buffer to manage your social media so that you have more time for your business.'
+		description: 'Cross-post your social media posts.'
 	},
 	{
 		category: 'smm',
@@ -1108,7 +1093,7 @@ export default [
 		url: 'https://storychief.io/',
 		img: 'https://assets-global.website-files.com/62d66b587db794f6131223e0/62dbace99e217327b0f7c0ee_dashboard.png',
 		description:
-			'StoryChief helps editorial teams, social media managers, and agencies collaborate better and distribute their content faster across multiple platforms. Create and distribute news, blogs, and social media posts across all your channels - without losing quality.',
+			'Create and distribute your social media posts across all your marketing channels.',
 		favicon:
 			'https://assets-global.website-files.com/62d66b587db794f6131223e0/62d675f9398ad5c64e3e3c79_favicon.png'
 	},
@@ -1129,19 +1114,8 @@ export default [
 		url: 'https://gummysearch.com/',
 		img: 'https://gummysearch.com/static/social-share-image-5557651f4c83cad77842de56d8963bb6.png',
 		description:
-			'Explore any niche. Discover pain points, content opportunities, and what solutions people are eager to pay for.',
+			'Explore any Reddit niche. Discover pain points, content opportunities, and what solutions people are eager to pay for.',
 		favicon: '/favicon-32x32.png?v=67578bfc454efc4eee525a3b92778838'
-	},
-	{
-		category: 'smm',
-		key: 'surfkey',
-		name: 'SurfKey',
-		url: 'https://surfkey.io/',
-		img: 'https://uploads-ssl.webflow.com/635e30016c0ae0521160407c/64b572f26c048a9e014cf6fe_og_image%20(1).png',
-		description:
-			'Get real time alerts on selected “keywords” to your inbox, Slack and Discord and never miss a relevant Reddit thread again.',
-		favicon:
-			'https://uploads-ssl.webflow.com/635e30016c0ae0521160407c/64b574e455b20603216f85f3_favicon.png'
 	},
 	{
 		category: 'startup-community',
@@ -1149,7 +1123,8 @@ export default [
 		name: 'GenzVC',
 		url: 'https://genzvcs.com/',
 		img: 'http://static1.squarespace.com/static/5ff9e77092e37d4757659c20/t/5ffa11bef96b3c097b4c7a00/1610224066920/Screen+Shot+2021-01-09+at+3.24.56+PM.png?format=1500w',
-		description: '',
+		description:
+			'Open Slack channel with 30k+ founders. Ask startup-related questions, meet other founders.',
 		favicon: 'https://assets.squarespace.com/universal/default-favicon.ico'
 	},
 	{
@@ -1158,8 +1133,7 @@ export default [
 		name: 'IndieHackers',
 		url: 'https://indiehackers.com/',
 		img: 'https://www.indiehackers.com/images/shareables/home.jpg',
-		description:
-			'Connect with developers who are sharing the strategies and revenue numbers behind their companies and side projects.',
+		description: 'Public active forum for bootstrapped solo founders aka indie-hackers.',
 		favicon: '/images/favicons/favicon--192x192.png'
 	},
 	{
@@ -1168,7 +1142,9 @@ export default [
 		name: 'IndieWorldwide',
 		url: 'https://indieworldwide.com/',
 		img: 'https://indieworldwide.carrd.co/assets/images/share.jpg?v=6930e506',
-		description: 'Startup Founder Community',
+		description:
+			'Paid startup community for bootstrapped founders. Active engaged Slack channel with 700+ founders.',
+
 		favicon: 'assets/images/favicon.png?v=6930e506'
 	},
 	{
@@ -1177,7 +1153,8 @@ export default [
 		name: 'Nano',
 		url: 'https://nanohq.co/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1683893482903-nano_banner.png',
-		description: 'Invest in authentic open early-stage startups',
+		description:
+			'Public internet community and accelerator. Grow your startup in public with content.',
 		favicon: './nano.png'
 	},
 	{
@@ -1186,8 +1163,7 @@ export default [
 		name: 'HiveIndex',
 		url: 'https://thehiveindex.com/',
 		img: 'https://thehiveindex.com/static/share-card-80285a4dc41c3cc75a114258129f732c.png',
-		description:
-			'Hive Index is a directory of online communities, organized by topic, platform, and community features.',
+		description: 'Discover best startup communities.',
 		favicon: '/favicon-32x32.png?v=6f9a721ed54860c63211350929d004b7'
 	},
 	{
@@ -1196,8 +1172,7 @@ export default [
 		name: 'r/startups',
 		url: 'https://reddit.com/r/startups',
 		img: 'https://b.thumbs.redditmedia.com/c7zj4Bem2INlJARtR9RfI_MsFlzzFlc57sejeYfSFNA.png',
-		description:
-			'r/startups: Welcome to /r/startups, the place to discuss startup problems and solutions. Startups are companies that are designed to grow and scale …',
+		description: 'More than 2 million founders read r/startups.',
 		favicon: 'https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png'
 	},
 	{
@@ -1206,7 +1181,8 @@ export default [
 		name: 'r/entrepreuner',
 		url: 'https://reddit.com/r/entrepreuner',
 		img: '',
-		description: ''
+		description:
+			'r/entrepreuner is the most active subreddit that not agressively punish for the links.'
 	},
 	{
 		category: 'domains',
@@ -1214,8 +1190,7 @@ export default [
 		name: 'NameCheap',
 		url: 'https://namecheap.com/',
 		img: 'https://www.namecheap.com/assets/img/nc-icon/favicon.ico',
-		description:
-			'Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 16 million domains under management, you know you’re in good hands.',
+		description: 'One of the most popular domain registrars + DNS providers.',
 		favicon: 'https://www.namecheap.com/assets/img/nc-icon/favicon.ico'
 	},
 	{
@@ -1224,8 +1199,7 @@ export default [
 		name: 'PorkBun',
 		url: 'https://porkbun.com/',
 		img: 'https://porkbun.com/images/porkbun-logo-1200x1200.png',
-		description:
-			"Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't be sorry. If you don't use us we'll be sad, but we'll still love you.",
+		description: 'Easy and affordable Domain Registrar + DNS provider.',
 		favicon: '/images/favicons/favicon-16x16.png'
 	},
 	{
@@ -1235,7 +1209,7 @@ export default [
 		url: 'https://cloudflare.com/',
 		img: 'https://cf-assets.www.cloudflare.com/slt3lc6tev37/2FNnxFZOBEha1W2MhF44EN/e9438de558c983ccce8129ddc20e1b8b/CF_MetaImage_1200x628.png',
 		description:
-			'Here at Cloudflare, we make the Internet work the way it should. Offering CDN, DNS, DDoS protection and security, find out how we can help your site.',
+			'DNS registrar with robust cloud infrastructure for HTTPS, DDOS protection and more.',
 		favicon: '/favicon.ico'
 	}
 ];
