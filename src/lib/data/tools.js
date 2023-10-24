@@ -193,44 +193,7 @@ export default [
 		favicon:
 			'https://www.tawk.to/wp-content/uploads/2020/08/cropped-tawky_2018_1200x1200-1-192x192.png'
 	},
-	{
-		category: 'customer-communication',
-		key: 'feature-os',
-		name: 'FeatureOs',
-		url: 'https://alphaos.app/featureos',
-		img: 'https://assets.production.skcript.com/alphaos/site-assets/images/blog/og_blog.jpg?v2',
-		description:
-			'Collect feedback from customers, prioritize user feedback, and share product roadmap.',
-		favicon: 'https://assets.production.skcript.com/alphaos/site-assets/favicon/favicon-16x16.png'
-	},
-	{
-		category: 'customer-communication',
-		key: 'canny',
-		name: 'Canny',
-		url: 'https://canny.io/',
-		img: 'https://canny.io/images/canny-social.png',
-		description:
-			'Collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
-		favicon: 'https://assets.canny.io/logo-icon.png'
-	},
-	{
-		category: 'customer-communication',
-		key: 'featurebase-app',
-		name: 'Featurebase',
-		url: 'https://featurebase.app/',
-		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057990540-telegram-cloud-photo-size-4-5909919250800292193-y.jpg',
-		description: 'Collect customer feedback and communicate updates'
-	},
-	{
-		category: 'customer-communication',
-		key: 'upvoty',
-		name: 'Upvoty',
-		url: 'https://upvoty.com/',
-		img: 'https://www.upvoty.com/wp-content/uploads/2020/08/FBhomepage.png',
-		description:
-			'Start working on the right user feedback. With Upvoty you are able to gather feedback and make the right product decisions.',
-		favicon: 'https://www.upvoty.com/wp-content/uploads/2021/03/cropped-Favicon-1-192x192.png'
-	},
+
 	{
 		category: 'customer-communication',
 		key: 'testimonial-to',
@@ -305,7 +268,7 @@ export default [
 		url: 'https://stripe.com/',
 		img: 'https://images.ctfassets.net/fzn2n1nzq965/3AGidihOJl4nH9D1vDjM84/9540155d584be52fc54c443b6efa4ae6/homepage.png?q=80',
 		description:
-			'The most common platform to accept digital payments (one-time, subscription, marketplaces)',
+			'The most common platform to accept digital payments: one-time, subscriptions, marketplaces, escrow etc.',
 		favicon:
 			'https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&h=180'
 	},
@@ -316,9 +279,18 @@ export default [
 		url: 'https://lemonsqueezy.com/',
 		img: 'https://assets-global.website-files.com/6347244ba8d63489ba51c08e/6358e59c97dcbfdc770e1ff8_og2.jpg',
 		description:
-			'The modern popular payment automation platform. Easily sell digital products and SaaS subscriptions, create customised checkout pages.',
+			'The modern payment automation platform. Easily sell digital products and SaaS subscriptions, create customised checkout pages.',
 		favicon:
 			'https://assets-global.website-files.com/6347244ba8d63489ba51c08e/6347244ba8d6341f3f51c0da_63071714fb42aa33dd948e49_favixon.webp'
+	},
+	{
+		category: 'payments',
+		key: 'braintree',
+		name: 'Braintree',
+		url: 'https://www.braintreepayments.com/',
+		img: 'https://businessdough.com/wp-content/uploads/braintree-payments-ratings-reviews-515x350.png',
+		description: 'Payment gateway with simple PayPal integration.',
+		favicon: ''
 	},
 	{
 		category: 'payments',
@@ -331,11 +303,20 @@ export default [
 	},
 	{
 		category: 'payments',
+		key: 'chargebee',
+		name: 'ChargeBee',
+		url: 'https://chargebee.com/',
+		img: 'https://www.chargebee.com/static/resources/og/rebrand/homepage/homepage.png',
+		description:
+			'Manage complex subscription logic and analyze revenue. Attach or migrate to any payment processor like Stripe, Braintree or dozens of others.'
+	},
+	{
+		category: 'payments',
 		key: 'gumroad',
 		name: 'Gumroad',
 		url: 'https://gumroad.com/',
 		img: 'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619fb5686c9b9b5f5a35020e_gumroad-og.png',
-		description: 'Marketplace where you can sell your digital products with one-time payments',
+		description: 'Marketplace where you can sell your digital products with one-time payments.',
 		favicon:
 			'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619bf6d5140958874014528c_favicon.png'
 	},
@@ -371,7 +352,7 @@ export default [
 		key: 'glide',
 		name: 'Glide',
 		url: 'https://www.glideapps.com',
-		img: 'https://glideapps.com/images/homepage-2023/og-cover.png',
+		img: 'https://glideapps.com/images/homepage-2023/cover.jpg',
 		description: 'No-code app builder to build and deploy custom mobile and web apps.'
 	},
 	{
@@ -398,7 +379,7 @@ export default [
 		name: 'AppSmith',
 		url: 'https://appsmith.com/',
 		img: 'https://images.ctfassets.net/lpvian6u6i39/3K4hnNGrLSlQzJRF4bn32J/8da3f35480fa66fd6c439e9af35b60ab/Default_OG_image.jpg',
-		description: 'Low-code open-source internal tools builder',
+		description: 'Low-code open-source internal tools builder.',
 		favicon: '/favicon-16x16.png'
 	},
 	{
@@ -529,7 +510,7 @@ export default [
 		key: 'trello',
 		name: 'Trello',
 		url: 'https://trello.com/',
-		img: 'https://bxp-content-static.prod.public.atl-paas.net/img/favicon.ico',
+		img: 'https://images.ctfassets.net/rz1oowkt5gyp/4kCNudjaBYj90CGgG7Lict/cbafa67336b2007278f50d99ceabfb22/Boards_2x.png',
 		description:
 			'Simple yet super-useful task board to track the progress of any project, whether work-related or personal.',
 		favicon: 'https://bxp-content-static.prod.public.atl-paas.net/img/favicon.ico'
@@ -565,6 +546,44 @@ export default [
 		favicon: '/favicon.png'
 	},
 	{
+		category: 'product-management',
+		key: 'feature-os',
+		name: 'FeatureOs',
+		url: 'https://alphaos.app/featureos',
+		img: 'https://assets.production.skcript.com/alphaos/site-assets/images/blog/og_blog.jpg?v2',
+		description:
+			'Collect feedback from customers, prioritize user feedback, and share product roadmap.',
+		favicon: 'https://assets.production.skcript.com/alphaos/site-assets/favicon/favicon-16x16.png'
+	},
+	{
+		category: 'product-management',
+		key: 'canny',
+		name: 'Canny',
+		url: 'https://canny.io/',
+		img: 'https://canny.io/images/canny-social.png',
+		description:
+			'Collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
+		favicon: 'https://assets.canny.io/logo-icon.png'
+	},
+	{
+		category: 'product-management',
+		key: 'featurebase-app',
+		name: 'Featurebase',
+		url: 'https://featurebase.app/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057990540-telegram-cloud-photo-size-4-5909919250800292193-y.jpg',
+		description: 'Collect customer feedback and communicate updates'
+	},
+	{
+		category: 'product-management',
+		key: 'upvoty',
+		name: 'Upvoty',
+		url: 'https://upvoty.com/',
+		img: 'https://www.upvoty.com/wp-content/uploads/2020/08/FBhomepage.png',
+		description:
+			'Start working on the right user feedback. With Upvoty you are able to gather feedback and make the right product decisions.',
+		favicon: 'https://www.upvoty.com/wp-content/uploads/2021/03/cropped-Favicon-1-192x192.png'
+	},
+	{
 		category: 'analytics',
 		key: 'posthog',
 		name: 'PostHog',
@@ -588,7 +607,7 @@ export default [
 		key: 'amplitude',
 		name: 'Amplitude',
 		url: 'https://amplitude.com/',
-		img: '/nextjs-public/amplitude-default-seo.png',
+		img: 'https://amplitude.com/nextjs-public/amplitude-default-seo.png',
 		description:
 			'Robust app analytics. Build funnels, visualise data, run experiments and grow your product.',
 		favicon: '/nextjs-public/favicon/favicon-16x16.png'
@@ -653,8 +672,8 @@ export default [
 		key: 'spline',
 		name: 'Spline',
 		url: 'https://spline.design/',
-		img: 'https://www.blender.org/wp-content/uploads/2023/05/blender_36_lts_splash.jpg',
-		description: 'Modern collaborative web-based 3D design tool',
+		img: 'https://spline.design/_next/static/media/spline_image_banner.de9090c7.png',
+		description: 'Modern collaborative web-based 3D design tool.',
 		favicon: 'https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-16x16.png'
 	},
 	{
@@ -785,7 +804,7 @@ export default [
 		key: 'hubspot',
 		name: 'Hubspot',
 		url: 'https://hubspot.com/',
-		img: 'https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png',
+		img: 'https://www.hubspot.com/hubfs/EN%20Round%203%20Variant%201%20Desktop%20(2).webp',
 		description:
 			'Marketing, sales, service, operations, and website-building software to grow your business.',
 		favicon: 'https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png'
@@ -837,15 +856,7 @@ export default [
 		favicon:
 			'https://hunter.io/assets/favicon/favicon-35c267ca9f2a39f1c9d7118c8533e74385d9e7a4fad1ced75fd51442ecfbceb2.ico'
 	},
-	{
-		category: 'crm',
-		key: 'clearbit',
-		name: 'Clearbit',
-		url: 'https://clearbit.com/',
-		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058026085-telegram-cloud-photo-size-4-5793008011915144582-y.jpg',
-		description: 'Enhance anonymous customer data with their actual data and improve conversions.',
-		favicon: '/favicon-192.png'
-	},
+
 	{
 		category: 'crm',
 		key: 'lemlist',
@@ -861,7 +872,7 @@ export default [
 		key: 'smartlead',
 		name: 'SmartLead',
 		url: 'https://smartlead.ai/',
-		img: 'https://all-blog-assets.s3.ap-southeast-2.amazonaws.com/FB+add.jpg',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698164691522-image.png',
 		description: `Scale your outreach with unlimited mailboxes, unlimited warmups, a limitless multi-channel infrastructure from the first touch to revenue.`,
 		favicon:
 			'https://assets-global.website-files.com/6204a703ff61516512c04f55/631b014cb499da5bab949198_Group_6608_1_32x32.png'
@@ -878,18 +889,18 @@ export default [
 			'https://assets-global.website-files.com/5ffd5ee7d7c77af3d1e2a894/60d16019be15fb3a36fb2005_favicon-32x32.png'
 	},
 	{
-		category: 'crm',
+		category: 'marketing',
 		key: 'fomo',
 		name: 'Fomo',
 		url: 'https://fomo.com/',
 		img: 'https://s3.amazonaws.com/fomo-static-assets/og/fomo-social-proof-homepage-og.jpg',
 		description:
-			'Show social-proof live notifications on your website to generate FOMO and close leadds.',
+			'Show social-proof live notifications on your website to generate FOMO and close leads.',
 		favicon:
 			'https://fomo.com/assets/landing/favicons/favicon-16x16-639dc66a0e2fbfb6834421d5a7fda8f5d192bf3fffe27ca40e2142fde51537ae.png'
 	},
 	{
-		category: 'crm',
+		category: 'marketing',
 		key: 'proof',
 		name: 'Proof',
 		url: 'https://useproof.com/',
@@ -897,6 +908,42 @@ export default [
 		description: 'Personalize your website for every visitor to increase conversions.',
 		favicon:
 			'https://uploads-ssl.webflow.com/59318798d83bff2781822428/5e1de9c4c9b0a29444498dd6_Favicon%2032%20transparent%20(1).png'
+	},
+	{
+		category: 'marketing',
+		key: 'wynter',
+		name: 'Wynter',
+		url: 'https://wynter.com',
+		img: 'https://assets-global.website-files.com/615addcd910b6e8f65bde306/61ed72c594fd7e0832887a62_wynter%20results%20mockup.png',
+		description: `Test your B2B messaging against real people: decision-makers, C-suite. Hear from people you're marketing to.`,
+		favicon: ''
+	},
+	{
+		category: 'marketing',
+		key: 'rewardful',
+		name: 'Rewardful',
+		url: 'https://www.rewardful.com/',
+		img: 'https://assets-global.website-files.com/6041705a8ccb775007a2e651/6499638ac5eecec5b374a7d2_Rewardful-home-page.png',
+		description: `Launch white-labeled affiliate program that is simple to integrate with your website.`,
+		favicon: ''
+	},
+	{
+		category: 'marketing',
+		key: 'tolt',
+		name: 'Tolt',
+		url: 'https://tolt.io/',
+		img: 'https://assets-global.website-files.com/6329ec26d5d4133a1b0ed116/639dc501e9b4740a4c1bf761_tolt%20affiliate%20marketing%20software.png',
+		description: `Affordable automated affiliate programs with branded customer portal.`,
+		favicon: ''
+	},
+	{
+		category: 'marketing',
+		key: 'clearbit',
+		name: 'Clearbit',
+		url: 'https://clearbit.com/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058026085-telegram-cloud-photo-size-4-5793008011915144582-y.jpg',
+		description: 'Enhance anonymous customer data with their actual data and improve conversions.',
+		favicon: '/favicon-192.png'
 	},
 	{
 		category: 'formation',
@@ -911,11 +958,40 @@ export default [
 	},
 	{
 		category: 'formation',
+		name: 'Orrick Startup Templates',
+		key: 'orrick',
+		url: 'https://www.orrick.com/en/Total-Access/Tool-Kit/Start-Up-Forms',
+		img: 'https://marvel-b1-cdn.bc0a.com/f00000000128125/media.orrick.com/Media%20Library/public/images/solutions/startup%20forms%20center/termsheetcreator-740x360.jpg',
+		description:
+			'Use common startup forms for your legal docs: corporate formation, co-founder, employment, shares, equity.'
+	},
+	{
+		category: 'formation',
+		key: 'clerky',
+		name: 'Clerky',
+		url: 'https://clerky.com/',
+		img: 'https://www.clerky.com/assets/images/social/facebook-c4af3538.png',
+		description:
+			'Popular service for designed for startups: legal paperwork, including Delaware C Corp incorporation.',
+		favicon: '/assets/images/favicon-16x16-da9bbf51.png'
+	},
+	{
+		category: 'payments',
 		key: 'mercury',
 		name: 'Mercury',
 		url: 'https://mercury.com',
-		img: '',
-		description: 'Modern digital bank for startup with clean straightforward interface',
+		img: 'https://mercury.com/icons/meta/general.jpg',
+		description: 'Modern digital bank for startups with clean straightforward interface.',
+		favicon: ''
+	},
+	{
+		category: 'payments',
+		key: 'brex',
+		name: 'Brex',
+		url: 'https://www.brex.com/',
+		img: 'https://brand.brex.com/transform/597dc73c-9212-4174-94fe-6fb58c427c1e/Preview-Home?io=transform:fit,width:1200',
+		description:
+			'Manage cards with ease, onboard employees, automate manual work across cards, expenses, travel, and bill pay.',
 		favicon: ''
 	},
 	{
@@ -936,16 +1012,7 @@ export default [
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058536493-telegram-cloud-photo-size-4-5829106834080903459-y.jpg',
 		description: 'The common tool to manage cap table and equity.'
 	},
-	{
-		category: 'formation',
-		key: 'clerky',
-		name: 'Clerky',
-		url: 'https://clerky.com/',
-		img: 'https://www.clerky.com/assets/images/social/facebook-c4af3538.png',
-		description:
-			'Popular service for designed for startups: legal paperwork, including Delaware C Corp incorporation.',
-		favicon: '/assets/images/favicon-16x16-da9bbf51.png'
-	},
+
 	{
 		category: 'formation',
 		key: 'docusign',
@@ -972,8 +1039,27 @@ export default [
 		description: 'Modern platform to create, manage and sign startup documents.',
 		favicon: '/images/favicon.ico'
 	},
+
 	{
-		category: 'formation',
+		category: 'growth',
+		key: 'pipe-com',
+		name: 'Pipe',
+		url: 'https://pipe.com/',
+		img: 'https://pipe.com/assets/img/open-graph/home.png',
+		description: 'Get upfront capital based on your MRR.',
+		favicon: '/assets/img/favicon.png'
+	},
+	{
+		category: 'growth',
+		key: 'founderpath',
+		name: 'Founderpath',
+		url: 'https://founderpath.com/',
+		img: 'https://founderpath.com/img/brand/meta/og-image.jpg',
+		description: 'Get upfront capital based on your MRR.',
+		favicon: '/assets/img/favicon.png'
+	},
+	{
+		category: 'growth',
 		key: 'acquire',
 		name: 'Acquire',
 		url: 'https://acquire.com/',
@@ -982,23 +1068,14 @@ export default [
 		favicon: '/assets/img/favicon-16x16.e1dbac.png'
 	},
 	{
-		category: 'formation',
+		category: 'growth',
 		key: 'tinyacquisitions',
 		name: 'TinyAcquisitions',
 		url: 'https://tinyacquisitions.com/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698162881278-image.png',
 		description:
 			'Buy tiny startups with customers for a small price, instead of building on your own from scratch.'
 	},
-	{
-		category: 'formation',
-		key: 'pipe-com',
-		name: 'Pipe',
-		url: 'https://pipe.com/',
-		img: 'https://pipe.com/assets/img/open-graph/home.png',
-		description: 'Get the financing based on your MRR. Turn your MRR into ARR.',
-		favicon: '/assets/img/favicon.png'
-	},
-
 	{
 		category: 'seo',
 		key: 'semrush',
@@ -1030,7 +1107,7 @@ export default [
 		name: 'LowFruits',
 		url: 'https://lowfruits.io/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058178188-telegram-cloud-photo-size-4-6018424530017561511-w.jpg',
-		description: 'Analyze SERPs easily and rank even with new domains'
+		description: 'Analyze SERPs easily and rank even with new domains.'
 	},
 	// {
 	// 	category: 'seo',
@@ -1122,7 +1199,7 @@ export default [
 		key: 'genzvc',
 		name: 'GenzVC',
 		url: 'https://genzvcs.com/',
-		img: 'http://static1.squarespace.com/static/5ff9e77092e37d4757659c20/t/5ffa11bef96b3c097b4c7a00/1610224066920/Screen+Shot+2021-01-09+at+3.24.56+PM.png?format=1500w',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698163220987-image.png',
 		description:
 			'Open Slack channel with 30k+ founders. Ask startup-related questions, meet other founders.',
 		favicon: 'https://assets.squarespace.com/universal/default-favicon.ico'
@@ -1171,7 +1248,7 @@ export default [
 		key: 'r-startups',
 		name: 'r/startups',
 		url: 'https://reddit.com/r/startups',
-		img: 'https://b.thumbs.redditmedia.com/c7zj4Bem2INlJARtR9RfI_MsFlzzFlc57sejeYfSFNA.png',
+		img: 'https://images.ctfassets.net/lzny33ho1g45/RdyJrgaCvIKpSB5EUmwNq/319552e88aac20cb8bdffbe307cc9d92/reddit-app-tips-00-hero.png?w=1520&fm=jpg&q=30&fit=thumb&h=760',
 		description: 'More than 2 million founders read r/startups.',
 		favicon: 'https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png'
 	},
@@ -1180,7 +1257,7 @@ export default [
 		key: 'r-entrepreuner',
 		name: 'r/entrepreuner',
 		url: 'https://reddit.com/r/entrepreuner',
-		img: '',
+		img: 'https://assets-global.website-files.com/606e615a0e2589f2e7699556/640f3b4ed8b2e826ea5f0b41_reddit-marketing-header%20(1).jpg',
 		description:
 			'r/entrepreuner is the most active subreddit that not agressively punish for the links.'
 	},

@@ -31,8 +31,22 @@ export default [
 		name: 'CRM and Sales'
 	},
 	{
+		key: 'marketing',
+		name: 'Marketing'
+	},
+
+	{
+		key: 'seo',
+		name: 'SEO'
+	},
+	{
+		key: 'smm',
+		name: 'SMM'
+	},
+	{
 		key: 'design',
-		name: 'Design & Creator'
+		name: 'Design & Creator Tools',
+		noTools: true
 	},
 	{
 		key: 'automation',
@@ -43,14 +57,7 @@ export default [
 		name: 'Low-Code App Builders',
 		noTools: true
 	},
-	{
-		key: 'seo',
-		name: 'SEO'
-	},
-	{
-		key: 'smm',
-		name: 'SMM'
-	},
+
 	{
 		key: 'analytics',
 		name: 'Analytics'
@@ -59,6 +66,10 @@ export default [
 	{
 		key: 'formation',
 		name: 'Formation & Legal'
+	},
+	{
+		key: 'growth',
+		name: 'Growth'
 	},
 	{
 		key: 'startup-community',
