@@ -102,7 +102,6 @@
 	<a href="/"
 		><div
 			class="bg-zinc-900 hover:bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition"
-			in:slide
 		>
 			Browse Tools
 		</div>
