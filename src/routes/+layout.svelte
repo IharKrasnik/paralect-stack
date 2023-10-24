@@ -40,7 +40,7 @@
 	<div
 		class=" {$page.url.pathname !== '/'
 			? 'sm:fixed'
-			: ''} top-0 transition mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
+			: ''} top-0 transition sm:mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
 		style="margin-bottom: -32px;"
 	>
 		<a href="/" class="block w-[110px]">
