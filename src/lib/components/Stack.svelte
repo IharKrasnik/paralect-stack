@@ -21,7 +21,7 @@
 </script>
 
 <div class="flex mb-8 items-start" id="tools">
-	<div class="mt-8 p-4 section flex-shrink-0 mr-8">
+	<div class="mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block">
 		{#each categories as category}
 			<a
 				href="/cat/{category.key}"
@@ -33,7 +33,7 @@
 		{/each}
 	</div>
 
-	<div>
+	<div class="p-4 sm:p-0">
 		<div class="mt-8">
 			<h1>Top {activeCategory.name} {activeCategory.noTools ? '' : 'Tools'}</h1>
 			<h2>{activeCategory.description || ''}</h2>
@@ -65,16 +65,4 @@
 </div>
 
 <style>
-	.nav-link {
-		@apply transition;
-	}
-
-	.nav-link:hover {
-		color: #fff400;
-	}
-
-	.active {
-		color: #fff400;
-		@apply font-bold;
-	}
 </style>

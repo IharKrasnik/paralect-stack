@@ -7,7 +7,7 @@ body {
 	color: white;
 	font-family: 'Inter';
 
-	--color-brand: #2b65f9;
+	--color-brand: #fff400;
 	--color-green: #039177;
 }
 
@@ -27,14 +27,41 @@ body {
 	aspect-ratio: 1200/630 !important;
 }
 
+.bg-brand {
+	background: var(--color-brand);
+	color: #111;
+}
+
+.nav-link {
+	@apply transition;
+}
+
+.nav-link:hover {
+	color: #fff400;
+}
+
+.active {
+	color: #fff400;
+	@apply font-bold;
+}
+
 button,
 button[type='submit'] {
 	background-color: var(--color-brand);
-	@apply flex items-center justify-center py-2 px-4 rounded-3xl;
+	@apply flex items-center justify-center py-2 px-4 text-black;
+}
+
+button.rotated {
+	transform: rotate(-2deg);
+	@apply transition;
+}
+
+button.rotated:hover {
+	transform: none;
 }
 
 button:hover {
-	@apply bg-green-400 text-black transition;
+	@apply shadow shadow-yellow-500/40 shadow-lg text-black transition;
 }
 
 button.orange {
