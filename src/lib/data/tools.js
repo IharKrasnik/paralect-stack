@@ -5,7 +5,7 @@ export default [
 		name: 'Webflow',
 		url: 'https://webflow.com/',
 		img: 'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/651c796fcc43bbae9ae1c137_og-default.jpg',
-		description: 'Powerful website builder for marketing teams',
+		description: `Powerful website builder for marketing teams. Lots of templates.`,
 		favicon:
 			'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac0f_wf_favicon.png'
 	},
@@ -15,17 +15,17 @@ export default [
 		name: 'Framer',
 		url: 'https://framer.com/',
 		img: 'https://framerusercontent.com/images/2jcKVnNogkCVvxm6pdLJ37qk7w.jpg',
-		description: 'Create beautiful animated websites fast',
+		description:
+			'Create beautiful animated websites fast. Lots of templates, getting super popular.',
 		favicon: 'https://framerusercontent.com/images/3ydDYhTbVKKzF5xDzZpZKoMmc.png'
 	},
 	{
-		category: 'landing-page',
+		category: 'blog-newsletter-emails',
 		key: 'convertkit',
 		name: 'ConvertKit',
 		url: 'https://convertkit.com/',
 		img: 'https://media.convertkit.com/page/APs2iyVV-homepage-og.jpg',
-		description:
-			'Connect with your fans, foster your community, and earn a living online with the only marketing platform built for creators, by creators.'
+		description: 'Simple ladning page builder and scalable newsletter targeting creators.'
 	},
 	{
 		category: 'landing-page',
@@ -34,7 +34,7 @@ export default [
 		url: 'https://carrd.co/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057747017-image.png',
 		description:
-			'A free platform for building simple, fully responsive one-page sites for pretty much anything.'
+			'A super-simple builder. Mostly fits one-page websites, has templates to start with.'
 	},
 	{
 		category: 'landing-page',
@@ -42,7 +42,7 @@ export default [
 		name: 'Readymag',
 		url: 'https://readymag.com/',
 		img: 'https://d3n32ilufxuvd1.cloudfront.net/5f747d54a0bfc900b69a5fea/Image-dae06291-eaaa-4d69-babf-c997a2f27a8c.jpg',
-		description: 'Design, prototype, collaborate, publish.',
+		description: 'Great for animation-heavy websites. Fits designers best.',
 		favicon: '/dist/img/favicons/favicon.ico'
 	},
 	{
@@ -51,8 +51,7 @@ export default [
 		name: 'Tilda',
 		url: 'https://tilda.cc/',
 		img: 'https://static.tildacdn.com/tild3635-6533-4135-b034-306362363465/fbbadge_v2.png',
-		description:
-			'Create a website, online store, landing page with Tilda intuitive website builder. Build your site from hundreds of pre-designed templates and publish it today. No code required.',
+		description: 'Figma-like website editor',
 		favicon:
 			'https://static.tildacdn.com/tild3435-6532-4565-b865-666139353136/6210favicon_48_48_.ico'
 	},
@@ -62,17 +61,16 @@ export default [
 		name: 'Momentum Page',
 		url: 'https://page.mmntm.build/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1691926283375-telegram-cloud-document-2-5386494382004252533.jpg',
-		description: 'Super simple editor with built-in email capture and analytics',
+		description: 'Super simple one-page editor with built-in email capture and analytics.',
 		favicon: 'logo.svg'
 	},
 	{
 		category: 'landing-page',
-		key: 'super-so',
+		key: 'super',
 		name: 'Super',
 		url: 'https://super.so/',
 		img: 'https://assets.super.so/186f4256-f467-4f79-8d6f-40defe12b9b4/uploads/cover/27f62831-0be1-4be3-91fa-6f86d6caa6f8.png',
-		description:
-			'Create a website in less than a minute with instant page loads, SEO optimization, and no-code theming. All your content is kept and managed in Notion so you can focus on creating while Super handles the rest.',
+		description: 'Turn your Notion page into website.',
 		favicon:
 			'https://assets.super.so/186f4256-f467-4f79-8d6f-40defe12b9b4/uploads/favicon/54a7f247-1005-4b2b-a424-8669cdda7a7f.png'
 	},
@@ -91,8 +89,7 @@ export default [
 		name: 'TypeForm',
 		url: 'https://typeform.com/',
 		img: 'https://images.ctfassets.net/co0pvta7hzrh/6wP4CjzESuoMKUpkZFBjrz/2347f2fdc2d4a7352b742f7aa7e16ea1/meta-image.png?fm=webp&q=75',
-		description:
-			'Build beautiful, interactive forms — get more responses. No coding needed. Templates for quizzes, research, feedback, lead generation, and more. Sign up FREE.',
+		description: 'Beautiful forms with automation. Note: getting pricy on scale.',
 		favicon: '/favicon-16x16.png'
 	},
 	{
@@ -101,8 +98,7 @@ export default [
 		name: 'Jotform',
 		url: 'https://jotform.com/',
 		img: 'https://cdn.jotfor.ms/assets/img/landing/opengraph.png',
-		description:
-			'Create forms and surveys for free with Jotform’s drag-and-drop form builder. Start collecting registrations, applications, orders, and payments today.',
+		description: 'Drag n drop form builder with huge number of templates.',
 		favicon: 'https://cdn.jotfor.ms/assets/img/favicons/favicon-2021-dark.ico'
 	},
 	{
@@ -112,7 +108,7 @@ export default [
 		url: 'https://airtable.com/',
 		img: 'https://www.airtable.com/images/airtable-seo.jpg',
 		description:
-			'Airtable is a low‒code platform to build next‒gen apps. Move beyond rigid tools, operationalize your critical data, and reimagine workflows with AI.',
+			'Database that is simple to edit as sheets, but as powerful as robust API backend.',
 		favicon: '/favicon.ico'
 	},
 	{
@@ -121,7 +117,7 @@ export default [
 		name: 'Rows',
 		url: 'https://row.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057872836-telegram-cloud-photo-size-4-6024741022455672550-w.jpg',
-		description: ''
+		description: 'Database-like editor with built-in functions to fetch and transform data.'
 	},
 	{
 		category: 'forms-data',
@@ -130,7 +126,7 @@ export default [
 		url: 'https://strapi.com/',
 		img: 'https://assets.strapi.io/uploads/HP_meta_b32f546a40.png',
 		description:
-			'Strapi is the next-gen headless CMS, open-source, javascript, enabling content-rich experiences to be created, managed and exposed to any digital device.',
+			'Headless CMS that allows you to model your database and make it available via API. Extended with code.',
 		favicon: '/assets/favicon-96x96.png'
 	},
 	{
@@ -140,7 +136,7 @@ export default [
 		url: 'https://videoask.com/',
 		img: 'https://www.videoask.com/static/media/card.jpg',
 		description:
-			'Enhance and streamline your one-on-one conversations with video funnels, AI-powered video chatbots, multimedia messaging, and video forms. Use it to boost candidate and lead experience.',
+			'Collect video responses from your clients, candidates etc. Make your funnel interactive.',
 		favicon: '/static/icons/android-icon-192x192.png'
 	},
 	{
@@ -149,8 +145,7 @@ export default [
 		name: 'Vidyard',
 		url: 'https://vidyard.com/',
 		img: 'https://www.vidyard.com/media/Website-Sharing-3-1-1.jpg',
-		description:
-			'Vidyard is an online video platform for business which allows you to increase leads, accelerate your pipeline and delight your customers. Learn more!',
+		description: 'Get more leads with video sales pipeline',
 		favicon: '/wp-content/uploads/fbrfg/favicon-16x16.png'
 	},
 	{
@@ -176,8 +171,7 @@ export default [
 		name: 'Crisp',
 		url: 'https://crisp.chat/',
 		img: 'https://crisp.chat/static/images/og/home.en.min.png',
-		description:
-			'Discover our Business Messaging Platform for Startups & SMBs. The one-stop for sales, marketing & support in one platform: Crisp. 14-day free trial. No credit card required. Try now! We provide Knowledge base, Team Inbox, Chatbot, CRM and multiple other features to let you build your own way to customer success.',
+		description: 'Chat platform with Knowledge Base, robust analytics and tones of plugins.',
 		favicon: 'https://crisp.chat/favicon.png'
 	},
 	{
@@ -186,8 +180,7 @@ export default [
 		name: 'Intercom',
 		url: 'https://intercom.com/',
 		img: 'https://images.ctfassets.net/xny2w179f4ki/2PUYjDMsqk8rVvFaCB6j8w/f52641d3eed453e6ad9a67d355ac756d/Open_Graph_-_Homepage_Exploration.png',
-		description:
-			'Faster resolutions, higher CSAT, and lighter support volumes with the only platform to combine the power of automation and human customer support.',
+		description: 'Common chat + email platform with knowledge base.',
 		favicon: '/_next/static/media/favicon.2d53bda5.png'
 	},
 	{
@@ -196,8 +189,7 @@ export default [
 		name: 'Tawk',
 		url: 'https://tawk.to/',
 		img: 'https://www.tawk.to/wp-content/uploads/2018/06/feature-image-blog.jpg',
-		description:
-			'tawk.to is 100% free live chat software to monitor and chat with visitors on your website or from a free customizable page.',
+		description: 'Forever free but quality customer chat widget.',
 		favicon:
 			'https://www.tawk.to/wp-content/uploads/2020/08/cropped-tawky_2018_1200x1200-1-192x192.png'
 	},
@@ -208,7 +200,7 @@ export default [
 		url: 'https://alphaos.app/featureos',
 		img: 'https://assets.production.skcript.com/alphaos/site-assets/images/blog/og_blog.jpg?v2',
 		description:
-			'Collect feedback from customers, prioritize user feedback, and share product roadmap with featureOS.',
+			'Collect feedback from customers, prioritize user feedback, and share product roadmap.',
 		favicon: 'https://assets.production.skcript.com/alphaos/site-assets/favicon/favicon-16x16.png'
 	},
 	{
@@ -218,7 +210,7 @@ export default [
 		url: 'https://canny.io/',
 		img: 'https://canny.io/images/canny-social.png',
 		description:
-			'Canny helps you collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
+			'Collect and organize feature requests to better understand customer needs and prioritize your roadmap.',
 		favicon: 'https://assets.canny.io/logo-icon.png'
 	},
 	{
@@ -227,7 +219,7 @@ export default [
 		name: 'Featurebase',
 		url: 'https://featurebase.app/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057990540-telegram-cloud-photo-size-4-5909919250800292193-y.jpg',
-		description: ''
+		description: 'Collect customer feedback and communicate updates'
 	},
 	{
 		category: 'customer-communication',
@@ -236,7 +228,7 @@ export default [
 		url: 'https://upvoty.com/',
 		img: 'https://www.upvoty.com/wp-content/uploads/2020/08/FBhomepage.png',
 		description:
-			'Start working on the right user feedback. With Upvoty you are able to gather feedback and make the right product decisions. Start for free!',
+			'Start working on the right user feedback. With Upvoty you are able to gather feedback and make the right product decisions.',
 		favicon: 'https://www.upvoty.com/wp-content/uploads/2021/03/cropped-Favicon-1-192x192.png'
 	},
 	{
@@ -255,8 +247,7 @@ export default [
 		name: 'Senja',
 		url: 'https://senja.io/',
 		img: 'https://framerusercontent.com/images/KYQC2wSKRbwBkAQfgujPHBgKPY.png',
-		description:
-			'The easiest way to collect testimonials and add them to your website. Get started for free.',
+		description: 'The easiest way to collect testimonials and add them to your websites. ',
 		favicon: 'https://framerusercontent.com/images/FKXyQKfcgQzBRcrolOI4cjpNGwk.png'
 	},
 	{
@@ -266,7 +257,7 @@ export default [
 		url: 'https://slack.com/',
 		img: 'https://a.slack-edge.com/b211f31/marketing/img/homepage/true-prospects/unfurl/slack-e2e-homepage-unfurl.jpg',
 		description:
-			'Slack is a new way to communicate with your team. It’s faster, better organized, and more secure than email.',
+			'Most common startup chat software. Tones of integrations and plugins, easy connection with other companies.',
 		favicon: 'https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png'
 	},
 	{
@@ -276,7 +267,7 @@ export default [
 		url: 'https://discord.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057947565-telegram-cloud-photo-size-4-5950866416733368631-y.jpg',
 		description:
-			'Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.',
+			'Discord is one of the most popular chat tools for managing tech-related communities.',
 		favicon: '/assets/847541504914fd33810e70a0ea73177e.ico'
 	},
 	{
@@ -285,7 +276,8 @@ export default [
 		name: 'Circle',
 		url: 'https://circle.so/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057970272-telegram-cloud-photo-size-4-6015902177329000278-y.jpg',
-		description: ''
+		description:
+			'Circle is community-management platform. Add useful content, create topics, whitelabel, invite your customers.'
 	},
 	{
 		category: 'customer-communication',
@@ -293,8 +285,7 @@ export default [
 		name: 'MightyNetworks',
 		url: 'https://mightynetworks.com/',
 		img: '//images.ctfassets.net/m9n8o4ceoyuw/1Dst0LbODmoa2ddp7uifEH/1ee04d03f8176041e9bf32a3cd41d6bf/SEO___Home.jpg',
-		description:
-			'The #1 ranked community platform on G2. Mighty Networks is the only place you can own your community and upgrade to your own branded apps.',
+		description: 'Community management platform where you can create your own branded app.',
 		favicon: '/favicon.svg'
 	},
 	{
@@ -304,7 +295,7 @@ export default [
 		url: 'https://lu.ma/',
 		img: 'https://images.lumacdn.com/social-images/luma-default-social-2023-07.png',
 		description:
-			'From beautiful event pages to effortless invites and ticketing, Luma is all you need to host a memorable event.',
+			'Host events like webinars and workshops, allow customers subscribe and follow your events updates.',
 		favicon: '/favicon.ico'
 	},
 	{
@@ -314,7 +305,7 @@ export default [
 		url: 'https://stripe.com/',
 		img: 'https://images.ctfassets.net/fzn2n1nzq965/3AGidihOJl4nH9D1vDjM84/9540155d584be52fc54c443b6efa4ae6/homepage.png?q=80',
 		description:
-			'Stripe bietet Software und APIs zur Verarbeitung von Online-Zahlungen: Zahlungen annehmen, Auszahlungen senden und Geschäftsabläufe einfach online verwalten.',
+			'The most common platform to accept digital payments (one-time, subscription, marketplaces)',
 		favicon:
 			'https://images.ctfassets.net/fzn2n1nzq965/2EOOpI2mMZgHYBlbO44zWV/5a6c5d37402652c80567ec942c733a43/favicon.png?w=180&h=180'
 	},
@@ -325,7 +316,7 @@ export default [
 		url: 'https://lemonsqueezy.com/',
 		img: 'https://assets-global.website-files.com/6347244ba8d63489ba51c08e/6358e59c97dcbfdc770e1ff8_og2.jpg',
 		description:
-			'Sell digital products and SaaS software the easy peasy way with Lemon Squeezy. As your merchant of record, we handle the tax compliance burden so you can focus on more revenue and less headache.',
+			'The modern popular payment automation platform. Easily sell digital products and SaaS subscriptions, create customised checkout pages.',
 		favicon:
 			'https://assets-global.website-files.com/6347244ba8d63489ba51c08e/6347244ba8d6341f3f51c0da_63071714fb42aa33dd948e49_favixon.webp'
 	},
@@ -336,7 +327,7 @@ export default [
 		url: 'https://paddle.com/',
 		img: 'https://images.prismic.io/paddle/a01787c4-75fa-408c-8b63-16a85b255826_paddle-share-image.png?auto=compress,format&rect=0,19,1200,591&w=1280&h=630',
 		description:
-			'B2B and B2C software companies around the globe use Paddle to offload operational complexities so they can focus on growth. Paddle provides more than just the plumbing for your revenue. As a merchant of record, we take care of fraud, sales tax compliance, billing support and more.'
+			'Digital payment platform, merchant-of-record that takes take care of fraud, sales tax compliance, billing support.'
 	},
 	{
 		category: 'payments',
@@ -344,8 +335,7 @@ export default [
 		name: 'Gumroad',
 		url: 'https://gumroad.com/',
 		img: 'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619fb5686c9b9b5f5a35020e_gumroad-og.png',
-		description:
-			'Gumroad is a powerful, but simple, e-commerce platform. We make it easy to earn your first dollar online by selling digital products, memberships and more.',
+		description: 'Marketplace where you can sell your digital products with one-time payments',
 		favicon:
 			'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619bf6d5140958874014528c_favicon.png'
 	},
@@ -355,8 +345,7 @@ export default [
 		name: 'FlutterFlow',
 		url: 'https://flutterflow.io/',
 		img: 'https://uploads-ssl.webflow.com/608d9c1a6cbcc01b80952190/64fa413637ba6791a9624bfa_alt_flutterFlow_ShareImage_ffdc.jpg',
-		description:
-			'FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!',
+		description: 'Low-code platform that allows building mobile and web apps right in browser.',
 		favicon: 'images/favicon.png'
 	},
 	{
@@ -366,7 +355,7 @@ export default [
 		url: 'https://retool.com/',
 		img: 'https://retool.com/og-image.png',
 		description:
-			"Retool is the fastest way to build effective business software. Use Retool's building blocks to develop apps and workflow automations that connect to your databases and APIs, instantly.",
+			'Visualize your database and create powerful back-office functionality in minutes.',
 		favicon: '/favicon.png'
 	},
 	{
@@ -375,8 +364,7 @@ export default [
 		name: 'UiBakery',
 		url: 'https://uibakery.io/',
 		img: 'https://assets-global.website-files.com/5d2739e4cf8d9538f80af0a6/6242c961b5a6866f6ed35396_home-min.png',
-		description:
-			'Create an admin panel, dashboards and user portals using the UI Bakery internal tools builder'
+		description: 'Create admin panels, dashboards and user portals with no-code.'
 	},
 	{
 		category: 'low-code',
@@ -384,8 +372,7 @@ export default [
 		name: 'Glide',
 		url: 'https://www.glideapps.com',
 		img: 'https://glideapps.com/images/homepage-2023/og-cover.png',
-		description:
-			'Glide makes it easy to build and deploy powerful custom apps powered by AI with no code. '
+		description: 'No-code app builder to build and deploy custom mobile and web apps.'
 	},
 	{
 		category: 'low-code',
@@ -393,8 +380,7 @@ export default [
 		name: 'Adalo',
 		url: 'https://adalo.com/',
 		img: 'https://assets-global.website-files.com/5d123a0e13543973a9665271/63616c8286af546d4ba3366c_homepageshareimage.png',
-		description:
-			"Create fully custom no-code web & mobile applications with Adalo's easy-to-use drag and drop platform. Publish directly to the App Store, Google Play, or Web.",
+		description: 'Popular no-code app builder for mobile and web apps.',
 		favicon:
 			'https://assets-global.website-files.com/5d123a0e13543973a9665271/5d129bdf7a7a1a22f8f1fbbc_Adalo-Favicon.png'
 	},
@@ -404,8 +390,7 @@ export default [
 		name: 'Bubble',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058502189-telegram-cloud-photo-size-4-5932490910258540681-w.jpg',
 		url: 'https://bubble.io/',
-		description:
-			'Bubble introduces a new way to build software. It’s a no-code tool that lets you build SaaS platforms, marketplaces and CRMs without code. Bubble hosts all web apps on its cloud platform.'
+		description: `Bubble is most common low-code app builder. Note: though it's popular, the builder UI is pretty complex.`
 	},
 	{
 		category: 'low-code',
@@ -413,8 +398,7 @@ export default [
 		name: 'AppSmith',
 		url: 'https://appsmith.com/',
 		img: 'https://images.ctfassets.net/lpvian6u6i39/3K4hnNGrLSlQzJRF4bn32J/8da3f35480fa66fd6c439e9af35b60ab/Default_OG_image.jpg',
-		description:
-			'Stop grappling with data, scouring for the perfect React library, and coding everything from scratch. Build internal tools 10X faster with Appsmith.',
+		description: 'Low-code open-source internal tools builder',
 		favicon: '/favicon-16x16.png'
 	},
 	{
@@ -422,9 +406,8 @@ export default [
 		key: 'sendgrid',
 		name: 'Sendgrid',
 		url: 'https://sendgrid.com/',
-		img: 'https://d15tnd3q55f8nl.cloudfront.net/static/SG_Twilio_Lockup_Social-56f3cfd2f6b0c62422980170d57fac64.png',
-		description:
-			"SendGrid delivers your transactional and marketing emails through the world's largest cloud-based email delivery platform. Send with confidence."
+		img: 'https://kinsta.com/wp-content/uploads/2019/03/sendgrid-wordpress.png',
+		description: 'Send transactional emails, automate emails and send and marketing emails'
 	},
 	{
 		category: 'blog-newsletter-emails',
@@ -433,7 +416,7 @@ export default [
 		url: 'https://mailerlite.com/',
 		img: 'https://www.mailerlite.com/img/containers/assets/SEO/homepage-meta.jpg/a271969696ccb718c1a26ea27c86ef53.jpg',
 		description:
-			'Digital marketing tools to grow your audience faster and drive revenue smarter. Backed by 24/7 award-winning support. Check it out now!',
+			'Grow your audience with marketing emails. Automate emails sequences, see campaign analytics.',
 		favicon: '/assets/site/favicons/favicon-16x16.png'
 	},
 	{
@@ -442,8 +425,7 @@ export default [
 		name: 'Mailchimp',
 		url: 'https://mailchimp.com/',
 		img: 'https://eep.io/images/yzco4xsimv0y/1SB1jCYU95Dh5YDdrucTh0/add18363e44ff00d54254592c7c0860c/Intuit_Mailchimp_-_Wordmark_2023_-_Recirculation_.png',
-		description:
-			'Nutze Echtzeit-Verhaltensdaten und KI, um mehr Kund*innen zu gewinnen – mit der führenden Mailchimp-Plattform für Marketing, Automatisierungen und E-Mail-Marketing. Einfach in der Nutzung – kostenloser Einstieg!',
+		description: 'Popular marketing email + automation platform. Note: gets pricy on scale.',
 		favicon: '/release/plums/cxp/images/favicon.8969a0a6.1.ico'
 	},
 	{
@@ -453,7 +435,7 @@ export default [
 		url: 'https://ghost.org/',
 		img: 'https://ghost.org/images/meta/ghost.png',
 		description:
-			'Beautiful, modern publishing with newsletters and premium subscriptions built-in. Used by Sky, 404Media, Lever News, Tangle, The Browser, and thousands more.'
+			'Beautiful, modern publishing with newsletters and premium subscriptions built-in. Open-source.'
 	},
 	{
 		category: 'blog-newsletter-emails',
@@ -462,7 +444,7 @@ export default [
 		url: 'https://substack.com/',
 		img: 'https://substack.com/img/home_page/og-homepage.png',
 		description:
-			"With Substack, anyone can start a publication that combines a personal website, blog, and email newsletter or podcast. It's quick and simple, so you don't have to be tech savvy. Your audience can pay you directly through subscriptions, with no ads to get in the way. Writers and podcasters can own their intellectual property, keep their mailing list, and start a media business.",
+			'Grow your audience with publications that combines a personal website, blog, and email newsletter or podcast.',
 		favicon: 'https://substackcdn.com/icons/substack/favicon-32x32.png'
 	},
 	{
@@ -471,7 +453,7 @@ export default [
 		name: 'Beehiiv',
 		url: 'https://www.beehiiv.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057919495-telegram-cloud-photo-size-4-5786234792654778706-w.jpg',
-		description: ''
+		description: 'Modern newsletter platform loved by creators.'
 	},
 	{
 		category: 'product-management',
@@ -480,7 +462,7 @@ export default [
 		url: 'https://notion.so/',
 		img: 'https://www.notion.so/front-static/meta/default.png',
 		description:
-			"A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team.",
+			'Create robust documents, track team tasks, publish knowledge base and launch landing pages, all with simple document editor.',
 		favicon: '/front-static/favicon.ico'
 	},
 	{
@@ -490,7 +472,7 @@ export default [
 		url: 'https://loom.com/',
 		img: 'https://cdn.sanity.io/images/pvn35iyy/production/2bb98edb0f378799d46fc7aa3564b9ad28604073-1200x627.png?fm=jpg',
 		description:
-			'Best free online screen recording tool with advanced video editing and video storage trusted by over 21 million people and easy sharing from Loom.com.',
+			'Record desktop videos with easy and share by link. Replace sync calls with async videos and scale faster.',
 		favicon: 'https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png'
 	},
 	{
@@ -499,8 +481,7 @@ export default [
 		name: 'Coda',
 		url: 'https://coda.io/',
 		img: 'https://sanity-images.imgix.net/production/6b46953798756d87bc1ad579a32d2af427ba6d3d-1200x628.png?w=&auto=format%2Ccompress',
-		description:
-			'Coda brings teams and tools together for a more organized work day. Learn why 40,000+ teams use Coda to supercharge their work days and foster collaborative workflows.',
+		description: 'Robust product management document automation platform.',
 		favicon: 'https://cdn.coda.io/icons/png/color/coda-192.png'
 	},
 	{
@@ -510,7 +491,7 @@ export default [
 		url: 'https://miro.com/',
 		img: 'https://images.ctfassets.net/w6r2i5d8q73s/OxZ08hm5k2id0kjQXmc0L/05bcc2743945b82009e59aa5d9c77c7d/miro.png',
 		description:
-			'Miro is a visual workspace for innovation where teams manage projects, design products, and build the future together. Join 60M+ users from around the world.',
+			'A visual product collaborative whiteboard and set of tools that makes ideation and brainstorm simple.',
 		favicon: 'https://static-website.miro.com/miro-site-lp-build-assets/assets/favicon.ico'
 	},
 	{
@@ -540,7 +521,7 @@ export default [
 		url: 'https://linear.app/',
 		img: 'https://linear.app/static/og/home.jpg',
 		description:
-			'Linear streamlines issues, sprints, and product roadmaps. It’s the new standard for modern software development.',
+			'Linear is high-quality opinionated task tracker that helps you follow best development practices while keeping UI organized.',
 		favicon: '/static/favicon.svg'
 	},
 	{
@@ -550,7 +531,7 @@ export default [
 		url: 'https://trello.com/',
 		img: 'https://bxp-content-static.prod.public.atl-paas.net/img/favicon.ico',
 		description:
-			'Make the impossible, possible with Trello. The ultimate teamwork project management tool. Start up a board in seconds, automate tedious tasks, and collaborate anywhere, even on mobile.',
+			'Simple yet super-useful task board to track the progress of any project, whether work-related or personal.',
 		favicon: 'https://bxp-content-static.prod.public.atl-paas.net/img/favicon.ico'
 	},
 	{
@@ -560,7 +541,7 @@ export default [
 		url: 'https://asana.com/',
 		img: 'https://assets.asana.biz/m/4aecf2c7c66aa51b/original/asana-meta-coral-1x.png',
 		description:
-			'Work anytime, anywhere with Asana. Keep remote and distributed teams, and your entire organization, focused on their goals, projects, and tasks with Asana.',
+			'Keep track of your project statuses and team progress. One of the most popular project management tools.',
 		favicon: '/assets/img/brand/asana-logo-favicon.ico'
 	},
 	{
@@ -570,7 +551,7 @@ export default [
 		url: 'https://monday.com/',
 		img: 'https://s3.amazonaws.com/general-assets/monday-1200x628.png',
 		description:
-			'monday.com Work OS is an open platform where anyone can create the tools they need to run every aspect of their work.',
+			'Open platform where anyone can create the tools they need to run every aspect of their work.',
 		favicon: '/static/img/favicons/favicon.ico'
 	},
 	{
@@ -580,7 +561,7 @@ export default [
 		url: 'https://fibery.io/',
 		img: 'https://fibery.io/img/sharing/index-v2-share.png',
 		description:
-			'Tailored workspace for your company. Connected databases, customizable views, powerful reports, automations, integrations, docs & whiteboards.',
+			'Low-level workspace for your company. Create your own all-in-one project management tool, program complex logic and relations.',
 		favicon: '/favicon.png'
 	},
 	{
@@ -590,7 +571,7 @@ export default [
 		url: 'https://posthog.com/',
 		img: 'https://posthog.com/images/home.png',
 		description:
-			'PostHog is the all-in-one platform for building better products - with product analytics, feature flags, session recordings, a/b testing, heatmaps, and more.',
+			'Product analytics, feature flags, session recordings, a/b testing, heatmaps, and more. Open-source.',
 		favicon: '/favicon.svg?v=6e5ac8d4a5b381b5caa29396fbf7c955'
 	},
 	{
@@ -600,7 +581,7 @@ export default [
 		url: 'https://mixpanel.com/',
 		img: 'https://cdn.mxpnl.com/marketing-site/static/image/external/og/mixpanel-social-sharing.png',
 		description:
-			'Helping the world learn from its data with event analytics everyone can use. Let’s build.'
+			'Robust app analytics. Build funnels, visualise data, run experiments and grow your product.'
 	},
 	{
 		category: 'analytics',
@@ -609,7 +590,7 @@ export default [
 		url: 'https://amplitude.com/',
 		img: '/nextjs-public/amplitude-default-seo.png',
 		description:
-			"Build better products by turning your user data into meaningful insights, using Amplitude's digital analytics platform and experimentation tools.",
+			'Robust app analytics. Build funnels, visualise data, run experiments and grow your product.',
 		favicon: '/nextjs-public/favicon/favicon-16x16.png'
 	},
 	{
@@ -618,8 +599,7 @@ export default [
 		name: 'Hotjar',
 		url: 'https://hotjar.com/',
 		img: 'https://images.ctfassets.net/lh3zuq09vnm2/zsJe5ujXWMeNJScarO5jX/92ee747a96ef4a5998f9a1b10b2bb737/hotjar_og_image_Jul22.png',
-		description:
-			'The next best thing to sitting beside someone browsing your site. See where they click, ask what they think, and learn why they drop off. Get started for free.',
+		description: 'Heatmaps, session recordings, use surveys and more.',
 		favicon: '/images/touch-icon-192x192.png'
 	},
 	{
@@ -629,7 +609,7 @@ export default [
 		url: 'https://heap.io/',
 		img: 'https://images.ctfassets.net/jicu8fwm4fvs/57SlD3uXZskS7cHKEOwGEm/793173d449f782f05fad3531ee05a1a5/heap-logo-social-twitter-1200x675__2_.png?w=1200&h=627&fit=fill&q=60&fm=jpg&fl=progressive',
 		description:
-			'Heap is the only digital insights platform that shows everything users do on your site, revealing the "unknown unknowns" that stay invisible with other tools.',
+			'Product analytics that helps you configure complex analytical workflows with no-code.',
 		favicon: 'https://www.heap.io/favicon/favicon-16x16.png?v=1'
 	},
 	{
@@ -639,7 +619,7 @@ export default [
 		url: 'https://figma.com/',
 		img: 'https://cdn.sanity.io/images/599r6htc/localized/a9afeb156fd9d624032026ba5dded124f3265a42-2400x1260.png?w=1200&q=70&fit=max&auto=format',
 		description:
-			'Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.',
+			'Seamlessly design, prototype, develop, and collect feedback in a single platform.',
 		favicon: 'https://static.figma.com/app/icon/1/favicon.svg'
 	},
 	{
@@ -648,7 +628,8 @@ export default [
 		name: 'Canva',
 		url: 'https://canva.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058071713-telegram-cloud-photo-size-4-5964047190328455643-y.jpg',
-		description: ''
+		description:
+			'Web platform to design your marketing assets with ease. Use tons of templates, generate with AI.'
 	},
 	// {
 	// 	category: 'design',
@@ -664,9 +645,17 @@ export default [
 		name: 'Maze',
 		url: 'https://maze.co/',
 		img: 'https://www.datocms-assets.com/38511/1667814560-maze-continuous-product-discovery.png?auto=format',
-		description:
-			'Maze powers your product research workflow with continuous user insights, fueling better product decision-making and business growth.',
+		description: 'Research your product starting from designs.',
 		favicon: 'https://www.datocms-assets.com/38511/1682258084-favicon.png?w=192&h=192'
+	},
+	{
+		category: 'design',
+		key: 'spline',
+		name: 'Spline',
+		url: 'https://spline.design/',
+		img: 'https://www.blender.org/wp-content/uploads/2023/05/blender_36_lts_splash.jpg',
+		description: 'Modern collaborative web-based 3D design tool',
+		favicon: 'https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-16x16.png'
 	},
 	{
 		category: 'design',
@@ -674,7 +663,7 @@ export default [
 		name: 'Blender',
 		url: 'https://blender.org/',
 		img: 'https://www.blender.org/wp-content/uploads/2023/05/blender_36_lts_splash.jpg',
-		description: 'The Freedom to Create',
+		description: 'Create custom low-level 3D design scenes.',
 		favicon: 'https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-16x16.png'
 	},
 	{
@@ -683,7 +672,7 @@ export default [
 		name: 'Xnapper',
 		url: 'https://xnapper.com/',
 		img: 'https://xnapper.com/assets/poster.png',
-		description: 'Native macOS app. One click to take a beautiful and ready-to-share screenshot.',
+		description: 'MacOS app to take a beautiful and ready-to-share screenshot.',
 		favicon: '/favicon-16x16.png'
 	},
 	{
@@ -693,7 +682,7 @@ export default [
 		url: 'https://cleanshot.com/',
 		img: 'https://cleanshot.com/img/ogimage.png',
 		description:
-			'CleanShot X is the best screenshot and screen recording app for Mac with a built-in annotation tool, Cloud uploading, scrolling capture, and a lot more.',
+			'Screenshot and screen recording app for Mac with a built-in annotation tool, cloud uploading and scrolling capture.',
 		favicon: '/favicon@2x.png'
 	},
 	{
@@ -703,7 +692,7 @@ export default [
 		url: 'https://screen.studio/',
 		img: 'https://screen.studio/og-main-2.png',
 		description:
-			'Screen Studio is a professional and simple to use screen recorder for macOS that lets you create professionally looking screen recordings & tutorial videos in minutes, without video editing skills needed. With Screen Studio, you can create professional-looking screencasts that are on par with those created by experienced video editors. Start recording your screen now and make your videos stand out with Screen Studio.',
+			'Create professionally looking screen recordings & tutorial videos in minutes, without video editing skills needed.',
 		favicon: '/icon.png'
 	},
 	{
@@ -713,7 +702,7 @@ export default [
 		url: 'https://pitch.com/',
 		img: 'https://res.cloudinary.com/pitch-software/image/upload/v1686066113/website/social-image.jpg',
 		description:
-			'Pitch is presentation software that enables any team to quickly create sleek decks that get results. Sign up for free.',
+			'Simple web-based tools to design powerful pitchdecks. Tons of templates to get started.',
 		favicon: '/favicon.ico'
 	},
 	{
@@ -722,7 +711,7 @@ export default [
 		name: 'TypeFrames',
 		url: 'https://typeframes.com/',
 		img: 'https://www.typeframes.com/images/og.png',
-		description: 'Stunning product videos, in minutes.'
+		description: 'Create stunning product demo or promo videos in minutes.'
 	},
 	{
 		category: 'automation',
@@ -731,7 +720,7 @@ export default [
 		url: 'https://zapier.com/',
 		img: 'https://res.cloudinary.com/zapier-media/image/upload/q_auto/f_auto/v1686261500/Homepage/homepage_og_bkvohs.png',
 		description:
-			'Workflow automation for everyone. Zapier automates your work across 5,000+ app integrations, so you can focus on what matters.',
+			'The most popular automation tool that helps you integrate mostly any tool with each other. Without code!',
 		favicon: 'https://cdn.zapier.com/zapier/images/favicon.ico'
 	},
 	{
@@ -741,7 +730,7 @@ export default [
 		url: 'https://make.com/en',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058305907-telegram-cloud-photo-size-4-5768547391480377415-y.jpg',
 		description:
-			'Automate your work. Make allows you to visually create, build and automate workflows. User friendly no-code integration tool.'
+			'User friendly no-code integration tool: visually create, integrate apps and automate workflows.'
 	},
 	{
 		category: 'automation',
@@ -749,8 +738,7 @@ export default [
 		name: 'IFTTT',
 		url: 'https://ifttt.com/',
 		img: '//web-assets.ifttt.com/packs/media/shared/ifttt-banner-287889aa7d44e76a8d08.png',
-		description:
-			'Get started with IFTTT, the easiest way to automate your favorite apps and devices for free. Make your home more relaxing. Make your work more productive. We...',
+		description: 'Automate your workflows and integrate tools.',
 		favicon: '//web-assets.ifttt.com/packs/media/shared/favicon-52685f5f6a9fa84b597b.svg'
 	},
 	{
@@ -760,7 +748,7 @@ export default [
 		url: 'https://phantombuster.com/',
 		img: 'https://static.phantombuster.com/og_thumbnail_1200_630_rebranding.png',
 		description:
-			'Generate leads from all major networks & websites. More than one hundred Phantoms and Flows available, try it for free.',
+			'Automation platform that works as extension: useful for lead-generation, mass actions like cold emails and more.',
 		favicon: '/assets113534/images/icon32.png'
 	},
 	{
@@ -769,8 +757,7 @@ export default [
 		name: 'Memberstack',
 		url: 'https://memberstack.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058352417-telegram-cloud-photo-size-4-5790831764871162320-y.jpg',
-		description:
-			'Memberstack is a SaaS product that helps Webflow developers add secure user accounts and payments in a fraction of the time.',
+		description: 'Authorize users, create memberships, accept payments and store paid content.',
 		favicon:
 			'https://assets-global.website-files.com/5bbfaf3252489b4c484ba9b9/5c7478a4a272b1f33b7ee0b0_Favicon2.png'
 	},
@@ -780,8 +767,7 @@ export default [
 		name: 'SavvyCal',
 		url: 'https://savvycal.com/',
 		img: 'https://savvycal.com/assets/og/home.png',
-		description:
-			'SavvyCal is scheduling software that helps people to find a time to meet instantly.',
+		description: 'Beautiful calendar automation for your demo or sales calls.',
 		favicon: '/favicon-16x16.png'
 	},
 	{
@@ -790,8 +776,7 @@ export default [
 		name: 'Calendly',
 		url: 'https://calendly.com/',
 		img: 'https://images.ctfassets.net/k0lk9kiuza3o/6sN1GkuaBoQ67Nhkqa8Hgn/bcefc60aa064f94237bac2524bad875c/homepage.png?w=1200&h=627&q=85&fm=png',
-		description:
-			'Calendly is the modern scheduling platform that makes “finding time” a breeze. When connecting is easy, your teams can get more done.',
+		description: 'Most popular original calendar scheduling application.',
 		favicon:
 			'https://assets-marketing-site.calendly.com/static/favicon-809b9f65e640437fa477547420b63639.ico'
 	},
@@ -802,7 +787,7 @@ export default [
 		url: 'https://hubspot.com/',
 		img: 'https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png',
 		description:
-			"HubSpot's CRM platform contains the marketing, sales, service, operations, and website-building software you need to grow your business.",
+			'Marketing, sales, service, operations, and website-building software to grow your business.',
 		favicon: 'https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png'
 	},
 	{
@@ -811,8 +796,7 @@ export default [
 		name: 'ActiveCampaign',
 		url: 'https://activecampaign.com/',
 		img: 'https://www.activecampaign.com/wp-content/uploads/2021/10/ActiveCampaign_Logo_OpenGraph.png',
-		description:
-			"ActiveCampaign's category-defining Customer Experience Automation platform helps over 180,000 businesses build meaningful connections with their customers.",
+		description: 'Build meaningful connections with their customers via email.',
 		favicon: 'https://www.activecampaign.com/wp-content/uploads/2023/10/cropped-favicon-192x192.png'
 	},
 	// {

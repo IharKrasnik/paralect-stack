@@ -29,9 +29,9 @@
 		'videoask',
 		'webflow',
 		'zapier',
-		'airtable',
+		'mailerlite',
 		'posthog',
-		'beehiiv',
+		'super',
 		'notion',
 		'semrush'
 	]);
@@ -88,7 +88,7 @@
 		middleLeftIcons[1] = endIcons.shift();
 
 		createIcons();
-	}, 100);
+	}, 500);
 
 	// setInterval(() => {
 	// 	move();
@@ -104,6 +104,22 @@
 		updatedOn = new Date();
 		move();
 	}
+
+	let activeCategory = null;
+
+	let intervalId;
+
+	let setCategory = (cat) => {
+		if (!cat && intervalId) {
+			clearInterval(intervalId);
+		}
+
+		if (cat === 'all') {
+			intervalId = setInterval(move, 500);
+		}
+
+		activeCategory = cat;
+	};
 </script>
 
 <svelte:window bind:scrollY />
@@ -112,10 +128,33 @@
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">
 		<div class="flex justify-center items-center max-w-[600px] text-center mx-auto z-10 h-full">
 			<h1 class="text-3xl" style="text-shadow: 1px 1px #fffc65">
-				Discover best startup tools to <a href="cat/landing-page">Launch Websites</a>,
-				<a href="cat/customer-communication">Engage Customers</a>,
-				<a href="cat/payments">Collect Payments</a> and
-				<a href="cat/formation">Manage Companies</a>.
+				Discover best startup tools to <a
+					href="cat/landing-page"
+					on:mouseover={() => setCategory('landing-page')}
+					on:mouseleave={() => setCategory(null)}>Launch Websites</a
+				>,
+
+				<a
+					href="cat/forms-data"
+					on:mouseover={() => setCategory('blog-newsletter-emails')}
+					on:mouseleave={() => setCategory(null)}>Grow Audience</a
+				>,
+				<a
+					href="cat/customer-communication"
+					on:mouseover={() => setCategory('customer-communication')}
+					on:mouseleave={() => setCategory(null)}>Engage Customers</a
+				>,
+				<a
+					href="cat/customer-communication"
+					on:mouseover={() => setCategory('crm')}
+					on:mouseleave={() => setCategory(null)}>Sell</a
+				>
+				and
+				<a
+					href="#tools"
+					on:mouseover={() => setCategory('all')}
+					on:mouseleave={() => setCategory(null)}>more</a
+				>.
 			</h1>
 		</div>
 	</div>
@@ -127,7 +166,9 @@
 					{#if icon.name}
 						<a href="cat/{icon.category}">
 							<img
-								class="shrink-0 aspect-square grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition opacity-40"
+								class="shrink-0 aspect-square grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
+								class:grayscale={activeCategory !== 'all' && activeCategory !== icon.category}
+								class:opacity-40={activeCategory !== 'all' && activeCategory !== icon.category}
 								src="/products/{icon.name}.png"
 							/>
 						</a>
