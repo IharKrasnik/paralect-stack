@@ -15,38 +15,13 @@ export default [
 		name: 'Blogs & Newsletters'
 	},
 	{
-		key: 'product-management',
-		name: 'Product Management'
-	},
-	{
-		key: 'customer-communication',
-		name: 'Customer Communications'
-	},
-	{
-		key: 'payments',
-		name: 'Payments'
-	},
-	{
-		key: 'crm',
-		name: 'CRM and Sales'
-	},
-	{
-		key: 'marketing',
-		name: 'Marketing'
-	},
-
-	{
-		key: 'seo',
-		name: 'SEO'
-	},
-	{
-		key: 'smm',
-		name: 'SMM'
-	},
-	{
 		key: 'design',
 		name: 'Design & Creator Tools',
 		noTools: true
+	},
+	{
+		key: 'product-management',
+		name: 'Product Management'
 	},
 	{
 		key: 'automation',
@@ -57,19 +32,41 @@ export default [
 		name: 'Low-Code App Builders',
 		noTools: true
 	},
-
 	{
 		key: 'analytics',
 		name: 'Analytics'
 	},
-
+	{
+		key: 'customer-communication',
+		name: 'Customer Communications'
+	},
+	{
+		key: 'crm',
+		name: 'CRM and Sales'
+	},
+	{
+		key: 'payments',
+		name: 'Payments'
+	},
+	{
+		key: 'marketing',
+		name: 'Marketing'
+	},
+	{
+		key: 'seo',
+		name: 'SEO'
+	},
+	{
+		key: 'smm',
+		name: 'SMM'
+	},
 	{
 		key: 'formation',
 		name: 'Formation & Legal'
 	},
 	{
 		key: 'growth',
-		name: 'Growth'
+		name: 'Capital & Growth'
 	},
 	{
 		key: 'startup-community',
