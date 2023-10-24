@@ -7,7 +7,7 @@
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import { get } from '$lib/api';
-
+	import { showSuccessMessage } from '$lib/services/toast';
 	export let categoryKey = 'landing-page';
 	import currentUser, { isLoading as isCurrentUserLoading } from '$lib/stores/currentUser';
 
@@ -18,10 +18,19 @@
 	}
 
 	let isLoaded = {};
+
+	let copyUrl = () => {
+		window.navigator.clipboard.writeText(window.location.href);
+
+		showSuccessMessage('URL was copied to clipboard!');
+	};
 </script>
 
-<div class="flex mb-8 items-start" id="tools">
-	<div class="mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block">
+<div class="relative flex mb-8 items-start" id="tools">
+	<div
+		class=" top-24 bottom-24 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto"
+		class:fixed={$page.url.pathname !== '/'}
+	>
 		{#each categories as category}
 			<a
 				href="/cat/{category.key}"
@@ -33,15 +42,18 @@
 		{/each}
 	</div>
 
-	<div class="p-4 sm:p-0">
-		<div class="mt-8">
-			<h1>Top {activeCategory.name} {activeCategory.noTools ? '' : 'Tools'}</h1>
-			<h2>{activeCategory.description || ''}</h2>
+	<div class="min-h-screen p-4 sm:p-0 bg-black {$page.url.pathname !== '/' ? 'sm:ml-[304px]' : ''}">
+		<div class="flex justify-between items-center mt-8">
+			<div>
+				<h1>Top {activeCategory.name} {activeCategory.noTools ? '' : 'Tools'}</h1>
+				<h2>{activeCategory.description || ''}</h2>
+			</div>
+			<button class="hidden sm:block secondary" on:click={copyUrl}>Share Stack</button>
 		</div>
 
 		{#key categoryKey}
 			<div
-				class="grid grid-cols-1 sm:grid-cols-3 mt-8 items-start gap-4"
+				class="grid grid-cols-1 sm:grid-cols-2 mt-8 items-start gap-4"
 				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each tools.filter((t) => t.category === activeCategory.key) as tool}

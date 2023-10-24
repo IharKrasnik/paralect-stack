@@ -1,6 +1,6 @@
 <script>
 	import { SvelteToast } from '@zerodevx/svelte-toast';
-	import { slide } from 'svelte/transition';
+	import isMobile from '$lib/helpers/isMobile';
 	import categories from '$lib/data/categories';
 	import '../app.css';
 	import { fade, fly } from 'svelte/transition';
@@ -14,6 +14,7 @@
 
 	let scrollY;
 	// fillMetaTags();
+	console.log('mobil', isMobile());
 </script>
 
 <svelte:window bind:scrollY />
@@ -36,8 +37,12 @@
 
 <SvelteToast />
 
-<div class="container mx-auto lg:mt-8 h-full max-w-[1200px] mb-16">
-	<div class="flex justify-between p-4 xs:p-0">
+<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px] mb-24">
+	<div
+		class="top-0 transition mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
+		class:fixed={$page.url.pathname !== '/' && browser && !isMobile()}
+		style="margin-bottom: -32px;"
+	>
 		<a href="/" class="block w-[110px]">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1431 443" fill="none"
 				><script xmlns=""></script>
@@ -54,6 +59,7 @@
 			</svg>
 			<div class="mt-2">Startup Stack</div>
 		</a>
+
 		<div class="flex items-center">
 			<a href="/about"
 				><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
@@ -63,29 +69,44 @@
 			</a>
 		</div>
 	</div>
+</div>
+
+<div class="container mx-auto h-full max-w-[1200px] mb-16 z-10 relative">
 	<slot />
 </div>
 
+<div class="bg-zinc-900 w-full p-4 sm:hidden">
+	<div class="font-bold text-xl mb-4">Tools Categories</div>
+	{#each categories as category}
+		<a
+			href="/cat/{category.key}"
+			class="block nav-link pb-4 text-lg shrink-0"
+			class:active={$page.params.categoryKey === category.key}
+		>
+			{category.name}
+		</a>
+	{/each}
+</div>
+
 {#if !$page.url.pathname.includes('/about')}
-	<div class="bg-zinc-900 w-full p-4 sm:hidden">
-		<div class="font-bold text-xl mb-4">Tools Categories</div>
-		{#each categories as category}
-			<a
-				href="/cat/{category.key}"
-				class="block nav-link pb-4 text-lg shrink-0"
-				class:active={$page.params.categoryKey === category.key}
-			>
-				{category.name}
-			</a>
-		{/each}
-	</div>
 	<a href="/about"
-		><div class="bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition" in:slide>
+		><div
+			class="bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition"
+			in:fly={{ y: -50 }}
+		>
 			Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
 			startup growth.
 		</div>
 	</a>
-{/if}
+{:else}
+	<a href="/"
+		><div
+			class="bg-zinc-900 hover:bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition"
+			in:slide
+		>
+			Browse Tools
+		</div>
+	</a>{/if}
 
 <style>
 	.nav {
