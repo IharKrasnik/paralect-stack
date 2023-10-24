@@ -45,19 +45,21 @@
 				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each tools.filter((t) => t.category === activeCategory.key) as tool}
-					<div class="section">
-						<div class="w-full aspect-og bg-zinc-900">
-							<Image src={tool.img} class="transition w-full object-cover aspect-og" />
-						</div>
+					<a target="_blank" href={tool.url}>
+						<div class="section">
+							<div class="w-full aspect-og bg-zinc-900">
+								<Image src={tool.img} class="transition w-full object-cover aspect-og" />
+							</div>
 
-						<div class="p-4">
-							<h3 class="font-bold">
-								{tool.name}
-							</h3>
+							<div class="p-4">
+								<h3 class="font-bold">
+									{tool.name}
+								</h3>
 
-							<div class="mt-2 opacity-80">{tool.description}</div>
+								<div class="mt-2 opacity-80">{tool.description}</div>
+							</div>
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 		{/key}
