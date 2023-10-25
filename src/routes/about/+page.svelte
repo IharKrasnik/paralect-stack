@@ -14,12 +14,12 @@
 	<div class="mt-4 max-w-[700px] p-4 mx-auto" in:fade={{ duration: 150 }}>
 		<h1>Paralect Startup Stack</h1>
 
-		<h2 class="mt-2">
+		<h2 class="white mt-2">
 			Stack is an opinionated list of {tools.length} battle-tested tools, platforms and resources for
 			startup growth.
 		</h2>
 
-		<h2 class="mt-8 mb-2">We use Stack to build startups. You can too.</h2>
+		<h2 class="white mt-8 mb-2">We use Stack to build startups. You can too.</h2>
 
 		<div class="text-lg opacity-80">
 			We've built 30+ startups and prototyped 100+ mvps during 14 years in <a
@@ -28,14 +28,14 @@
 			advice our clients which tool is the best for the problem at hand.
 		</div>
 
-		<h2 class="mt-8 mb-2">Stack guides you from an idea to the exit.</h2>
+		<h2 class="white mt-8 mb-2">Stack guides you from an idea to the exit.</h2>
 
 		<div class="text-lg opacity-80">
 			We manually curate tools to ensure that all primary startup categories are covered. The goal
 			is to help you discover the common startup challenges and help you solve them, the modern way.
 		</div>
 
-		<h2 class="mt-8 mb-2">Stack is reliable, yet made of cutting-edge tools.</h2>
+		<h2 class="white mt-8 mb-2">Stack is reliable, yet made of cutting-edge tools.</h2>
 
 		<div class="opacity-80 text-lg">
 			There are so many shiny tools around. It's easy to trap into shiny-object syndrome. Don't
@@ -43,7 +43,7 @@
 			will help you discover the best modern tools for modern problems.
 		</div>
 
-		<h2 class="mt-8 mb-2">Smaller stack is a better stack.</h2>
+		<h2 class="white mt-8 mb-2">Smaller stack is a better stack.</h2>
 
 		<div class="text-lg opacity-80">
 			We'll keep the list concise. But we'll include the alternatives to the huge well-known tools,

@@ -1266,7 +1266,7 @@ export default [
 		key: 'namecheap',
 		name: 'NameCheap',
 		url: 'https://namecheap.com/',
-		img: 'https://www.namecheap.com/assets/img/nc-icon/favicon.ico',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698224760608-image.png',
 		description: 'One of the most popular domain registrars + DNS providers.',
 		favicon: 'https://www.namecheap.com/assets/img/nc-icon/favicon.ico'
 	},

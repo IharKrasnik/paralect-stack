@@ -118,7 +118,7 @@
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">
 		<div class="flex justify-center items-center max-w-[600px] text-center mx-auto z-10 h-full">
 			<h1 class="text-3xl" style="text-shadow: 1px 1px #fffc65">
-				Discover best startup tools to <a
+				Discover the best startup tools to <a
 					href="cat/landing-page"
 					on:mouseover={() => setCategory('landing-page')}
 					on:mouseleave={() => setCategory(null)}>Launch Websites</a

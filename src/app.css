@@ -90,6 +90,15 @@ button.secondary:hover {
 	@apply bg-brand;
 }
 
+button.whiteb {
+	outline-color: white !important;
+	@apply opacity-80 transition;
+}
+
+button.whiteb:hover {
+	@apply opacity-100;
+}
+
 label {
 	display: block;
 	@apply font-bold mb-2;
@@ -114,7 +123,11 @@ h1 {
 
 h2 {
 	font-weight: 500;
-	@apply text-xl opacity-80;
+	@apply text-xl;
+}
+
+h2:not(.white) {
+	@apply opacity-80;
 }
 
 h3 {
