@@ -28,6 +28,8 @@ export default [
 		category: 'design',
 		url: 'https://photorush.io/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698233790807-image.png',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698234710514-photorush_stack.png',
 		description: 'Get your professional product photos in minutes',
 		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698234070833-image.png',
 		tools: [

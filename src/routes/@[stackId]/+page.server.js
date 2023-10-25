@@ -7,6 +7,7 @@ export async function load({ params }) {
 
 	return {
 		ogTitle: `${stack.name} Startup Stack — Paralect Stack`,
-		ogDescription: stack.description
+		ogDescription: stack.description,
+		ogImage: stack.ogImage
 	};
 }
