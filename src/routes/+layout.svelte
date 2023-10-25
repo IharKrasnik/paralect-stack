@@ -38,7 +38,7 @@
 
 <div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px]">
 	<div
-		class=" {$page.params.categoryKey
+		class=" {!$page.params.stackId && $page.params.categoryKey
 			? 'sm:fixed'
 			: ''} top-0 transition sm:mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
 		style="margin-bottom: -32px;"
@@ -60,7 +60,7 @@
 						/>
 					</svg>
 				</a>
-				<div class="ml-2 text-xl font-bold">
+				<div class="ml-4 text-2xl font-bold">
 					{#if $page.params.stackId}
 						<a href="/@{$page.params.stackId}">
 							/ {$page.params.stackId}
@@ -76,7 +76,11 @@
 			<a href="/about"
 				><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
 			>
-			<a target="_blank" href="https://twitter.com/that_igor_">
+			<a
+				target="_blank"
+				href="https://twitter.com/that_igor_"
+				class={$page.params.stackId ? 'hidden sm:block' : ''}
+			>
 				<button class="rotated">Publish My Stack</button>
 			</a>
 		</div>

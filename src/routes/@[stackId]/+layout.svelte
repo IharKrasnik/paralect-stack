@@ -14,17 +14,33 @@
 	let allCategories = [...categories, ...techCategories];
 
 	let stackTools = stack.tools.map((stackTool) => {
-		return allTools.find((t) => t.key === stackTool.key);
+		let tool = allTools.find((t) => t.key === stackTool.key);
+
+		if (!tool) {
+			throw new Error('Not found tool ' + stackTool.name);
+		}
+		return tool;
 	});
 
 	let stackCategories = _.uniqBy(stackTools, (t) => t.category).map((st) => {
-		return allCategories.find((c) => c.key === st.category);
+		let category = allCategories.find((c) => c.key === st.category);
+
+		if (!category) {
+			throw new Error('Not found category ' + st.category);
+		}
+		return category;
 	});
+
+	let activeCategory = allCategories.find((c) => c.key === $page.params.categoryKey || 'all');
+
+	$: activeCategory =
+		allCategories.find((c) => c.key === $page.params.categoryKey || 'all') || allCategories[0];
 
 	stackCategories.unshift({
 		key: 'all',
 		name: 'Full Stack',
-		description: `${$page.params.stackId} startup stack`
+		description: `All Tools`,
+		noTools: true
 	});
 
 	let category = allCategories.find((c) => c.key === $page.params.categoryKey);

@@ -43,24 +43,38 @@
 	};
 </script>
 
-{#if $page.params.stackId && !$page.params.categoryKey}
-	<div class="py-16 w-full bg-[#111] flex justify-center items-center" style="margin-top: -64px;">
-		<div class="flex items-center flex-col text-center max-w-[600px] mx-auto">
-			<img class="w-[60px] h-[60px] rounded-lg mb-4" src={activeStack.logo} />
-			<h1>{activeStack.name} Startup Stack</h1>
+{#if $page.params.stackId}
+	<div class="relative py-16 w-full bg-[#111] flex justify-center items-center mt-8 sm:mt-[-64px]">
+		<img
+			class="absolute left-0 top-0 w-full h-full grayscale opacity-20 z-1 object-cover"
+			src={activeStack.img}
+		/>
+
+		<div class="flex items-center flex-col text-center max-w-[600px] mx-auto px-4 z-10">
+			<img
+				class="w-auto h-[60px] rounded-lg mb-4 p-1"
+				style="background: rgba(255, 255, 255, .9)"
+				src={activeStack.logo}
+			/>
+			<h1>{activeStack.name}</h1>
 			<h2 class="mt-2">{activeStack.description}</h2>
 
-			<a class="mt-8" href={activeStack.url} target="_blank"
-				><button class="secondary">Visit {activeStack.name} Website</button></a
-			>
+			<div class="flex items-center mt-8">
+				<a href="/@{$page.params.stackId}/cat/all#tools">
+					<button class="mr-4">View Tech Stack</button>
+				</a>
+				<a href={activeStack.url} target="_blank">
+					<button class="secondary">Visit {activeStack.name} Website</button></a
+				>
+			</div>
 		</div>
 	</div>
 {/if}
 
 <div class="relative flex mb-8 items-start" id="tools">
 	<div
-		class=" top-24 bottom-16 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto"
-		class:fixed={$page.params.categoryKey}
+		class=" top-24 bottom-16 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
+		class:fixed={!$page.params.stackId && $page.params.categoryKey}
 	>
 		<!-- <a href="/cat/all" class="block nav-link pb-4 text-lg" class:active={categoryKey === 'all'}>
 			All Tools
@@ -68,7 +82,7 @@
 
 		{#each categories as category}
 			<a
-				href="{stackId ? `/@${stackId}/` : '/'}cat/{category.key}"
+				href="{stackId ? `/@${stackId}/` : '/'}cat/{category.key}{stackId ? '#tools' : ''}"
 				class="block nav-link pb-4 text-lg"
 				class:active={categoryKey === category.key}
 			>
@@ -77,30 +91,42 @@
 		{/each}
 	</div>
 
-	<div class="min-h-screen p-4 sm:p-0 bg-black {$page.params.categoryKey ? 'sm:ml-[304px]' : ''}">
+	<div
+		class="min-h-screen p-4 sm:p-0 bg-black {!$page.params.stackId && $page.params.categoryKey
+			? 'sm:ml-[304px]'
+			: ''}"
+	>
 		<div class="flex justify-between items-center mt-8">
-			<div>
+			<div class="w-full">
 				<div class="flex items-center">
 					<h1>
 						{#if activeCategory.title}
 							{activeCategory.title}
+						{:else if $page.params.stackId}
+							{activeCategory.key === 'all'
+								? `${activeStack.name} Startup Stack`
+								: `${activeCategory.name}`}
 						{:else}
 							{activeCategory.key === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
 							{activeCategory.noTools ? '' : 'Tools'}
 						{/if}
 					</h1>
-					<div
-						class="flex items-center ml-4 cursor-pointer px-2 py-1 border border-white opacity-80 hover:opacity-100 transition"
-						on:click={shuffle}
-					>
-						<Icon class="mr-2" size="20" name="stack" />
-						shuffle
-					</div>
+					{#if tools
+						.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
+						.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key).length > 6}
+						<div
+							class="flex items-center ml-4 cursor-pointer px-2 py-1 border border-white opacity-80 hover:opacity-100 transition"
+							on:click={shuffle}
+						>
+							<Icon class="mr-2" size="20" name="stack" />
+							shuffle
+						</div>
+					{/if}
 				</div>
-				<h2 class="mt-2">{activeCategory.description || ''}</h2>
+				<h2 class="mt-2 max-w-[80%]">{activeCategory.description || ''}</h2>
 			</div>
 
-			<button class=" hidden sm:flex items-center secondary whiteb" on:click={copyUrl}>
+			<button class="flex-shrink-0 hidden sm:flex items-center secondary whiteb" on:click={copyUrl}>
 				<div>Share Stack</div></button
 			>
 		</div>
@@ -109,11 +135,11 @@
 			<div
 				class="grid grid-cols-1 {activeCategory.key === 'all'
 					? 'sm:grid-cols-3'
-					: 'sm:grid-cols-2'} mt-8 items-start gap-4"
+					: 'sm:grid-cols-2'} mt-8 gap-4"
 				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each _.shuffle(tools)
-					.filter((t) => !t.isUnlisted)
+					.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
 					.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key)
 					.sort((a, b) => {
 						if (a.key === selectedTool) {

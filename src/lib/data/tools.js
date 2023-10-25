@@ -1297,5 +1297,69 @@ export default [
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698233790807-image.png',
 		description: 'Get your professional product photos in minutes',
 		isUnlisted: true
+	},
+	{
+		key: 'loops',
+		name: 'Loops',
+		url: 'https://loops.so/',
+		category: 'blog-newsletter-emails',
+		description: 'Modern platform for marketing + transactional emails with API',
+		img: 'https://framerusercontent.com/images/8pNd7h7RZQFA9BAftof9KbceQ.png',
+		isUnlisted: true
+	},
+	{
+		key: 'mode',
+		name: 'Mode',
+		url: 'https://mode.com/',
+		category: 'analytics',
+		description:
+			'Modern user-friendly collaborative business intelligence for product teams. Process with SQL, R, Python.',
+		img: 'https://cdn.sanity.io/images/alf6wlua/production/8bb05dc9552d1fa2840b8177ae46f9e5615797e6-1200x630.png?w=1200&h=630&auto=format',
+		isUnlisted: true
+	},
+	{
+		key: 'zoom',
+		name: 'Zoom',
+		url: 'https://zoom.com/',
+		category: 'product-management',
+		description: 'A most popular app for video conferences and calls.',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698251644335-telegram-cloud-photo-size-4-5883362531706253846-y.jpg',
+		isUnlisted: true
+	},
+	{
+		key: 'shortcut',
+		name: 'Shortcut',
+		url: 'https://www.shortcut.com/',
+		category: 'product-management',
+		description:
+			'Unite planning and development in a single experience with tightly integrated docs, issue tracking, sprint planning and roadmap',
+		img: 'https://assets-global.website-files.com/6372338e5477e047032b37a5/64f70c52b8c131d2979f88b6_Main_opengraph.png',
+		isUnlisted: true
+	},
+	{
+		key: 'contentstudio',
+		name: 'ContentStudio',
+		url: 'https://contentstudio.io/',
+		category: 'smm',
+		description: 'Simple SMM channel management: publish, analyze, engage and discover leads',
+		img: 'https://contentstudio.io/images/og/home-twitter.png',
+		isUnlisted: true
+	},
+	{
+		key: 'customerio',
+		category: 'marketing',
+		name: 'Customer.io',
+		url: 'https://customer.io',
+		img: 'https://customer.io/wp-content/uploads/2023/07/OG_Image_1200x630_CDP_landing_page.png',
+		description:
+			'Visualise customer journey, pipe data and automate messaging (email, in-app, sms, push)'
+	},
+	{
+		key: 'usermaven',
+		category: 'analytics',
+		name: 'UserMaven',
+		url: 'https://usermaven.com/',
+		img: 'https://usermaven.com/images/og/Usermaven-homepage-facebook.png',
+		description: 'Easy no-code web+product analytics for marketers and product teams'
 	}
 ];

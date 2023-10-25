@@ -158,7 +158,7 @@
 							<img
 								class="shrink-0 aspect-square w-[120px] grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
 								class:grayscale={activeCategory !== 'all' && activeCategory !== icon.category}
-								class:opacity-40={activeCategory !== 'all' && activeCategory !== icon.category}
+								class:opacity-20={activeCategory !== 'all' && activeCategory !== icon.category}
 								src="/products/{icon.name}.png"
 							/>
 						</a>
