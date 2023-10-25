@@ -1118,7 +1118,7 @@ export default [
 		key: 'topicmojo',
 		name: 'TopicMojo',
 		url: 'https://topicmojo.com/',
-		img: 'https://d21b0h47110qhi.cloudfront.net/old-free/group-3540-E88weKteT5jilx5.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698264077840-image.png',
 		description:
 			'Topic and Question Research Tool. Uncover valuable insights into listener interests, preferences, and trends',
 		favicon: 'https://d21b0h47110qhi.cloudfront.net/internal/icon-bKCtmaNkLIbKJmQ.png'
