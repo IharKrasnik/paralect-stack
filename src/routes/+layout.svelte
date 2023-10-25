@@ -76,7 +76,7 @@
 			<a href="/about"
 				><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
 			>
-			<a target="_blank" href="https://build.paralect.com">
+			<a target="_blank" href="https://twitter.com/that_igor_">
 				<button class="rotated">Publish My Stack</button>
 			</a>
 		</div>
