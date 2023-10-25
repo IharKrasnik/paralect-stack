@@ -19,7 +19,7 @@ export default [
 	},
 	{
 		key: 'full-stack-frameworks',
-		name: 'Full Stack Frameworks'
+		name: 'Full-Stack Frameworks'
 	},
 	{
 		key: 'backend-frameworks',
@@ -27,7 +27,7 @@ export default [
 	},
 	{
 		key: 'frontend-frameworks',
-		name: 'Front-end Frameworks'
+		name: 'Frontend Frameworks'
 	},
 	{
 		key: 'mobile-frameworks',

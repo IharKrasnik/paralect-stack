@@ -38,7 +38,7 @@
 
 	stackCategories.unshift({
 		key: 'all',
-		name: 'Full Stack',
+		name: 'Complete Stack',
 		description: `All Tools`,
 		noTools: true
 	});
