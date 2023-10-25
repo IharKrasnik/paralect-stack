@@ -77,12 +77,12 @@ export default [
 		category: 'backend-frameworks',
 		url: 'https://expressjs.com/',
 		description: 'Oldest most commonly used Node.JS API framework based on middlewares',
-		img: 'https://expressjs.com/images/express-facebook-share.png'
+		img: 'https://miro.medium.com/v2/resize:fit:1400/1*XP-mZOrIqX7OsFInN2ngRQ.png'
 	},
 	{
 		key: 'mongodb',
 		name: 'MongoDB',
-		category: 'database',
+		category: 'databases',
 		url: 'https://www.mongodb.com/',
 		description: 'The most common NoSQL database which is easily-scalable',
 		img: 'http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png'

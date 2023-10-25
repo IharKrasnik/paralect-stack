@@ -84,9 +84,10 @@ export default [
 		key: 'hawker',
 		name: 'Hawker',
 		url: 'https://hawker.pro/',
-		img: 'https://hawker.pro/img/og-img.png',
-		ogImage: '',
-		description: 'The Ultimate Competitor Research Database',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260102716-image.png',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260239185-hawker_og.png',
+		description: 'The ultimate competitor research database',
 		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698249931691-eagle.png',
 		tools: [{ key: 'expressjs' }, { key: 'mongodb' }, { key: 'bootstrap' }, { key: 'openai' }]
 	},
@@ -96,7 +97,8 @@ export default [
 		description: 'Unlock your athletic potential',
 		url: 'https://www.olyup.tech/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698248470071-image.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260485880-olyup_og.png',
 		logo: 'https://www.olyup.tech/_next/static/media/olyup1_logo.048b810d.svg',
 		tools: [
 			{ key: 'firebase' },
@@ -136,7 +138,8 @@ export default [
 		url: 'https://gemoo.com/focusee/',
 		logo: 'https://www.gemoo-resource.com/focusee/img/focusee_logo@2x.png',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698250386842-image.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260465514-focusee_og.png',
 		tools: [{ key: 'notion' }, { key: 'zoom' }, { key: 'figma' }]
 	}
 ];
