@@ -20,5 +20,30 @@ export default [
 				key: 'posthog'
 			}
 		]
+	},
+
+	{
+		key: 'photorush',
+		name: 'PhotoRush',
+		category: 'design',
+		url: 'https://photorush.io/',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698233790807-image.png',
+		description: 'Get your professional product photos in minutes',
+		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698234070833-image.png',
+		tools: [
+			{
+				key: 'figma'
+			},
+			{
+				key: 'canva'
+			},
+			{ key: 'supabase' },
+			{
+				key: 'resend'
+			},
+			{
+				key: 'retool'
+			}
+		]
 	}
 ];

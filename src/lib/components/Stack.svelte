@@ -46,11 +46,11 @@
 {#if $page.params.stackId && !$page.params.categoryKey}
 	<div class="py-16 w-full bg-[#111] flex justify-center items-center" style="margin-top: -64px;">
 		<div class="flex items-center flex-col text-center max-w-[600px] mx-auto">
-			<img class="w-[60px] h-[60px] rounded-lg mb-2" src={activeStack.logo} />
+			<img class="w-[60px] h-[60px] rounded-lg mb-4" src={activeStack.logo} />
 			<h1>{activeStack.name} Startup Stack</h1>
 			<h2 class="mt-2">{activeStack.description}</h2>
 
-			<a class="mt-4" href={activeStack.url} target="_blank"
+			<a class="mt-8" href={activeStack.url} target="_blank"
 				><button class="secondary">Visit {activeStack.name} Website</button></a
 			>
 		</div>
@@ -113,6 +113,7 @@
 				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each _.shuffle(tools)
+					.filter((t) => !t.isUnlisted)
 					.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key)
 					.sort((a, b) => {
 						if (a.key === selectedTool) {
