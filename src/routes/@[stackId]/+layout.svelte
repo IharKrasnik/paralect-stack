@@ -1,4 +1,5 @@
 <script>
+	import _ from 'lodash';
 	import { page } from '$app/stores';
 	import stacks from '$lib/data/stacks';
 	import categories from '$lib/data/categories';
@@ -16,7 +17,7 @@
 		return allTools.find((t) => t.key === stackTool.key);
 	});
 
-	let stackCategories = stackTools.map((st) => {
+	let stackCategories = _.uniqBy(stackTools, (t) => t.category).map((st) => {
 		return allCategories.find((c) => c.key === st.category);
 	});
 
