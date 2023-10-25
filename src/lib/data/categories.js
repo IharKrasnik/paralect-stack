@@ -2,6 +2,8 @@ export default [
 	{
 		key: 'all',
 		name: 'All Tools',
+		title: 'Top No-Code Startup Tools',
+		description: 'Use proven tools to build your startup from an idea to the exit',
 		noTools: true
 	},
 	{

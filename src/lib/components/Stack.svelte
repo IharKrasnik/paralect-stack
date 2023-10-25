@@ -7,7 +7,7 @@
 	import { goto } from '$app/navigation';
 	import { get } from '$lib/api';
 	import { showSuccessMessage } from '$lib/services/toast';
-	export let categoryKey = 'landing-page';
+	export let categoryKey = 'all';
 	import currentUser, { isLoading as isCurrentUserLoading } from '$lib/stores/currentUser';
 
 	export let categories = [];
@@ -53,10 +53,14 @@
 		<div class="flex justify-between items-center mt-8">
 			<div>
 				<h1>
-					{activeCategory.name === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
-					{activeCategory.noTools ? '' : 'Tools'}
+					{#if activeCategory.title}
+						{activeCategory.title}
+					{:else}
+						{activeCategory.name === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
+						{activeCategory.noTools ? '' : 'Tools'}
+					{/if}
 				</h1>
-				<h2>{activeCategory.description || ''}</h2>
+				<h2 class="mt-2">{activeCategory.description || ''}</h2>
 			</div>
 
 			<button class="hidden sm:block secondary" on:click={copyUrl}>Share Stack</button>

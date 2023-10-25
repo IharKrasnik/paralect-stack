@@ -114,7 +114,7 @@ h1 {
 
 h2 {
 	font-weight: 500;
-	@apply text-xl;
+	@apply text-xl opacity-80;
 }
 
 h3 {
