@@ -7,6 +7,8 @@
 	import { goto } from '$app/navigation';
 	import { get } from '$lib/api';
 	import { showSuccessMessage } from '$lib/services/toast';
+	import Icon from '$lib/components/Icon.svelte';
+
 	export let categoryKey = 'all';
 	import currentUser, { isLoading as isCurrentUserLoading } from '$lib/stores/currentUser';
 
@@ -26,6 +28,12 @@
 		window.navigator.clipboard.writeText(window.location.href);
 
 		showSuccessMessage('URL was copied to clipboard!');
+	};
+
+	let shuffleKey = +new Date();
+
+	let shuffle = () => {
+		shuffleKey = +new Date();
 	};
 </script>
 
@@ -52,21 +60,32 @@
 	<div class="min-h-screen p-4 sm:p-0 bg-black {$page.url.pathname !== '/' ? 'sm:ml-[304px]' : ''}">
 		<div class="flex justify-between items-center mt-8">
 			<div>
-				<h1>
-					{#if activeCategory.title}
-						{activeCategory.title}
-					{:else}
-						{activeCategory.name === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
-						{activeCategory.noTools ? '' : 'Tools'}
-					{/if}
-				</h1>
+				<div class="flex items-center">
+					<h1>
+						{#if activeCategory.title}
+							{activeCategory.title}
+						{:else}
+							{activeCategory.key === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
+							{activeCategory.noTools ? '' : 'Tools'}
+						{/if}
+					</h1>
+					<div
+						class="flex items-center ml-4 cursor-pointer px-2 py-1 border border-white opacity-80 hover:opacity-100 transition"
+						on:click={shuffle}
+					>
+						<Icon class="mr-2" size="20" name="stack" />
+						shuffle
+					</div>
+				</div>
 				<h2 class="mt-2">{activeCategory.description || ''}</h2>
 			</div>
 
-			<button class="hidden sm:block secondary" on:click={copyUrl}>Share Stack</button>
+			<button class=" hidden sm:flex items-center secondary" on:click={copyUrl}>
+				<div>Share Stack</div></button
+			>
 		</div>
 
-		{#key categoryKey}
+		{#key categoryKey + shuffleKey}
 			<div
 				class="grid grid-cols-1 {activeCategory.key === 'all'
 					? 'sm:grid-cols-3'

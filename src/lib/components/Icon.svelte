@@ -3,12 +3,16 @@
 	import PercentageIcon from '$lib/icons/percentage.svelte';
 	import UploadIcon from '$lib/icons/upload.svelte';
 	import WalletIcon from '$lib/icons/wallet.svelte';
+	import RefreshIcon from '$lib/icons/refresh.svelte';
+	import StackIcon from '$lib/icons/stack.svelte';
 
 	let map = {
 		notification: NotificationIcon,
 		percentage: PercentageIcon,
 		upload: UploadIcon,
-		wallet: WalletIcon
+		wallet: WalletIcon,
+		refresh: RefreshIcon,
+		stack: StackIcon
 	};
 
 	let clazz = '';
