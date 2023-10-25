@@ -2,6 +2,7 @@ export default [
 	{
 		category: 'paas',
 		key: 'vercel',
+		url: 'https://vercel.com/',
 		name: 'Vercel',
 		img: 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/d2a3db0b85b3a8ae3df41e7357840ef5/og.png',
 		description: 'Popular scalable fast developer cloud.'
@@ -9,12 +10,14 @@ export default [
 	{
 		category: 'databases',
 		key: 'supabase',
+		url: 'https://supabase.com',
 		name: 'Supabase',
 		img: 'https://supabase.com/images/og/og-image-v2.jpg',
 		description: 'Open-source PostgreSQL interface available via cloud API.'
 	},
 	{
 		category: 'email-api',
+		url: 'https://resend.com/',
 		key: 'resend',
 		name: 'Resend',
 		img: 'https://resend.com/static/cover.png',
