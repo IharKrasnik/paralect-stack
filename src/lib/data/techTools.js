@@ -5,7 +5,7 @@ export default [
 		url: 'https://vercel.com/',
 		name: 'Vercel',
 		img: 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/d2a3db0b85b3a8ae3df41e7357840ef5/og.png',
-		description: 'Popular scalable and fast developer cloud.'
+		description: 'Popular scalable and fast developer cloud'
 	},
 	{
 		category: 'databases',
@@ -13,7 +13,7 @@ export default [
 		url: 'https://supabase.com',
 		name: 'Supabase',
 		img: 'https://supabase.com/images/og/og-image-v2.jpg',
-		description: 'Open-source PostgreSQL interface available via cloud API.'
+		description: 'Open-source PostgreSQL interface available via cloud API'
 	},
 	{
 		category: 'email-api',
@@ -21,7 +21,7 @@ export default [
 		key: 'resend',
 		name: 'Resend',
 		img: 'https://resend.com/static/cover.png',
-		description: 'Developer-friendly API for transactional emails.'
+		description: 'Developer-friendly API for transactional emails'
 	},
 	{
 		key: 'nextjs',
@@ -101,7 +101,7 @@ export default [
 		category: 'ui-libraries',
 		url: 'https://tailwindcss.com/',
 		description:
-			'A popular utility-first CSS framework to build any design directly in your HTML markup.',
+			'A popular utility-first CSS framework to build any design directly in your HTML markup',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698253503703-telegram-cloud-photo-size-4-5867538738316423012-w.jpg'
 	},
 	{

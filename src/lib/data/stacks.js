@@ -48,7 +48,8 @@ export default [
 			},
 			{
 				key: 'retool'
-			}
+			},
+			{ key: 'tailwindcss' }
 		]
 	},
 	{
@@ -108,7 +109,7 @@ export default [
 		name: 'Tatem',
 		description: 'Intelligent email built for speed. Make productivity your superpower',
 		url: 'https://tatem.com/',
-		img: 'https://tatem.com/meta/Tatem.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698259228678-image.png',
 		ogImage: '',
 		logo: 'https://tatem.com/images/tatem-logo.png',
 		tools: [
@@ -117,7 +118,11 @@ export default [
 			{ key: 'slack' },
 			{ key: 'zoom' },
 			{ key: 'mode' },
-			{ key: 'loops' }
+			{ key: 'loops' },
+			{ key: 'nextjs' },
+			{ key: 'typescript' },
+			{ key: 'tailwindcss' },
+			{ key: 'supabase' }
 		]
 	},
 	{
