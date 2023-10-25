@@ -15,7 +15,7 @@
 		<h1>Paralect Startup Stack</h1>
 
 		<h2 class="mt-2">
-			Stack is a opinionated list of {tools.length} battle-tested tools, platforms and resources for
+			Stack is an opinionated list of {tools.length} battle-tested tools, platforms and resources for
 			startup growth.
 		</h2>
 

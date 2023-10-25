@@ -1,5 +1,10 @@
 export default [
 	{
+		key: 'all',
+		name: 'All Tools',
+		noTools: true
+	},
+	{
 		key: 'landing-page',
 		name: 'Landing Page Builders',
 		description: 'Tools to build marketing websites',

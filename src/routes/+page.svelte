@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import _ from 'lodash';
+	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
 	import { fade } from 'svelte/transition';
 	import isMobile from '$lib/helpers/isMobile';
@@ -153,7 +154,7 @@
 			{#each icons as icon}
 				<div>
 					{#if icon.name}
-						<a href="cat/{icon.category}">
+						<a href="cat/{icon.category}?tool={icon.name}">
 							<img
 								class="shrink-0 aspect-square w-[120px] grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
 								class:grayscale={activeCategory !== 'all' && activeCategory !== icon.category}
@@ -168,7 +169,7 @@
 	{/key}
 </div>
 
-<Stack />
+<Stack {tools} {categories} />
 
 <style>
 	a {
