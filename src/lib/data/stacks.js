@@ -37,6 +37,9 @@ export default [
 				key: 'vercel'
 			},
 			{
+				key: 'nextjs'
+			},
+			{
 				key: 'figma'
 			},
 			{
