@@ -1357,5 +1357,16 @@ export default [
 		url: 'https://usermaven.com/',
 		img: 'https://usermaven.com/images/og/Usermaven-homepage-facebook.png',
 		description: 'Easy no-code web+product analytics for marketers and product teams'
+	},
+	{
+		key: 'tatem',
+		name: 'Tatem',
+		category: 'product-management',
+		description: 'Intelligent email built for speed and productivity',
+		url: 'https://tatem.com/',
+		img: 'https://cdn.sanity.io/images/l6nabp7v/production/0c1471249b5e1a99b6edf507009006528b9d9a04-1304x652.png',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698259583359-tatem_og.png',
+		logo: 'https://tatem.com/images/tatem-logo.png'
 	}
 ];

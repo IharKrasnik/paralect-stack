@@ -128,7 +128,8 @@ export default [
 			{ key: 'nextjs' },
 			{ key: 'typescript' },
 			{ key: 'tailwindcss' },
-			{ key: 'supabase' }
+			{ key: 'supabase' },
+			{ key: 'tatem' }
 		]
 	},
 	{
