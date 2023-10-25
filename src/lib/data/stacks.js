@@ -107,10 +107,11 @@ export default [
 	{
 		key: 'tatem',
 		name: 'Tatem',
-		description: 'Intelligent email built for speed. Make productivity your superpower',
+		description: 'Intelligent email built for speed and productivity',
 		url: 'https://tatem.com/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698259228678-image.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698259583359-tatem_og.png',
 		logo: 'https://tatem.com/images/tatem-logo.png',
 		tools: [
 			{ key: 'linear' },
