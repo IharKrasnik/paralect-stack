@@ -249,7 +249,7 @@ export default [
 			'Nuxt-based boilerplate to build and deploy landing pages for SaaS products and web apps',
 		url: 'https://rapidlaunch.it/',
 		logo: 'https://rapidlaunch.it/apple-touch-icon.png',
-		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698326925590-image.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698332509483-rapidlaunch_img.png',
 		ogImage:
 			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698332117715-prompt_hackers.png',
 		tools: [
