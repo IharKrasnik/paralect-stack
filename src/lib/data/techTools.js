@@ -257,7 +257,7 @@ export default [
 		category: 'frontend-libraries',
 		url: 'https://flowbite.com/',
 		description: '600+ Tailwind CSS components designed in Figma',
-		img: 'https://nuxt.com/new-social.jpg'
+		img: 'https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/29293/flowbite-vue.jpg'
 	},
 	{
 		key: 'sveltekit',

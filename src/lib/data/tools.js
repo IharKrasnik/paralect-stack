@@ -5,7 +5,7 @@ export default [
 		name: 'Webflow',
 		url: 'https://webflow.com/',
 		img: 'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/651c796fcc43bbae9ae1c137_og-default.jpg',
-		description: `Powerful website builder for marketing teams. Lots of templates.`,
+		description: `Powerful website builder for marketing teams. Lots of templates`,
 		favicon:
 			'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac0f_wf_favicon.png'
 	},
@@ -199,8 +199,7 @@ export default [
 		name: 'Testimonial',
 		url: 'https://testimonial.to/',
 		img: 'https://testimonial.to/assets/twitter-meta-img.png',
-		description:
-			'With Testimonial, in minutes, you can collect and display video testimonials and other types of testimonials from your customers with no need for a developer or website hosting',
+		description: 'Collect video and text testimonials from your customers',
 		favicon: '/favicon.ico'
 	},
 	{
@@ -209,7 +208,7 @@ export default [
 		name: 'Senja',
 		url: 'https://senja.io/',
 		img: 'https://framerusercontent.com/images/KYQC2wSKRbwBkAQfgujPHBgKPY.png',
-		description: 'The easiest way to collect testimonials and add them to your websites. ',
+		description: 'The easiest way to collect testimonials and add them to your websites',
 		favicon: 'https://framerusercontent.com/images/FKXyQKfcgQzBRcrolOI4cjpNGwk.png'
 	},
 	{
@@ -239,7 +238,7 @@ export default [
 		url: 'https://circle.so/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698057970272-telegram-cloud-photo-size-4-6015902177329000278-y.jpg',
 		description:
-			'Circle is community-management platform. Add useful content, create topics, whitelabel, invite your customers'
+			'Community-management platform: add useful content, create topics, whitelabel, invite your customers'
 	},
 	{
 		category: 'customer-communication',
@@ -369,7 +368,7 @@ export default [
 		name: 'Bubble',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698058502189-telegram-cloud-photo-size-4-5932490910258540681-w.jpg',
 		url: 'https://bubble.io/',
-		description: `Bubble is most common low-code app builder. Note: though it's popular, the builder UI is pretty complex.`
+		description: `Bubble is most common low-code app builder. Note: though it's popular, the builder UI is pretty complex`
 	},
 	{
 		category: 'low-code',
@@ -870,7 +869,7 @@ export default [
 		name: 'SmartLead',
 		url: 'https://smartlead.ai/',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698164691522-image.png',
-		description: `Scale your outreach with unlimited mailboxes, unlimited warmups, a limitless multi-channel infrastructure from the first touch to revenue.`,
+		description: `Scale your outreach with unlimited mailboxes, unlimited warmups, a limitless multi-channel infrastructure from the first touch to revenue`,
 		favicon:
 			'https://assets-global.website-files.com/6204a703ff61516512c04f55/631b014cb499da5bab949198_Group_6608_1_32x32.png'
 	},
@@ -912,7 +911,7 @@ export default [
 		name: 'Wynter',
 		url: 'https://wynter.com',
 		img: 'https://assets-global.website-files.com/615addcd910b6e8f65bde306/61ed72c594fd7e0832887a62_wynter%20results%20mockup.png',
-		description: `Test your B2B messaging against real people: decision-makers, C-suite. Hear from people you're marketing to.`,
+		description: `Test your B2B messaging against real people: decision-makers, C-suite. Hear from people you're marketing to`,
 		favicon: ''
 	},
 	{
@@ -921,7 +920,7 @@ export default [
 		name: 'Rewardful',
 		url: 'https://www.rewardful.com/',
 		img: 'https://assets-global.website-files.com/6041705a8ccb775007a2e651/6499638ac5eecec5b374a7d2_Rewardful-home-page.png',
-		description: `Launch white-labeled affiliate program that is simple to integrate with your website.`,
+		description: `Launch white-labeled affiliate program that is simple to integrate with your website`,
 		favicon: ''
 	},
 	{
@@ -930,7 +929,7 @@ export default [
 		name: 'Tolt',
 		url: 'https://tolt.io/',
 		img: 'https://assets-global.website-files.com/6329ec26d5d4133a1b0ed116/639dc501e9b4740a4c1bf761_tolt%20affiliate%20marketing%20software.png',
-		description: `Affordable automated affiliate programs with branded customer portal.`,
+		description: `Affordable automated affiliate programs with branded customer portal`,
 		favicon: ''
 	},
 	{
@@ -973,7 +972,7 @@ export default [
 		favicon: '/assets/images/favicon-16x16-da9bbf51.png'
 	},
 	{
-		category: 'payments',
+		category: 'banking-accounting',
 		key: 'mercury',
 		name: 'Mercury',
 		url: 'https://mercury.com',
@@ -982,7 +981,7 @@ export default [
 		favicon: ''
 	},
 	{
-		category: 'payments',
+		category: 'banking-accounting',
 		key: 'brex',
 		name: 'Brex',
 		url: 'https://www.brex.com/',
@@ -1389,8 +1388,7 @@ export default [
 		favicon: 'https://s.w.org/images/wmark.png',
 		img: 'https://s.w.org/images/home/wordpress-homepage-ogimage.png',
 		description:
-			'Massively popular open-source page builder to easily create a beautiful website, blog, or app',
-		isUnlisted: true
+			'Massively popular open-source page builder to easily create a beautiful website, blog, or app'
 	},
 	{
 		key: 'elementor',
@@ -1417,10 +1415,18 @@ export default [
 		name: 'June',
 		category: 'analytics',
 		url: 'https://www.june.so/',
-		favicon: '/favicon.ico',
+		favicon: 'https://www.june.so/favicon.ico',
 		img: 'https://june.so/social.png',
 		description:
 			'B2B SaaS Analytics for with auto-generated reports focused on how companies use your product'
+	},
+	{
+		key: 'segment',
+		name: 'Segment',
+		category: 'analytics',
+		url: 'https://segment.com/',
+		img: 'https://segment.com/_next/static/images/OgHome-7855d49bf1ace212e7feabd5964a0350.jpeg',
+		description: 'Connect your product data to dozens of analytical and product management tools'
 	},
 	{
 		key: 'frill',
@@ -1440,5 +1446,52 @@ export default [
 		favicon: '/assets/images/icon/favicon.png',
 		img: 'https://plausible.io/assets/images/plausible_promo.jpg',
 		description: 'Lightweight, open-source, privacy-focused Google Analytics alternative'
+	},
+	{
+		key: 'xero',
+		name: 'Xero',
+		category: 'banking-accounting',
+		url: 'https://www.xero.com/',
+		favicon:
+			'/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon-144x144-precomposed.png',
+		img: 'https://www.xero.com/content/dam/xero/pilot-images/product-pages/xero-blue/product_xero-accounting-software_overview.1646877536652.jpg',
+		description: 'Accounting & Bookeeping software'
+	},
+	{
+		key: 'quickbooks',
+		name: 'QuickBooks',
+		category: 'banking-accounting',
+		url: 'https://quickbooks.intuit.com/global/',
+		favicon: 'https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png',
+		img: 'https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png',
+		description: 'Accounting & Bookeeping software'
+	},
+	{
+		key: 'gusto',
+		name: 'Gusto',
+		category: 'banking-accounting',
+		url: 'https://gusto.com/',
+		img: 'https://cdn.shopify.com/app-store/listing_images/1295e4c7ed23f04e405d06a7e8602ede/desktop_screenshot/CL6Cvr70lu8CEAE=.png?height=720&width=1280',
+		description: 'Popular HR & Payroll software'
+	},
+	{
+		key: 'deel',
+		name: 'Deel',
+		url: 'https://www.deel.com/',
+		category: 'banking-accounting',
+		favicon:
+			'https://19498232.fs1.hubspotusercontent-na1.net/hubfs/19498232/deel-favicon-2023-1.svg',
+		img: 'https://19498232.fs1.hubspotusercontent-na1.net/hubfs/19498232/og-social.png#keepProtocol',
+
+		description: 'HR & Payroll software'
+	},
+	{
+		key: 'rippling',
+		name: 'Rippling',
+		url: 'https://www.rippling.com/',
+		category: 'banking-accounting',
+		favicon: '/favicons/favicon-16x16.png',
+		img: 'https://rippling.imgix.net/images/PreviewImage_Product.png?fm=png',
+		description: 'HR & Payroll software'
 	}
 ];
