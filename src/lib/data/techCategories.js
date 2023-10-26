@@ -34,8 +34,8 @@ export default [
 		name: 'Mobile Frameworks'
 	},
 	{
-		key: 'ui-libraries',
-		name: 'UI Libraries'
+		key: 'frontend-libraries',
+		name: 'Frontend Libraries'
 	},
 	{
 		key: 'dev-utils',
@@ -48,5 +48,9 @@ export default [
 	{
 		key: 'cdn-media',
 		name: 'CDN + Serving Media'
+	},
+	{
+		key: 'code-editors',
+		name: 'Code Editors'
 	}
 ];

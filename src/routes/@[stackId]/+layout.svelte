@@ -26,7 +26,7 @@
 		let category = allCategories.find((c) => c.key === st.category);
 
 		if (!category) {
-			throw new Error('Not found category ' + st.category);
+			throw new Error('Not found category ' + st.key);
 		}
 		return category;
 	});

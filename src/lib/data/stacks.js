@@ -183,7 +183,12 @@ export default [
 			{ key: 'daisyui' },
 			{ key: 'bytescale' },
 			{ key: 'neondb' },
-			{ key: 'brevo' }
+			{ key: 'brevo' },
+			{ key: 'framer-motion' },
+			{ key: 'next-auth' },
+			{ key: 'react-query' },
+			{ key: 'react-table' },
+			{ key: 'react-hook-form' }
 		]
 	},
 	{
@@ -236,5 +241,46 @@ export default [
 		ogImage:
 			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319276728-markthisforme_img.png',
 		tools: [{ key: 'nextjs' }, { key: 'vercel' }, { key: 'openai' }, { key: 'notion' }]
+	},
+	{
+		key: 'rapidlaunch',
+		name: 'RapidLaunch',
+		description:
+			'Nuxt-based boilerplate to build and deploy landing pages for SaaS products and web apps',
+		url: 'https://markthisforme.com/',
+		logo: 'https://rapidlaunch.it/apple-touch-icon.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698326925590-image.png',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698332117715-prompt_hackers.png',
+		tools: [
+			{ key: 'notion' },
+			{ key: 'slack' },
+			{ key: 'mailerlite' },
+			{ key: 'crisp' },
+			{ key: 'openai' },
+			{ key: 'plausible' },
+			{ key: 'nuxt' },
+			{ key: 'laravel' },
+			{ key: 'phpstorm' },
+			{ key: 'tailwindcss' },
+			{ key: 'vercel' }
+		]
+	},
+	{
+		key: 'prompthackers',
+		name: 'PromptHackers',
+		description: 'Discover the best ChatGPT and AI Prompts',
+		url: 'https://www.prompthackers.co/',
+		logo: 'https://www.prompthackers.co/PH.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698327180082-image.png',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698332151597-prompt_hackers.png',
+		tools: [
+			{ key: 'sveltekit' },
+			{ key: 'supabase' },
+			{ key: 'tailwindcss' },
+			{ key: 'flowbite' },
+			{ key: 'plasmo' }
+		]
 	}
 ];
