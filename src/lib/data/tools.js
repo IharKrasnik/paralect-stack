@@ -1356,7 +1356,8 @@ export default [
 		name: 'UserMaven',
 		url: 'https://usermaven.com/',
 		img: 'https://usermaven.com/images/og/Usermaven-homepage-facebook.png',
-		description: 'Easy no-code web+product analytics for marketers and product teams'
+		description: 'Easy no-code web+product analytics for marketers and product teams',
+		isUnlisted: true
 	},
 	{
 		key: 'tatem',
@@ -1367,6 +1368,77 @@ export default [
 		img: 'https://cdn.sanity.io/images/l6nabp7v/production/0c1471249b5e1a99b6edf507009006528b9d9a04-1304x652.png',
 		ogImage:
 			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698259583359-tatem_og.png',
-		logo: 'https://tatem.com/images/tatem-logo.png'
+		logo: 'https://tatem.com/images/tatem-logo.png',
+		isUnlisted: true
+	},
+	{
+		key: 'github-projects',
+		name: 'GitHub Projects',
+		category: 'product-management',
+		description: 'Project management based on GitHub Issues',
+		url: 'https://github.com/features/issues',
+		img: 'https://github.blog/wp-content/uploads/2022/05/blog-header-image.png?fit=1400%2C742',
+		isUnlisted: true
+	},
+
+	{
+		key: 'wordpress',
+		name: 'Wordpress',
+		category: 'low-code',
+		url: 'https://wordpress.org',
+		favicon: 'https://s.w.org/images/wmark.png',
+		img: 'https://s.w.org/images/home/wordpress-homepage-ogimage.png',
+		description:
+			'Massively popular open-source page builder to easily create a beautiful website, blog, or app',
+		isUnlisted: true
+	},
+	{
+		key: 'elementor',
+		name: 'Elementor',
+		category: 'landing-page',
+		url: 'https://elementor.com',
+		favicon: 'https://elementor.com/wp-content/uploads/2021/04/elementor-favicon-512.png',
+		img: 'https://elementor.com/wp-content/uploads/2022/02/HP.png',
+		description: 'Free tool to build nice professional websites on top of Wordpress',
+		isUnlisted: true
+	},
+	{
+		key: 'brevo',
+		name: 'Brevo',
+		category: 'crm',
+		url: 'https://www.brevo.com/',
+		favicon: 'https://corp-backend.brevo.com/wp-content/uploads/2023/05/favicon.svg',
+		img: 'https://play-lh.googleusercontent.com/NIdaYvkgQaWkbtrjIgzX_7q9ihRVfFKK-4vy11umGRishb51xeJRyP2bSnEHXksaCw',
+		description: 'Build customer relationships across email, SMS, chat, and more',
+		isUnlisted: true
+	},
+	{
+		key: 'june',
+		name: 'June',
+		category: 'analytics',
+		url: 'https://www.june.so/',
+		favicon: '/favicon.ico',
+		img: 'https://june.so/social.png',
+		description:
+			'B2B SaaS Analytics for with auto-generated reports focused on how companies use your product'
+	},
+	{
+		key: 'frill',
+		name: 'Frill',
+		category: 'product-management',
+		url: 'https://frill.co/',
+		favicon: '/favicon-16x16.png',
+		img: 'https://frill.co/images/social/fb-share-image.jpg',
+		description:
+			'Collect and organize feature requests to better understand customer needs and prioritize your roadmap'
+	},
+	{
+		key: 'plausible',
+		name: 'Plausible Analytics',
+		category: 'analytics',
+		url: 'https://plausible.io/',
+		favicon: '/assets/images/icon/favicon.png',
+		img: 'https://plausible.io/assets/images/plausible_promo.jpg',
+		description: 'Lightweight, open-source, privacy-focused Google Analytics alternative'
 	}
 ];

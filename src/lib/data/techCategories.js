@@ -44,5 +44,9 @@ export default [
 	{
 		key: 'ai-utils',
 		name: 'AI APIs'
+	},
+	{
+		key: 'cdn-media',
+		name: 'CDN + Serving Media'
 	}
 ];

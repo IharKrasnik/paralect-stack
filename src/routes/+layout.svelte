@@ -12,8 +12,15 @@
 	import { get } from '$lib/api';
 	import fillMetaTags from '$lib/services/fillMetaTags';
 
+	import techTools from '$lib/data/techTools';
+	import tools from '$lib/data/tools';
+
+	let toolsToFill = [...techTools, ...tools].filter((t) => {
+		return !t.img;
+	});
+
 	let scrollY;
-	// fillMetaTags();
+	fillMetaTags({ tools: toolsToFill });
 </script>
 
 <svelte:window bind:scrollY />

@@ -17,7 +17,7 @@
 		let tool = allTools.find((t) => t.key === stackTool.key);
 
 		if (!tool) {
-			throw new Error('Not found tool ' + stackTool.name);
+			throw new Error('Not found tool ' + stackTool.key);
 		}
 		return tool;
 	});

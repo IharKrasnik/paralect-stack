@@ -112,5 +112,50 @@ export default [
 		description:
 			'A serverless scalable database with streaming interface, analytics, push notifications and more',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698253642045-telegram-cloud-photo-size-4-5790815233542041704-w.jpg'
+	},
+	{
+		key: 'replicate',
+		name: 'Replicate',
+		url: 'https://replicate.com/',
+		category: 'ai-utils',
+		favicon: 'https://replicate.com/static/favicon.78c995b286d3.svg',
+		img: 'https://replicate.com/static/favicon.e390e65c9599.png',
+		description: 'Open-source machine learning models with a cloud API'
+	},
+	{
+		key: 'github',
+		name: 'GitHub',
+		url: 'https://github.com/',
+		category: 'paas',
+		favicon: 'https://github.githubassets.com/favicons/favicon.svg',
+		img: 'https://github.githubassets.com/images/modules/site/social-cards/campaign-social.png',
+		description: 'The most popular developer+DevOps cloud'
+	},
+	{
+		key: 'daisyui',
+		name: 'Daisy UI',
+		category: 'ui-libraries',
+		url: 'https://daisyui.com/',
+		img: 'https://daisyui.com/images/default.jpg',
+		description: 'Tailwind components library'
+	},
+	{
+		key: 'bytescale',
+		name: 'Bytescale',
+		url: 'https://www.bytescale.com/',
+		category: 'cdn-media',
+		favicon: 'https://assets.bytescale.com/website/fe8c51029806e93aa0170ceb411ffb04.png',
+		img: 'https://assets.bytescale.com/website/5271f69907050180d5be79f530094004.png',
+		description:
+			'Worldwide CDN to serve images, videos, and audio for web apps through real-time media processing APIs'
+	},
+	{
+		key: 'neondb',
+		name: 'NeonDB',
+		url: 'https://neon.tech/',
+		category: 'databases',
+		favicon: 'https://neon.tech/favicon/favicon.png',
+		img: 'https://neon.tech/images/social-previews/index.jpg',
+		description: 'Fully managed multi-cloud Postgres with a generous free tier'
 	}
 ];

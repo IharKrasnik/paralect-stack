@@ -1,4 +1,3 @@
-import tools from '$lib/data/tools';
 import { get } from '$lib/api';
 import { browser } from '$app/environment';
 
@@ -16,10 +15,11 @@ async function asyncForEach(array, callback) {
 	}
 }
 
-export default async () => {
+export default async ({ tools }) => {
 	if (browser) {
+		console.log('yo');
 		await asyncForEach(
-			tools.filter((t) => !t.img && !t.name.includes('Effects')),
+			tools.filter((t) => (!t.img && !t.name) || !t.name.includes('Effects')),
 			async (t, i) => {
 				let metatags = await get(
 					'https://ship-627ed08f489a970013572f5d.paralect.net/utils/fetch-meta-tags',

@@ -142,5 +142,94 @@ export default [
 		ogImage:
 			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260465514-focusee_og.png',
 		tools: [{ key: 'notion' }, { key: 'zoom' }, { key: 'figma' }]
+	},
+	{
+		key: 'echobase',
+		name: 'EchoBase',
+		description: 'Create files, share with your team, query and analyze with AI',
+		url: 'https://echobase.ai/',
+		logo: 'https://framerusercontent.com/images/mxW7Uko1o02e3Ah4gUzJSZ6iLk.png?scale-down-to=512',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698311253929-image.png',
+		ogImage: '',
+		tools: [
+			{ key: 'figma' },
+			{ key: 'github' },
+			{ key: 'github-projects' },
+			{ key: 'typescript' },
+			{ key: 'framer' },
+			{ key: 'postgres' },
+			{ key: 'openai' }
+		]
+	},
+	{
+		key: 'depikt',
+		name: 'Depikt',
+		description: 'Generate stunning packshot photos and descriptions from just one picture with AI',
+		url: 'https://depiktai.com/',
+		logo: 'https://depiktai.com/_next/image?url=%2Flogo_black.png&w=96&q=75',
+		img: 'https://pbs.twimg.com/card_img/1715259412195987456/XxXc9kAl?format=jpg&name=medium',
+		ogImage: '',
+
+		tools: [
+			{ key: 'nextjs' },
+			{ key: 'tailwindcss' },
+			{ key: 'prisma' },
+			{ key: 'vercel' },
+			{ key: 'stripe' },
+			{ key: 'replicate' },
+			{ key: 'openai' },
+			{ key: 'daisyui' },
+			{ key: 'bytescale' },
+			{ key: 'neondb' },
+			{ key: 'brevo' }
+		]
+	},
+	{
+		key: 'launchpedia',
+		name: 'LaunchPedia',
+		description: 'Library of guides and workbooks to get first 1000 users for your startup',
+		url: 'https://launchpedia.co/',
+		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698312574337-image.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698316491357-launcpedia.png',
+		ogImage: '',
+		tools: [
+			{ key: 'wordpress' },
+			{ key: 'elementor' },
+			{ key: 'tally' },
+			{ key: 'lemonsqueezy' },
+			{ key: 'gumroad' },
+			{ key: 'mailerlite' },
+			{ key: 'figma' },
+			{ key: 'make' }
+		]
+	},
+
+	{
+		key: 'typeflo',
+		name: 'Typeflo',
+		description: 'Start a blog from your Google Docs, collaborate with your team',
+		url: 'https://typeflo.io/',
+		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698313113570-typeflo.svg',
+		img: 'https://pbs.twimg.com/card_img/1717225635092090881/0GRQKzYQ?format=jpg&name=medium',
+		ogImage: '',
+		tools: [
+			{ key: 'nextjs' },
+			{ key: 'supabase' },
+			{ key: 'vercel' },
+			{ key: 'june' },
+			{ key: 'posthog' },
+			{ key: 'frill' },
+			{ key: 'plausible' }
+		]
+	},
+	{
+		key: 'markthisforme',
+		name: 'Markthisforme',
+		description: 'Get your paper marked by AI using your assignment criteria',
+		url: 'https://markthisforme.com/',
+		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698313854467-logo.svg',
+		img: 'https://markthisforme.com/logo.png',
+		ogImage: '',
+		tools: [{ key: 'nextjs' }, { key: 'vercel' }, { key: 'openai' }, { key: 'notion' }]
 	}
 ];
