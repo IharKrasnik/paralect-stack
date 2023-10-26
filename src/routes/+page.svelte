@@ -115,7 +115,7 @@
 		activeCategory = cat;
 	};
 
-	let highlightOrder = [..._.range(1, 10), 20, 30, ..._.range(40, 30), 21, 11];
+	let highlightOrder = [..._.range(1, 11), 20, 30, ..._.range(40, 29), 21, 11];
 
 	let cycle = () => {
 		_.shuffle(highlightOrder).forEach((iconNum, i) => {
