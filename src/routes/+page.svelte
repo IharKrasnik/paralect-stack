@@ -227,8 +227,9 @@
 					{#if icon.name}
 						<a href="cat/{icon.category}?tool={icon.name}">
 							<div
-								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 cursor-pointer"
-								style={!icon.isHighlighted ? 'transition: all linear .5s' : ''}
+								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 hover:transition cursor-pointer"
+								class:transition={$isImagesLoaded}
+								class:slowtransition={!icon.isHighlighted}
 								class:grayscale={!icon.isHighlighted &&
 									activeCategory !== 'all' &&
 									activeCategory !== icon.category}

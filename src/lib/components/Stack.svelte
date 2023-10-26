@@ -90,7 +90,9 @@
 				href="{stackId ? `/@${stackId}/` : '/'}cat/{category.key}{stackId ? '#tools' : ''}"
 				class="block nav-link pb-4 text-lg"
 				class:active={categoryKey === category.key}
-				style={category.key === 'all' ? 'color: rgb(255, 244, 123);' : ''}
+				style={category.key === 'all' && activeCategory.key !== 'all'
+					? 'color: rgb(255, 244, 123);'
+					: ''}
 			>
 				{category.name}
 			</a>
@@ -98,11 +100,12 @@
 	</div>
 
 	<div
-		class="min-h-screen p-4 sm:p-0 bg-black {!$page.params.stackId && $page.params.categoryKey
+		class="overflow-hidden sm:min-h-screen p-4 sm:p-0 bg-black {!$page.params.stackId &&
+		$page.params.categoryKey
 			? 'sm:ml-[304px]'
 			: ''}"
 	>
-		<div class="flex justify-between items-center mt-8">
+		<div class="max-w-screen flex justify-between items-center mt-8">
 			<div class="w-full">
 				<div class="flex items-center">
 					<h1>
@@ -117,17 +120,19 @@
 							{activeCategory.noTools ? '' : 'Tools'}
 						{/if}
 					</h1>
-					{#if tools
-						.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
-						.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key).length > 6}
-						<div
-							class="flex items-center ml-4 cursor-pointer px-2 py-1 border border-white opacity-80 hover:opacity-100 transition"
-							on:click={shuffle}
-						>
-							<Icon class="mr-2" size="20" name="stack" />
-							shuffle
-						</div>
-					{/if}
+					<div>
+						{#if tools
+							.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
+							.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key).length > 6}
+							<div
+								class="flex items-center ml-4 cursor-pointer px-2 py-1 border border-white opacity-80 hover:opacity-100 transition"
+								on:click={shuffle}
+							>
+								<Icon class="mr-2" size="20" name="stack" />
+								shuffle
+							</div>
+						{/if}
+					</div>
 				</div>
 				<h2 class="mt-2 max-w-[80%]">{activeCategory.description || ''}</h2>
 			</div>
@@ -139,7 +144,7 @@
 
 		{#key categoryKey + shuffleKey}
 			<div
-				class="grid grid-cols-1 {activeCategory.key === 'all'
+				class="overflow-x-auto flex sm:grid {activeCategory.key === 'all'
 					? 'sm:grid-cols-3'
 					: 'sm:grid-cols-2'} mt-8 gap-4"
 				in:fly={{ duration: 150, y: 50 }}
@@ -153,7 +158,7 @@
 						}
 						return 1;
 					}) as tool}
-					<a class="card" target="_blank" href={tool.url}>
+					<a class="card min-w-[90%] sm:min-w-auto" target="_blank" href={tool.url}>
 						<div class="section">
 							<div class="w-full aspect-og bg-zinc-900 transition">
 								<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
@@ -174,6 +179,10 @@
 						{/if}
 					</a>
 				{/each}
+			</div>
+			<div class="flex items-center justify-between mt-12 sm:mt-0">
+				<div class="block sm:hidden w-full">Scroll right to see tools</div>
+				<div class="flex-shrink-0">→→→</div>
 			</div>
 		{/key}
 	</div>

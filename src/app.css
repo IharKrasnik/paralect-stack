@@ -45,6 +45,10 @@ body {
 	@apply font-bold;
 }
 
+.slowtransition {
+	transition: all linear 0.5s;
+}
+
 button,
 button[type='submit'] {
 	background-color: var(--color-brand);
