@@ -64,12 +64,12 @@
 			<h1>{activeStack.name}</h1>
 			<h2 class="mt-2">{activeStack.description}</h2>
 
-			<div class="flex items-center mt-8">
-				<a href="/@{$page.params.stackId}/cat/all#tools">
-					<button class="mr-4">View Tech Stack</button>
+			<div class="flex flex-col gap-4 sm:flex-row items-center mt-8 w-full sm:w-auto">
+				<a class="w-full sm:w-auto" href="/@{$page.params.stackId}/cat/all#tools">
+					<button class="w-full mr-4">View Tech Stack</button>
 				</a>
-				<a href={activeStack.url} target="_blank">
-					<button class="secondary">Visit {activeStack.name} Website</button></a
+				<a class="w-full sm:w-auto" href={activeStack.url} target="_blank">
+					<button class="w-full secondary">Visit {activeStack.name} Website</button></a
 				>
 			</div>
 		</div>
