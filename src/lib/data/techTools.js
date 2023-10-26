@@ -88,6 +88,14 @@ export default [
 		img: 'http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png'
 	},
 	{
+		key: 'postgres',
+		name: 'PostgreSQL',
+		category: 'databases',
+		url: 'https://www.postgresql.org.pl/',
+		description: 'The most common scalable SQL database with open source code',
+		img: 'http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png'
+	},
+	{
 		key: 'bootstrap',
 		name: 'Bootstrap',
 		category: 'ui-libraries',

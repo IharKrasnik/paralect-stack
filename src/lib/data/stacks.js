@@ -150,7 +150,8 @@ export default [
 		url: 'https://echobase.ai/',
 		logo: 'https://framerusercontent.com/images/mxW7Uko1o02e3Ah4gUzJSZ6iLk.png?scale-down-to=512',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698311253929-image.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319242504-echobase.png',
 		tools: [
 			{ key: 'figma' },
 			{ key: 'github' },
@@ -168,7 +169,8 @@ export default [
 		url: 'https://depiktai.com/',
 		logo: 'https://depiktai.com/_next/image?url=%2Flogo_black.png&w=96&q=75',
 		img: 'https://pbs.twimg.com/card_img/1715259412195987456/XxXc9kAl?format=jpg&name=medium',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319201564-depikt_img.png',
 
 		tools: [
 			{ key: 'nextjs' },
@@ -191,7 +193,8 @@ export default [
 		url: 'https://launchpedia.co/',
 		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698312574337-image.png',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698316491357-launcpedia.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319305455-launchpedia_img.png',
 		tools: [
 			{ key: 'wordpress' },
 			{ key: 'elementor' },
@@ -211,7 +214,8 @@ export default [
 		url: 'https://typeflo.io/',
 		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698313113570-typeflo.svg',
 		img: 'https://pbs.twimg.com/card_img/1717225635092090881/0GRQKzYQ?format=jpg&name=medium',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319292064-typeflo_img.png',
 		tools: [
 			{ key: 'nextjs' },
 			{ key: 'supabase' },
@@ -229,7 +233,8 @@ export default [
 		url: 'https://markthisforme.com/',
 		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698313854467-logo.svg',
 		img: 'https://markthisforme.com/logo.png',
-		ogImage: '',
+		ogImage:
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698319276728-markthisforme_img.png',
 		tools: [{ key: 'nextjs' }, { key: 'vercel' }, { key: 'openai' }, { key: 'notion' }]
 	}
 ];
