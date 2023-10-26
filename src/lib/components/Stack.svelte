@@ -147,9 +147,9 @@
 						}
 						return 1;
 					}) as tool}
-					<a target="_blank" href={tool.url}>
+					<a class="card" target="_blank" href={tool.url}>
 						<div class="section">
-							<div class="w-full aspect-og bg-zinc-900 transition opacity-60 hover:opacity-100">
+							<div class="w-full aspect-og bg-zinc-900 transition">
 								<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
 							</div>
 

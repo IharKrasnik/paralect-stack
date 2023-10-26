@@ -105,6 +105,16 @@ label {
 	@apply font-bold mb-2;
 }
 
+.card img {
+	filter: grayscale(0.7);
+	@apply opacity-80 transition;
+}
+
+.card:hover img {
+	filter: none;
+	@apply opacity-100;
+}
+
 input,
 textarea {
 	background: none;
