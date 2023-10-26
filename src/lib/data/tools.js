@@ -812,7 +812,7 @@ export default [
 		name: 'ActiveCampaign',
 		url: 'https://activecampaign.com/',
 		img: 'https://www.activecampaign.com/wp-content/uploads/2021/10/ActiveCampaign_Logo_OpenGraph.png',
-		description: 'Build meaningful connections with their customers via email',
+		description: 'Build meaningful connections with your customers via email',
 		favicon: 'https://www.activecampaign.com/wp-content/uploads/2023/10/cropped-favicon-192x192.png'
 	},
 	// {

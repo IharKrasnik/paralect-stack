@@ -137,7 +137,7 @@ export default [
 		name: 'Focusee',
 		description: 'Turn screen recordings into nice product demos',
 		url: 'https://gemoo.com/focusee/',
-		logo: 'https://www.gemoo-resource.com/focusee/img/focusee_logo@2x.png',
+		logo: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698307206240-image.png',
 		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698250386842-image.png',
 		ogImage:
 			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698260465514-focusee_og.png',
