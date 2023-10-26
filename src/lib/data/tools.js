@@ -1463,7 +1463,7 @@ export default [
 		category: 'banking-accounting',
 		url: 'https://quickbooks.intuit.com/global/',
 		favicon: 'https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png',
-		img: 'https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png',
+		img: 'https://quickbooks.intuit.com/uk2/uk/uk-2021//assets/online/Manage-Finances-2022.jpg',
 		description: 'Accounting & Bookeeping software'
 	},
 	{

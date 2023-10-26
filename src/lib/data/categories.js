@@ -66,8 +66,7 @@ export default [
 	{
 		key: 'payments',
 		name: 'Payments',
-		description:
-			'Collect one-time and recurring payments for your digital products and SaaS, open a bank account'
+		description: 'Collect one-time and recurring payments for your digital products and SaaS'
 	},
 	{
 		key: 'marketing',
@@ -95,13 +94,12 @@ export default [
 	{
 		key: 'formation',
 		name: 'Formation & Legal',
-		description:
-			'Software and tools to encorporate your company and handle startup legal procedures'
+		description: 'Incorporate your company and handle typical startup legal procedures'
 	},
 	{
 		key: 'growth',
 		name: 'Capital & Growth',
-		description: 'Alternative to VC to get funding for your growing startup'
+		description: 'Get funding for your startup, buy and sell companies'
 	},
 	{
 		key: 'startup-community',
