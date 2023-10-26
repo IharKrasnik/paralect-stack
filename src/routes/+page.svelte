@@ -4,9 +4,10 @@
 	import { onMount } from 'svelte';
 	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import isMobile from '$lib/helpers/isMobile';
 	import Stack from '$lib/components/Stack.svelte';
+	import Image from '$lib/components/Image.svelte';
 
 	let startIcons = _.shuffle([
 		'airtable',
@@ -58,7 +59,8 @@
 		icons = icons.map((icon) => {
 			return {
 				name: icon,
-				category: icon && tools.find((t) => t.key === icon.replace('_', '-')).category
+				category: icon && tools.find((t) => t.key === icon.replace('_', '-')).category,
+				isHighlighted: false
 			};
 		});
 	};
@@ -93,13 +95,7 @@
 		move();
 	}
 
-	let isLoaded = false;
-
-	onMount(() => {
-		setTimeout(() => {
-			isLoaded = true;
-		}, 100);
-	});
+	let isLoaded = true;
 
 	let activeCategory = null;
 
@@ -116,6 +112,46 @@
 
 		activeCategory = cat;
 	};
+
+	let highlightOrder = [..._.range(1, 10), 20, 30, ..._.range(40, 30), 21, 11];
+
+	let isImagesLoaded = false;
+
+	let cycle = () => {
+		_.shuffle(highlightOrder).forEach((iconNum, i) => {
+			let icon = icons[iconNum - 1];
+
+			setTimeout(() => {
+				icons = icons.map((ic) => {
+					if (ic.name === icon.name) {
+						return {
+							...ic,
+							isHighlighted: true
+						};
+					}
+					return ic;
+				});
+
+				setTimeout(() => {
+					icons = icons.map((ic) => {
+						if (ic.name === icon.name) {
+							return {
+								...ic,
+								isHighlighted: false
+							};
+						}
+						return ic;
+					});
+
+					if (i === highlightOrder.length - 1) {
+						isImagesLoaded = true;
+					}
+				}, 1000);
+			}, 20 * (i + 1));
+		});
+	};
+
+	cycle();
 </script>
 
 <svelte:window bind:scrollY />
@@ -131,33 +167,35 @@
 				class:opacity-10={!isLoaded}
 				style="text-shadow: 1px 1px #fffc65"
 			>
-				Discover the best startup tools to <a
-					href="cat/landing-page"
-					on:mouseover={() => setCategory('landing-page')}
-					on:mouseleave={() => setCategory(null)}>Launch Websites</a
-				>,
+				Discover the best startup tools <span class="transition">
+					to <a
+						href="cat/landing-page"
+						on:mouseover={() => setCategory('landing-page')}
+						on:mouseleave={() => setCategory(null)}>Launch Websites</a
+					>,
 
-				<a
-					href="cat/blog-newsletter-emails"
-					on:mouseover={() => setCategory('blog-newsletter-emails')}
-					on:mouseleave={() => setCategory(null)}>Grow Audience</a
-				>,
-				<a
-					href="cat/customer-communication"
-					on:mouseover={() => setCategory('customer-communication')}
-					on:mouseleave={() => setCategory(null)}>Engage Customers</a
-				>,
-				<a
-					href="cat/crm"
-					on:mouseover={() => setCategory('crm')}
-					on:mouseleave={() => setCategory(null)}>Sell</a
-				>
-				and
-				<a
-					href="#tools"
-					on:mouseover={() => setCategory('all')}
-					on:mouseleave={() => setCategory(null)}>more</a
-				>.
+					<a
+						href="cat/blog-newsletter-emails"
+						on:mouseover={() => setCategory('blog-newsletter-emails')}
+						on:mouseleave={() => setCategory(null)}>Grow Audience</a
+					>,
+					<a
+						href="cat/customer-communication"
+						on:mouseover={() => setCategory('customer-communication')}
+						on:mouseleave={() => setCategory(null)}>Engage Customers</a
+					>,
+					<a
+						href="cat/crm"
+						on:mouseover={() => setCategory('crm')}
+						on:mouseleave={() => setCategory(null)}>Sell</a
+					>
+					and
+					<a
+						href="#tools"
+						on:mouseover={() => setCategory('all')}
+						on:mouseleave={() => setCategory(null)}>more</a
+					>.
+				</span>
 			</h1>
 		</div>
 	</div>
@@ -168,16 +206,18 @@
 				<div>
 					{#if icon.name}
 						<a href="cat/{icon.category}?tool={icon.name}">
-							<img
+							<div
 								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
-								class:grayscale={isLoaded &&
+								class:grayscale={!icon.isHighlighted &&
 									activeCategory !== 'all' &&
 									activeCategory !== icon.category}
-								class:opacity-20={isLoaded &&
+								class:opacity-20={!icon.isHighlighted &&
 									activeCategory !== 'all' &&
 									activeCategory !== icon.category}
 								src="/products/{icon.name}.png"
-							/>
+							>
+								<Image src="/products/{icon.name}.png" />
+							</div>
 						</a>
 					{/if}
 				</div>
@@ -186,7 +226,13 @@
 	{/key}
 </div>
 
-<Stack {tools} {categories} />
+{#if isImagesLoaded}
+	<div in:fly={{ duration: 150 }}>
+		<Stack {tools} {categories} />
+	</div>
+{:else}
+	<div class="min-h-screen" />
+{/if}
 
 <style>
 	a {

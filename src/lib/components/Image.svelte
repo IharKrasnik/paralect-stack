@@ -6,6 +6,7 @@
 
 	let clazz = '';
 	export { clazz as class };
+	export let onload = () => {};
 
 	let loaded = false;
 	let failed = false;
@@ -19,7 +20,9 @@
 		img.onload = () => {
 			loading = false;
 			loaded = true;
+			onload();
 		};
+
 		img.onerror = () => {
 			loading = false;
 			failed = true;
