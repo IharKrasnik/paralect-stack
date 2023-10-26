@@ -41,6 +41,11 @@
 	let shuffle = () => {
 		shuffleKey = +new Date();
 	};
+
+	let formatCategory = (categoryKey) => {
+		let category = categories.find((c) => c.key === categoryKey);
+		return category?.name || '';
+	};
 </script>
 
 {#if $page.params.stackId}
@@ -85,6 +90,7 @@
 				href="{stackId ? `/@${stackId}/` : '/'}cat/{category.key}{stackId ? '#tools' : ''}"
 				class="block nav-link pb-4 text-lg"
 				class:active={categoryKey === category.key}
+				style={category.key === 'all' ? 'color: rgb(255, 244, 123);' : ''}
 			>
 				{category.name}
 			</a>
@@ -161,6 +167,11 @@
 								<div class="mt-2 opacity-90">{tool.description}</div>
 							</div>
 						</div>
+						{#if activeCategory.key === 'all'}
+							<div class="section p-4 w-full text-center opacity-80">
+								{formatCategory(tool.category)}
+							</div>
+						{/if}
 					</a>
 				{/each}
 			</div>

@@ -29,6 +29,12 @@ export default [
 		noTools: true
 	},
 	{
+		key: 'domains',
+		name: 'DNS & Domains',
+		description: 'Register your website domain and manage DNS records',
+		noTools: true
+	},
+	{
 		key: 'product-management',
 		name: 'Product Management',
 		description:

@@ -132,24 +132,34 @@
 					return ic;
 				});
 
-				setTimeout(() => {
-					icons = icons.map((ic) => {
-						if (ic.name === icon.name) {
-							return {
-								...ic,
-								isHighlighted: false
-							};
-						}
-						return ic;
-					});
+				// setTimeout(() => {
+				// 	icons = icons.map((ic) => {
+				// 		if (ic.name === icon.name) {
+				// 			return {
+				// 				...ic,
+				// 				isHighlighted: false
+				// 			};
+				// 		}
+				// 		return ic;
+				// 	});
 
-					if (i === highlightOrder.length - 1) {
-						$isImagesLoaded = true;
-					}
-				}, 1000);
+				// 	if (i === highlightOrder.length - 1) {
+				// 		$isImagesLoaded = true;
+				// 	}
+				// }, 1000);
 			}, 20 * (i + 1));
 		});
 	};
+
+	setTimeout(() => {
+		icons = icons.map((icon) => {
+			return {
+				...icon,
+				isHighlighted: false
+			};
+		});
+		$isImagesLoaded = true;
+	}, 1500);
 
 	if (isMobile()) {
 		icons = icons.map((i) => ({ ...i, isHighlighted: false }));
@@ -217,7 +227,8 @@
 					{#if icon.name}
 						<a href="cat/{icon.category}?tool={icon.name}">
 							<div
-								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
+								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 cursor-pointer"
+								style={!icon.isHighlighted ? 'transition: all linear .5s' : ''}
 								class:grayscale={!icon.isHighlighted &&
 									activeCategory !== 'all' &&
 									activeCategory !== icon.category}
