@@ -78,7 +78,7 @@
 
 <div class="relative flex mb-8 items-start" id="tools">
 	<div
-		class=" top-24 bottom-16 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
+		class=" top-24 bottom-4 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
 		class:fixed={!$page.params.stackId && $page.params.categoryKey}
 	>
 		<!-- <a href="/cat/all" class="block nav-link pb-4 text-lg" class:active={categoryKey === 'all'}>
@@ -100,8 +100,8 @@
 	</div>
 
 	<div
-		class="overflow-hidden sm:min-h-screen p-4 sm:p-0 bg-black {!$page.params.stackId &&
-		$page.params.categoryKey
+		class="overflow-hidden sm:overflow-visible sm:min-h-screen p-4 sm:p-0 bg-black {!$page.params
+			.stackId && $page.params.categoryKey
 			? 'sm:ml-[304px]'
 			: ''}"
 	>
@@ -144,9 +144,9 @@
 
 		{#key categoryKey + shuffleKey}
 			<div
-				class="overflow-x-auto flex sm:grid {activeCategory.key === 'all'
+				class="overflow-x-auto flex sm:grid auto-rows-fr {activeCategory.key === 'all'
 					? 'sm:grid-cols-3'
-					: 'sm:grid-cols-2'} mt-8 gap-4"
+					: 'sm:grid-cols-2 items-stretch'} mt-8 gap-4"
 				in:fly={{ duration: 150, y: 50 }}
 			>
 				{#each _.shuffle(tools)
@@ -157,36 +157,108 @@
 							return -1;
 						}
 						return 1;
-					}) as tool}
-					<a class="card min-w-[90%] sm:min-w-auto" target="_blank" href={tool.url}>
-						<div class="section">
+					}) as tool, i}
+					<div class="h-full flex flex-col justify-between">
+						<a
+							class="h-full section block card min-w-[80vw] sm:min-w-0"
+							target="_blank"
+							href={tool.url}
+						>
 							<div class="w-full aspect-og bg-zinc-900 transition">
 								<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
 							</div>
 
-							<div class="p-4">
-								<h3 class="font-bold">
+							<div class="p-4 pb-2">
+								<h3 class="font-bold text-lg">
 									{tool.name}
 								</h3>
+							</div>
 
-								<div class="mt-2 opacity-90">{tool.description}</div>
-							</div>
-						</div>
+							<div class="mb-4 px-4 opacity-90">{tool.description}</div>
+						</a>
+
 						{#if activeCategory.key === 'all'}
-							<div class="section p-4 w-full text-center opacity-80">
+							<a
+								href={$page.params.stackId
+									? `@${$page.params.stackId}/cat/${tool.category}`
+									: `/cat/${tool.category}`}
+								class="category-link section px-4 py-2 w-full opacity-80 bg-white/10"
+							>
 								{formatCategory(tool.category)}
-							</div>
+							</a>
 						{/if}
-					</a>
+					</div>
+					{#if activeCategory.key === 'all' && i === 1}
+						<a
+							href="/publish"
+							style="border: 1px rgb(255, 244, 123) solid;"
+							class="flex flex-col justify-between submitstack w-full section h-full min-w-[80vw] sm:min-w-0"
+						>
+							<div class="p-4">
+								<div class="text-lg font-bold">🔥 Submit Your Stack</div>
+
+								<hr class="divider" />
+								<div class="mt-2 w-full">
+									Get branded page for your product stack. Share it around and attract leads. Get
+									backlink to your product website
+								</div>
+							</div>
+
+							<div class="img">
+								<img
+									src="https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698350003479-your_pitch.png"
+									class="img w-full aspect-video"
+								/>
+							</div>
+						</a>
+					{/if}
 				{/each}
 			</div>
-			<div class="flex items-center justify-between mt-12 sm:mt-0">
-				<div class="block sm:hidden w-full">Scroll right to see tools</div>
+			<div class="sm:hidden flex items-center justify-between mt-12 sm:mt-0">
+				<div class="block sm:hidden w-full text-lg">Scroll Right</div>
 				<div class="flex-shrink-0">→→→</div>
 			</div>
+			<hr class="border border-white/20 my-4 mt-8 sm:hidden" />
 		{/key}
 	</div>
 </div>
 
 <style>
+	.submitstack {
+		@apply bg-white/10;
+		margin: 0;
+	}
+
+	.submitstack:hover {
+		background: rgb(255, 244, 123);
+		color: #111;
+	}
+
+	.divider {
+		border-color: rgba(255, 255, 255, 0.2);
+		@apply my-4;
+	}
+
+	.submitstack .img {
+		filter: blur(5px);
+	}
+
+	.submitstack:hover .img {
+		filter: none;
+		opacity: 100;
+	}
+
+	.submitstack:hover .divider {
+		border-color: #666;
+		@apply transition;
+	}
+
+	.category-link:hover {
+		background: rgb(255, 244, 123);
+		color: #111;
+	}
+
+	.card:hover {
+		border: 1px rgb(255, 244, 123) solid;
+	}
 </style>

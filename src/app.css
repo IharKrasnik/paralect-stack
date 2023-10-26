@@ -119,6 +119,10 @@ label {
 	@apply opacity-100;
 }
 
+.card:hover * {
+	color: white;
+}
+
 input,
 textarea {
 	background: none;

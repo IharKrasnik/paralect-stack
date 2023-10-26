@@ -28,12 +28,7 @@ export default [
 		description: 'Create nice visual content with ease',
 		noTools: true
 	},
-	{
-		key: 'domains',
-		name: 'DNS & Domains',
-		description: 'Register your website domain and manage DNS records',
-		noTools: true
-	},
+
 	{
 		key: 'product-management',
 		name: 'Product Management',
@@ -60,7 +55,7 @@ export default [
 	},
 	{
 		key: 'customer-communication',
-		name: 'Customer Communications',
+		name: 'Customer Chat',
 		description: 'Engage your customers, build communities, share updates and collect feedback'
 	},
 	{
@@ -90,6 +85,12 @@ export default [
 		name: 'SMM',
 		description:
 			'Distribute your social media content to multiple channels, schedule posts and analyse conversions'
+	},
+	{
+		key: 'domains',
+		name: 'DNS & Domains',
+		description: 'Register your website domain and manage DNS records',
+		noTools: true
 	},
 	{
 		key: 'banking-accounting',

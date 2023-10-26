@@ -119,7 +119,7 @@
 {#if !$page.url.pathname.includes('/about')}
 	<a href="/about"
 		><div
-			class="bg-brand py-4 w-full text-center opacity-90 hover:opacity-100 transition"
+			class="sticky z-10 bg-brand py-4 w-full text-center opacity-70 hover:opacity-100 transition"
 			in:fly={{ y: -50 }}
 		>
 			Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
