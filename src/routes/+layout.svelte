@@ -11,6 +11,7 @@
 	import { goto } from '$app/navigation';
 	import { get } from '$lib/api';
 	import fillMetaTags from '$lib/services/fillMetaTags';
+	import isImagesLoaded from '$lib/stores/isImagesLoaded';
 
 	import techTools from '$lib/data/techTools';
 	import tools from '$lib/data/tools';
@@ -43,7 +44,7 @@
 
 <SvelteToast />
 
-<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px]">
+<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px] transition">
 	<div
 		class=" {!$page.params.stackId && $page.params.categoryKey
 			? 'sm:fixed'

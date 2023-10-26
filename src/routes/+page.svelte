@@ -2,6 +2,7 @@
 	import '../app.css';
 	import _ from 'lodash';
 	import { onMount } from 'svelte';
+	import isImagesLoaded from '$lib/stores/isImagesLoaded';
 	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
 	import { fade, fly } from 'svelte/transition';
@@ -115,8 +116,6 @@
 
 	let highlightOrder = [..._.range(1, 10), 20, 30, ..._.range(40, 30), 21, 11];
 
-	let isImagesLoaded = false;
-
 	let cycle = () => {
 		_.shuffle(highlightOrder).forEach((iconNum, i) => {
 			let icon = icons[iconNum - 1];
@@ -144,7 +143,7 @@
 					});
 
 					if (i === highlightOrder.length - 1) {
-						isImagesLoaded = true;
+						$isImagesLoaded = true;
 					}
 				}, 1000);
 			}, 20 * (i + 1));
@@ -170,28 +169,33 @@
 				Discover the best startup tools <span class="transition">
 					to <a
 						href="cat/landing-page"
+						class:white={!$isImagesLoaded}
 						on:mouseover={() => setCategory('landing-page')}
 						on:mouseleave={() => setCategory(null)}>Launch Websites</a
 					>,
 
 					<a
 						href="cat/blog-newsletter-emails"
+						class:white={!$isImagesLoaded}
 						on:mouseover={() => setCategory('blog-newsletter-emails')}
 						on:mouseleave={() => setCategory(null)}>Grow Audience</a
 					>,
 					<a
 						href="cat/customer-communication"
+						class:white={!$isImagesLoaded}
 						on:mouseover={() => setCategory('customer-communication')}
 						on:mouseleave={() => setCategory(null)}>Engage Customers</a
 					>,
 					<a
 						href="cat/crm"
+						class:white={!$isImagesLoaded}
 						on:mouseover={() => setCategory('crm')}
 						on:mouseleave={() => setCategory(null)}>Sell</a
 					>
 					and
 					<a
 						href="#tools"
+						class:white={!$isImagesLoaded}
 						on:mouseover={() => setCategory('all')}
 						on:mouseleave={() => setCategory(null)}>more</a
 					>.
@@ -226,7 +230,7 @@
 	{/key}
 </div>
 
-{#if isImagesLoaded}
+{#if $isImagesLoaded}
 	<div in:fly={{ duration: 150 }}>
 		<Stack {tools} {categories} />
 	</div>
@@ -237,6 +241,11 @@
 <style>
 	a {
 		color: yellow;
+		@apply transition;
 		text-shadow: none;
+	}
+
+	a.white {
+		color: rgb(255, 244, 123);
 	}
 </style>
