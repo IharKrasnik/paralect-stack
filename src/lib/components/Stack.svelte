@@ -149,8 +149,8 @@
 					}) as tool}
 					<a target="_blank" href={tool.url}>
 						<div class="section">
-							<div class="w-full aspect-og bg-zinc-900">
-								<Image src={tool.img} class="transition w-full object-cover aspect-og" />
+							<div class="w-full aspect-og bg-zinc-900 transition opacity-60 hover:opacity-100">
+								<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
 							</div>
 
 							<div class="p-4">
@@ -158,7 +158,7 @@
 									{tool.name}
 								</h3>
 
-								<div class="mt-2 opacity-80">{tool.description}</div>
+								<div class="mt-2 opacity-90">{tool.description}</div>
 							</div>
 						</div>
 					</a>

@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import _ from 'lodash';
+	import { onMount } from 'svelte';
 	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
 	import { fade } from 'svelte/transition';
@@ -92,6 +93,14 @@
 		move();
 	}
 
+	let isLoaded = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			isLoaded = true;
+		}, 100);
+	});
+
 	let activeCategory = null;
 
 	let intervalId;
@@ -117,7 +126,11 @@
 >
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">
 		<div class="flex justify-center items-center max-w-[600px] text-center mx-auto z-10 h-full">
-			<h1 class="text-3xl" style="text-shadow: 1px 1px #fffc65">
+			<h1
+				class="transition text-3xl"
+				class:opacity-10={!isLoaded}
+				style="text-shadow: 1px 1px #fffc65"
+			>
 				Discover the best startup tools to <a
 					href="cat/landing-page"
 					on:mouseover={() => setCategory('landing-page')}
@@ -156,9 +169,13 @@
 					{#if icon.name}
 						<a href="cat/{icon.category}?tool={icon.name}">
 							<img
-								class="shrink-0 aspect-square w-[120px] grayscale hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
-								class:grayscale={activeCategory !== 'all' && activeCategory !== icon.category}
-								class:opacity-20={activeCategory !== 'all' && activeCategory !== icon.category}
+								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 cursor-pointer transition"
+								class:grayscale={isLoaded &&
+									activeCategory !== 'all' &&
+									activeCategory !== icon.category}
+								class:opacity-20={isLoaded &&
+									activeCategory !== 'all' &&
+									activeCategory !== icon.category}
 								src="/products/{icon.name}.png"
 							/>
 						</a>

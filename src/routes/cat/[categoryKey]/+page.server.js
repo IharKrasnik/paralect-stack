@@ -9,7 +9,10 @@ export async function load({ params }) {
 	}
 
 	return {
-		ogTitle: `Top ${category.name}${category.noTools ? '' : ' Tools'} — Paralect Stack`,
+		ogTitle:
+			category.key === 'all'
+				? 'Top Tools To Grow Startups From An Idea To The Exit'
+				: `Top ${category.name}${category.noTools ? '' : ' Tools'} — Paralect Stack`,
 		ogDescription: category.description
 	};
 }
