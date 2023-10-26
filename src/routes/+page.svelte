@@ -2,6 +2,7 @@
 	import '../app.css';
 	import _ from 'lodash';
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 	import isImagesLoaded from '$lib/stores/isImagesLoaded';
 	import categories from '$lib/data/categories';
 	import tools from '$lib/data/tools';
@@ -230,7 +231,7 @@
 	{/key}
 </div>
 
-{#if $isImagesLoaded}
+{#if browser && $isImagesLoaded}
 	<div in:fly={{ duration: 150 }}>
 		<Stack {tools} {categories} />
 	</div>
