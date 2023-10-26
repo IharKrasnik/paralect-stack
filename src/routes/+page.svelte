@@ -151,7 +151,12 @@
 		});
 	};
 
-	cycle();
+	if (isMobile()) {
+		icons = icons.map((i) => ({ ...i, isHighlighted: false }));
+		$isImagesLoaded = true;
+	} else {
+		cycle();
+	}
 </script>
 
 <svelte:window bind:scrollY />
@@ -206,7 +211,7 @@
 	</div>
 
 	{#key updatedOn}
-		<div class="absolute top-0 left-0 grid sm:grid-cols-10 grid-cols-4 w-full h-full z-0" in:fade>
+		<div class="absolute top-0 left-0 grid sm:grid-cols-10 grid-cols-3 w-full h-full z-0" in:fade>
 			{#each icons as icon}
 				<div>
 					{#if icon.name}
