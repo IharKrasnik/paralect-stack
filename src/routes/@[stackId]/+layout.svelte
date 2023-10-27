@@ -1,5 +1,6 @@
 <script>
 	import _ from 'lodash';
+	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import stacks from '$lib/data/stacks';
 	import categories from '$lib/data/categories';

@@ -111,10 +111,11 @@
 					url: startupUrl,
 					name: getName(startupUrl),
 					description: ($formCache.metatags && $formCache.metatags.titleTag) || '',
+					logo: ($formCache.metatags && $formCache.metatags.favicon) || null,
 					img: ($formCache.metatags && $formCache.metatags.image) || null,
 					toolsStr,
 					tools: currentTools.map((t) => ({
-						key: t.key,
+						_id: t.key,
 						name: t.name
 					}))
 				}).then((stack) => {

@@ -22,7 +22,10 @@
 	let updateStack = async () => {
 		let updatedStack = await put(`stacks/${stack._id}`, {
 			...stack,
-			tools: getToolsFromInput(stack.toolsStr)
+			tools: getToolsFromInput(stack.toolsStr).map((t) => {
+				t._id = t.key;
+				return t;
+			})
 		});
 		if (updatedStack.slug) {
 			goto(`/@${updatedStack.slug}`);

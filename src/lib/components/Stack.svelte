@@ -38,7 +38,7 @@
 		showSuccessMessage('URL was copied to clipboard!');
 	};
 
-	let shuffleKey = +new Date();
+	let shuffleKey = 'start';
 
 	let shuffle = () => {
 		shuffleKey = +new Date();
@@ -69,7 +69,7 @@
 				src={activeStack.logo}
 			/>
 			<h1>{activeStack.name}</h1>
-			<h2 class="mt-2">{activeStack.description}</h2>
+			<h2 class="mt-2 text-[#e1e1e1]" style="opacity: 1;">{activeStack.description}</h2>
 
 			<div class="flex flex-col gap-4 sm:flex-row items-center mt-8 w-full sm:w-auto">
 				<a class="w-full sm:w-auto" href="/@{$page.params.stackId}/cat/all#tools">
@@ -172,7 +172,9 @@
 							href={tool.url}
 						>
 							<div class="w-full aspect-og bg-zinc-900 transition">
-								<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
+								{#if tool.img}
+									<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
+								{/if}
 							</div>
 
 							<div class="p-4 pb-2">
