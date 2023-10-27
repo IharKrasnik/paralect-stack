@@ -69,7 +69,7 @@
 				src={activeStack.logo}
 			/>
 			<h1>{activeStack.name}</h1>
-			<h2 class="mt-2 text-[#e1e1e1]" style="opacity: 1;">{activeStack.description}</h2>
+			<h2 class="mt-2 text-[#e1e1e1]" style="opacity: 1;">{activeStack.description || ''}</h2>
 
 			<div class="flex flex-col gap-4 sm:flex-row items-center mt-8 w-full sm:w-auto">
 				<a class="w-full sm:w-auto" href="/@{$page.params.stackId}/cat/all#tools">
@@ -107,8 +107,8 @@
 	</div>
 
 	<div
-		class="overflow-hidden sm:overflow-visible sm:min-h-screen p-4 sm:p-0 bg-black {!$page.params
-			.stackId && $page.params.categoryKey
+		class="overflow-hidden sm:overflow-visible w-full sm:min-h-screen p-4 sm:p-0 bg-black {!$page
+			.params.stackId && $page.params.categoryKey
 			? 'sm:ml-[304px]'
 			: ''}"
 	>
@@ -168,12 +168,17 @@
 					<div class="h-full flex flex-col justify-between">
 						<a
 							class="h-full section block card min-w-[80vw] sm:min-w-0"
+							class:disabled={!tool.url}
 							target="_blank"
 							href={tool.url}
 						>
 							<div class="w-full aspect-og bg-zinc-900 transition">
 								{#if tool.img}
 									<Image src={tool.img} class="img transition w-full object-cover aspect-og" />
+								{:else}
+									<div class="px-4 w-full h-full flex items-center justify-between text-center">
+										tool is under review
+									</div>
 								{/if}
 							</div>
 
@@ -183,7 +188,7 @@
 								</h3>
 							</div>
 
-							<div class="mb-4 px-4 opacity-90">{tool.description}</div>
+							<div class="mb-4 px-4 opacity-90">{tool.description || ''}</div>
 						</a>
 
 						{#if activeCategory.key === 'all'}
@@ -191,6 +196,7 @@
 								href={$page.params.stackId
 									? `@${$page.params.stackId}/cat/${tool.category}`
 									: `/cat/${tool.category}`}
+								class:disabled={!tool.url}
 								class="category-link section px-4 py-2 w-full opacity-80 bg-white/10"
 							>
 								{formatCategory(tool.category)}
@@ -263,12 +269,16 @@
 		@apply transition;
 	}
 
-	.category-link:hover {
+	.category-link:not(.disabled):hover {
 		background: rgb(255, 244, 123);
 		color: #111;
 	}
 
-	.card:hover {
+	.category-link.disabled {
+		cursor: default !important;
+	}
+
+	.card:not(.disabled):hover {
 		border: 1px rgb(255, 244, 123) solid;
 	}
 </style>

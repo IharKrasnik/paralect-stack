@@ -220,6 +220,8 @@
 		</div>
 	</div>
 
+	<div class="grid-cols-5 grid-cols-3" />
+
 	{#key updatedOn}
 		<div class="absolute top-0 left-0 grid sm:grid-cols-10 grid-cols-3 w-full h-full z-0" in:fade>
 			{#each icons as icon}

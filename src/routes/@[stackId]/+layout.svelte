@@ -3,25 +3,18 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import stacks from '$lib/data/stacks';
-	import categories from '$lib/data/categories';
-	import techCategories from '$lib/data/techCategories';
-	import tools from '$lib/data/tools';
-	import techTools from '$lib/data/techTools';
+	import allCategories from '$lib/data/allCategories';
+	import allTools from '$lib/data/allTools';
+
 	import Stack from '$lib/components/Stack.svelte';
 
 	let stack = stacks.find((s) => s.key === $page.params.stackId) || $page.data.stack;
 
-	let allTools = [...tools, ...techTools];
-	let allCategories = [...categories, ...techCategories];
-
 	let stackTools = stack.tools.map((stackTool) => {
-		let tool = allTools.find((t) => t.key === stackTool.key);
+		let tool = allTools.find((t) => t.key === (stackTool.key || stackTool._id));
 
 		if (!tool) {
-			return {
-				id: null,
-				name: stackTool.name
-			};
+			return stackTool;
 			// throw new Error('Not found tool ' + stackTool.key);
 		}
 

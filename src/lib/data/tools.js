@@ -499,7 +499,7 @@ export default [
 		url: 'https://linear.app/',
 		img: 'https://linear.app/static/og/home.jpg',
 		description:
-			'Linear is high-quality opinionated task tracker that helps you follow best development practices while keeping UI organized',
+			'High-quality opinionated task tracker that helps you follow best development practices while keeping UI organized',
 		favicon: '/static/favicon.svg'
 	},
 	{
