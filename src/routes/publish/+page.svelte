@@ -1,8 +1,12 @@
 <script>
 	import _ from 'lodash';
+	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
+	import { get, post } from '$lib/api';
 	import { browser } from '$app/environment';
 	import Loader from '$lib/components/Loader.svelte';
 	import LoginButton from '$lib/components/LoginButton.svelte';
+	import currentUser from '$lib/stores/currentUser';
 	import formCache from '$lib/stores/formCache';
 	import { fade, fly } from 'svelte/transition';
 	import { showErrorMessage } from '$lib/services/toast';
@@ -13,6 +17,10 @@
 	let allTools = [...tools, ...techTools];
 
 	let startupUrl = $formCache.startupUrl || '';
+
+	let getName = (startupUrl) => {
+		return startupUrl.replace('https://', '').replace('www.', '').split('.')[0];
+	};
 
 	function isValidHttpUrl(string) {
 		if (string && !string.startsWith('http')) {
@@ -40,7 +48,7 @@
 
 	let isUrl = false;
 
-	let checkStartupUrl = ({ url = startupUrl, showError = true, submitIfUrl = false }) => {
+	let checkStartupUrl = async ({ url = startupUrl, showError = true, submitIfUrl = false }) => {
 		isUrl = false;
 
 		if (url) {
@@ -53,6 +61,19 @@
 			} else {
 				if (submitIfUrl) {
 					isUrlSubmitted = true;
+
+					try {
+						try {
+							let { metatags } = await get(
+								'utils/fetch-meta-tags',
+								{ url: startupUrl },
+								{ skipError: true }
+							);
+							$formCache.metatags = metatags;
+						} finally {
+						}
+					} finally {
+					}
 				}
 			}
 
@@ -116,7 +137,38 @@
 	let toolsStr = $formCache.toolsStr || '';
 	getToolsFromInput(toolsStr);
 
-	let isStackSubmitted = true;
+	let isStackSubmitted = false;
+
+	let isSubmitting = false;
+
+	if (browser && $currentUser && $page.url.searchParams.get('create')) {
+		if (startupUrl && currentTools.length) {
+			isStackSubmitted = true;
+			isSubmitting = true;
+
+			try {
+				post('stacks', {
+					url: startupUrl,
+					name: getName(startupUrl),
+					description: ($formCache.metatags && $formCache.metatags.titleTag) || '',
+					img: ($formCache.metatags && $formCache.metatags.image) || null,
+					toolsStr,
+					tools: currentTools.map((t) => ({
+						key: t.key,
+						name: t.name
+					}))
+				}).then((stack) => {
+					startupUrl = '';
+					toolsStr = '';
+					currentTools = [];
+					$formCache = { ...$formCache, toolsStr, startupUrl: '', metatags: null };
+					goto(`/@${stack.slug}`);
+				});
+			} finally {
+				isSubmitting = false;
+			}
+		}
+	}
 
 	let submitStack = () => {
 		isStackSubmitted = true;
@@ -135,10 +187,6 @@
 			['toolsStr']: toolsStr
 		};
 	}
-
-	let getName = (startupUrl) => {
-		return startupUrl.replace('https://', '').replace('www.', '').split('.')[0];
-	};
 </script>
 
 <div class="min-h-screen">
@@ -152,20 +200,27 @@
 			</div>
 			<div class="mt-8 border border-white/20 p-8">
 				{#if isStackSubmitted}
-					<div class="w-full text-lg">
-						<div class="font-bold mb-2">That's a nice stack 👏</div>
-						<div>
-							Please log in to submit <span>{getName(startupUrl)}</span>
-							<span class="underline cursor-pointer" on:click={() => (isStackSubmitted = false)}
-								>stack</span
-							>
+					{#if $currentUser}
+						<div class="w-full text-center">
+							<div class="mb-4">Submitting Stack...</div>
+							<Loader />
 						</div>
-						<div>Once your page is published, we'll send you an email</div>
-					</div>
+					{:else}
+						<div class="w-full text-lg">
+							<div class="font-bold mb-2">That's a nice stack 👏</div>
+							<div>
+								Please log in to submit <span>{getName(startupUrl)}</span>
+								<span class="underline cursor-pointer" on:click={() => (isStackSubmitted = false)}
+									>stack</span
+								>
+							</div>
+							<div>Once your page is published, we'll send you an email</div>
+						</div>
 
-					<div class="w-full flex justify-center mt-8">
-						<LoginButton />
-					</div>
+						<div class="w-full flex justify-center mt-8">
+							<LoginButton />
+						</div>
+					{/if}
 				{:else if !isUrlSubmitted}
 					<div in:fade={{ duration: 150 }}>
 						<label class="text-lg">What's your startup url?</label>
@@ -173,6 +228,12 @@
 							autofocus
 							class="w-full mt-4"
 							placeholder="mycoolproduct.com"
+							on:keydown={(e) => {
+								if (e.key === 'Enter') {
+									e.preventDefault();
+									checkStartupUrl({ url: e.target.value, submitIfUrl: true });
+								}
+							}}
 							on:input={(e) => checkStartupUrl({ url: e.target.value, showError: false })}
 							on:paste={(e) => {
 								if (checkStartupUrl({ url: e.clipboardData.getData('text') })) {
@@ -249,33 +310,43 @@
 			</div>
 		</div>
 
-		<div class="w-full justify-center flex flex-wrap gap-4 mt-12">
-			{#each currentTools as currentTool, i}
-				{#if currentTool.name}
-					<div class="w-[200px] grayscale">
-						{#if currentTool.img}
-							<img
-								in:fly={{ duration: 150, y: -50 }}
-								class="aspect-video w-full object-cover"
-								src={currentTool.img}
-							/>
-						{:else}
-							<div class="aspect-video w-full bg-zinc-900 flex items-center justify-center">
-								under review
+		{#if isUrlSubmitted}
+			<div class="w-full justify-center flex flex-wrap gap-4 mt-12">
+				{#each currentTools as currentTool, i}
+					{#if currentTool.name}
+						<div class="w-[200px] grayscale">
+							{#if currentTool.img}
+								<img
+									in:fly={{ duration: 150, y: -50 }}
+									class="aspect-video w-full object-cover"
+									src={currentTool.img}
+								/>
+							{:else}
+								<div class="aspect-video w-full bg-zinc-900 flex items-center justify-center">
+									under review
+								</div>
+							{/if}
+							<div class="font-bold mt-4">
+								{currentTool.name}
 							</div>
-						{/if}
-						<div class="font-bold mt-4">
-							{currentTool.name}
 						</div>
-					</div>
-				{/if}
-			{/each}
-		</div>
+					{/if}
+				{/each}
+			</div>
+		{/if}
 
 		{#if !isUrlSubmitted}
 			<div class="mt-2 text-center w-full mt-8 opacity-80">
 				This form is super simple and takes less than 1 minute to complete
 			</div>
+		{/if}
+
+		{#if $formCache.metatags}
+			<img class="max-w-[600px] mx-auto mt-8" in:fade src={$formCache.metatags.image} />
+
+			{#if isUrlSubmitted}
+				<h2 class="mx-auto text-center mt-4">{getName(startupUrl)}</h2>
+			{/if}
 		{/if}
 	{/if}
 </div>

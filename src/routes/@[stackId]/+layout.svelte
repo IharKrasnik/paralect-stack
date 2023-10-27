@@ -8,7 +8,7 @@
 	import techTools from '$lib/data/techTools';
 	import Stack from '$lib/components/Stack.svelte';
 
-	let stack = stacks.find((s) => s.key === $page.params.stackId);
+	let stack = stacks.find((s) => s.key === $page.params.stackId) || $page.data.stack;
 
 	let allTools = [...tools, ...techTools];
 	let allCategories = [...categories, ...techCategories];
@@ -17,8 +17,13 @@
 		let tool = allTools.find((t) => t.key === stackTool.key);
 
 		if (!tool) {
-			throw new Error('Not found tool ' + stackTool.key);
+			return {
+				id: null,
+				name: stackTool.name
+			};
+			// throw new Error('Not found tool ' + stackTool.key);
 		}
+
 		return tool;
 	});
 
@@ -26,7 +31,12 @@
 		let category = allCategories.find((c) => c.key === st.category);
 
 		if (!category) {
-			throw new Error('Not found category ' + st.key);
+			return {
+				id: null,
+				name: 'unknown'
+			};
+
+			// throw new Error('Not found category ' + st.key);
 		}
 		return category;
 	});

@@ -21,8 +21,6 @@ export default async ({ url }, title = 'Paralect Stack') => {
 
 			try {
 				user = await api.get('users/current');
-				console.log('user', user);
-				user.username = user.username || 'igor.krasnik';
 				currentUser.set(user);
 			} catch (err) {
 				console.log('err', err);

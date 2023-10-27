@@ -26,7 +26,9 @@
 
 	let activeStack;
 
-	$: activeStack = $page.params.stackId ? stacks.find((s) => s.key === $page.params.stackId) : null;
+	$: activeStack = $page.params.stackId
+		? stacks.find((s) => s.key === $page.params.stackId) || $page.data.stack
+		: null;
 
 	let isLoaded = {};
 

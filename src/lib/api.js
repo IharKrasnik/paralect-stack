@@ -99,7 +99,7 @@ const ftch = async (method, url, params, options = {}) => {
 		return data;
 	} else {
 		const data = await res.json();
-		if (browser) {
+		if (browser && !options.skipError) {
 			toast.push('Error: ' + (data?.errors?.global || 'unknown'), {
 				duration: 3000,
 				pausable: true,
