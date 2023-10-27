@@ -4,6 +4,8 @@
 	import { goto } from '$app/navigation';
 	import { get, post } from '$lib/api';
 	import { browser } from '$app/environment';
+	import getToolsFromInput from '$lib/helpers/getToolsFromInput';
+
 	import Loader from '$lib/components/Loader.svelte';
 	import LoginButton from '$lib/components/LoginButton.svelte';
 	import currentUser from '$lib/stores/currentUser';
@@ -19,7 +21,7 @@
 	let startupUrl = $formCache.startupUrl || '';
 
 	let getName = (startupUrl) => {
-		return startupUrl.replace('https://', '').replace('www.', '').split('.')[0];
+		return _.capitalize(startupUrl.replace('https://', '').replace('www.', '').split('.')[0]);
 	};
 
 	function isValidHttpUrl(string) {
@@ -87,53 +89,6 @@
 
 	let currentTools = [];
 
-	let variants = [
-		{ options: ['tailwind', 'tailwindc', 'tailwindcs'], key: 'tailwindcss' },
-		{ options: ['mongo', 'mongod'], key: 'mongodb' }
-	];
-
-	let getToolsFromInput = (str = '') => {
-		if (!str.includes(',')) {
-			currentTools = [];
-			return;
-		}
-
-		let parts = str
-			.split(',')
-			.map((p) => _.trim(p))
-			.filter((p) => !!p);
-
-		if (parts < 2) {
-			currentTools = [];
-		}
-
-		currentTools = _.uniqBy(
-			parts.map(
-				(p) => {
-					let lowerCase = p.toLowerCase().split(' ').join('');
-
-					_.each(variants, (variant) => {
-						if (_.includes(variant.options, lowerCase)) {
-							lowerCase = variant.key;
-						}
-					});
-
-					let tool = allTools.find((t) => t.key === lowerCase);
-
-					if (!tool) {
-						return {
-							key: null,
-							name: p
-						};
-					} else {
-						return tool;
-					}
-				},
-				(t) => t.key
-			)
-		);
-	};
-
 	let toolsStr = $formCache.toolsStr || '';
 	getToolsFromInput(toolsStr);
 
@@ -141,7 +96,12 @@
 
 	let isSubmitting = false;
 
-	if (browser && $currentUser && $page.url.searchParams.get('create')) {
+	let submitStack = () => {
+		if (!$currentUser) {
+			isStackSubmitted = true;
+			return;
+		}
+
 		if (startupUrl && currentTools.length) {
 			isStackSubmitted = true;
 			isSubmitting = true;
@@ -168,11 +128,11 @@
 				isSubmitting = false;
 			}
 		}
-	}
-
-	let submitStack = () => {
-		isStackSubmitted = true;
 	};
+
+	if (browser && $currentUser && $page.url.searchParams.get('create')) {
+		submitStack();
+	}
 
 	$: if (startupUrl) {
 		$formCache = {
@@ -189,7 +149,7 @@
 	}
 </script>
 
-<div class="min-h-screen">
+<div class="min-h-screen px-4 sm:px-0">
 	{#if browser}
 		<div class="max-w-[700px] mx-auto">
 			<div>
@@ -342,10 +302,10 @@
 		{/if}
 
 		{#if $formCache.metatags}
-			<img class="max-w-[600px] mx-auto mt-8" in:fade src={$formCache.metatags.image} />
+			<img class="px-4 max-w-[600px] mx-auto mt-8" in:fade src={$formCache.metatags.image} />
 
 			{#if isUrlSubmitted}
-				<h2 class="mx-auto text-center mt-4">{getName(startupUrl)}</h2>
+				<h2 class="px-4 mx-auto text-center mt-4">{getName(startupUrl)}</h2>
 			{/if}
 		{/if}
 	{/if}

@@ -63,7 +63,7 @@
 <Stack
 	bind:categories={stackCategories}
 	bind:tools={stackTools}
-	stackId={$page.params.stackId}
+	{stack}
 	categoryKey={$page.params.categoryKey}
 	selectedTool={$page.url.searchParams.get('tool')}
 />

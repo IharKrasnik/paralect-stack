@@ -57,6 +57,11 @@
 			src={activeStack.img}
 		/>
 
+		{#if $currentUser && $currentUser._id === activeStack.user?._id}
+			<a href="/edit/@{activeStack.slug}">
+				<button class="absolute top-8 right-8 rotated secondary">Edit Stack</button>
+			</a>
+		{/if}
 		<div class="flex items-center flex-col text-center max-w-[600px] mx-auto px-4 z-10">
 			<img
 				class="w-auto h-[60px] rounded-lg mb-4 p-1"
@@ -89,7 +94,7 @@
 
 		{#each categories as category}
 			<a
-				href="{stackId ? `/@${stackId}/` : '/'}cat/{category.key}{stackId ? '#tools' : ''}"
+				href="/{stackId ? `@${stackId}/` : ''}cat/{category.key}{stackId ? '#tools' : ''}"
 				class="block nav-link pb-4 text-lg"
 				class:active={categoryKey === category.key}
 				style={category.key === 'all' && activeCategory.key !== 'all'
@@ -190,7 +195,8 @@
 							</a>
 						{/if}
 					</div>
-					{#if activeCategory.key === 'all' && i === 1}
+
+					{#if activeCategory.key === 'all' && i === 1 && !isCurrentUserLoading && !$currentUser}
 						<a
 							href="/publish"
 							style="border: 1px rgb(255, 244, 123) solid;"
