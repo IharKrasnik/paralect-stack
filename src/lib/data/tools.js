@@ -450,7 +450,7 @@ export default [
 		url: 'https://loom.com/',
 		img: 'https://cdn.sanity.io/images/pvn35iyy/production/2bb98edb0f378799d46fc7aa3564b9ad28604073-1200x627.png?fm=jpg',
 		description:
-			'Record desktop videos with easy and share by link. Replace sync calls with async videos and scale faster',
+			'Record desktop videos with ease and share by link. Replace sync calls with async videos and scale faster',
 		favicon: 'https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png'
 	},
 	{

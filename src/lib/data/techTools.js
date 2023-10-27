@@ -93,7 +93,7 @@ export default [
 		category: 'databases',
 		url: 'https://www.postgresql.org.pl/',
 		description: 'The most common scalable SQL database with open source code',
-		img: 'http://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png'
+		img: 'https://i0.wp.com/softwareengineeringdaily.com/wp-content/uploads/2021/03/PostgreSQL-Logo.jpg?fit=2400%2C1500'
 	},
 	{
 		key: 'bootstrap',

@@ -84,11 +84,7 @@
 			<a href="/about"
 				><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
 			>
-			<a
-				target="_blank"
-				href="https://twitter.com/that_igor_"
-				class={$page.params.stackId ? 'hidden sm:block' : ''}
-			>
+			<a href="/publish" class={$page.params.stackId ? 'hidden sm:block' : ''}>
 				<button class="rotated">Publish My Stack</button>
 			</a>
 		</div>

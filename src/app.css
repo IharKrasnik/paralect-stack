@@ -65,23 +65,8 @@ button.rotated:hover {
 	transform: none;
 }
 
-button:hover {
+button:not(:disabled):hover {
 	@apply shadow shadow-yellow-500/40 shadow-lg text-black transition;
-}
-
-button.orange {
-	@apply bg-orange-400 text-black;
-}
-
-button.green {
-	@apply bg-green-400 text-black;
-}
-button.green:hover {
-	@apply bg-green-200 text-black;
-}
-
-button.orange:hover {
-	@apply bg-orange-200 text-black;
 }
 
 button.secondary {
@@ -90,7 +75,7 @@ button.secondary {
 	@apply text-white;
 }
 
-button.secondary:hover {
+button:not(:disabled).secondary:hover {
 	outline: none;
 	@apply bg-brand;
 }
@@ -125,11 +110,14 @@ label {
 
 input,
 textarea {
+	@apply p-4 text-xl;
+}
+
+input,
+textarea {
 	background: none;
 	color: white;
 	border: 1px grey solid;
-
-	@apply rounded-lg p-2;
 }
 
 .form-hint {
