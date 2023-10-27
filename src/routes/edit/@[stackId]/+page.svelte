@@ -20,10 +20,13 @@
 	let stack = $page.data.stack;
 
 	let updateStack = async () => {
-		await put(`stacks/${stack._id}`, {
+		let updatedStack = await put(`stacks/${stack._id}`, {
 			...stack,
 			tools: getToolsFromInput(stack.toolsStr)
 		});
+		if (updatedStack.slug) {
+			goto(`/@${updatedStack.slug}`);
+		}
 	};
 </script>
 

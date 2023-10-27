@@ -90,7 +90,7 @@
 	let currentTools = [];
 
 	let toolsStr = $formCache.toolsStr || '';
-	getToolsFromInput(toolsStr);
+	currentTools = getToolsFromInput(toolsStr);
 
 	let isStackSubmitted = false;
 
@@ -229,7 +229,9 @@
 							autofocus
 							class="w-full mt-4"
 							bind:value={toolsStr}
-							on:input={(e) => getToolsFromInput(e.target.value)}
+							on:input={(e) => {
+								currentTools = getToolsFromInput(e.target.value);
+							}}
 							placeholder="webflow, airtable, sendgrid, carta, vercel, nextjs, tailwind css"
 						/>
 					</div>

@@ -11,7 +11,7 @@ export default (str = '') => {
 
 	if (!str.includes(',')) {
 		currentTools = [];
-		return;
+		return currentTools;
 	}
 
 	let parts = str
