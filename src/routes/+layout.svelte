@@ -25,6 +25,7 @@
 	fillMetaTags({ tools: toolsToFill });
 
 	let isYesCode = false;
+	$: isYesCode = $page.url.pathname === '/lists/yes-code';
 </script>
 
 <svelte:window bind:scrollY />
@@ -54,17 +55,28 @@
 			: ''} top-0 transition sm:mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
 		style="margin-bottom: -32px;"
 	>
-		<!-- <div class="absolute left-[50%] top-2" style="transform:translateX(-50%)">
+		<div class="absolute left-[50%] top-2" style="transform:translateX(-50%)">
 			<div class="grid grid-cols-3 justify-center">
 				<div class:opacity-50={isYesCode} class="transition p-1">No-Code</div>
 				<div class="w-full h-full flex justify-center items-center">
-					<Switch bind:checked={isYesCode} fontSize={15} design="slider" />
+					<Switch
+						onChange={(isCode) => {
+							if (isCode) {
+								goto('/lists/yes-code');
+							} else {
+								goto('/');
+							}
+						}}
+						bind:checked={isYesCode}
+						fontSize={15}
+						design="slider"
+					/>
 				</div>
 				<div class:opacity-50={!isYesCode} class="transition text-center p-1 opacity-50">
 					Yes-Code
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div>
 			<div class="flex items-center">

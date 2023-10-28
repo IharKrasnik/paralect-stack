@@ -8,6 +8,7 @@
 	export let options = [];
 	export let fontSize = 16;
 
+	export let onChange = () => {};
 	export let checked = true;
 
 	const uniqueID = Math.floor(Math.random() * 100);
@@ -18,6 +19,8 @@
 		const state = target.getAttribute('aria-checked');
 
 		checked = state === 'true' ? false : true;
+
+		onChange(checked);
 	}
 
 	const slugify = (str = '') => str.toLowerCase().replace(/ /g, '-').replace(/\./g, '');

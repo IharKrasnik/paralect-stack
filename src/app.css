@@ -89,6 +89,10 @@ button.whiteb:hover {
 	@apply opacity-100;
 }
 
+button.dos:hover {
+	background: white !important;
+}
+
 label {
 	display: block;
 	@apply font-bold mb-2;
