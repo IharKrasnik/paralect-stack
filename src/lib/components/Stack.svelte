@@ -74,7 +74,7 @@
 
 			<div class="flex flex-col gap-4 sm:flex-row items-center mt-8 w-full sm:w-auto">
 				<a class="w-full sm:w-auto" href="/@{$page.params.stackId}/cat/all#tools">
-					<button class="w-full mr-4">View Tech Stack</button>
+					<button class="w-full mr-4">View Tech Stack ↓</button>
 				</a>
 				<a class="w-full sm:w-auto" href={activeStack.url} target="_blank">
 					<button class="w-full secondary">Visit {activeStack.name} Website</button></a
@@ -85,27 +85,29 @@
 {/if}
 
 <div class="relative flex mb-8 items-start" id="tools">
-	<div
-		class=" top-24 bottom-4 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
-		class:fixed={!$page.params.stackId && $page.params.categoryKey}
-	>
-		<!-- <a href="/cat/all" class="block nav-link pb-4 text-lg" class:active={categoryKey === 'all'}>
+	{#if !activeStack}
+		<div
+			class=" top-24 bottom-4 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
+			class:fixed={!$page.params.stackId && $page.params.categoryKey}
+		>
+			<!-- <a href="/cat/all" class="block nav-link pb-4 text-lg" class:active={categoryKey === 'all'}>
 			All Tools
 		</a> -->
 
-		{#each categories as category}
-			<a
-				href="/{stackId ? `@${stackId}/` : ''}cat/{category.key}{stackId ? '#tools' : ''}"
-				class="block nav-link pb-4 text-lg"
-				class:active={categoryKey === category.key}
-				style={category.key === 'all' && activeCategory.key !== 'all'
-					? 'color: rgb(255, 244, 123);'
-					: ''}
-			>
-				{category.name}
-			</a>
-		{/each}
-	</div>
+			{#each categories as category}
+				<a
+					href="/cat/{category.key}{stackId ? '#tools' : ''}"
+					class="block nav-link pb-4 text-lg"
+					class:active={categoryKey === category.key}
+					style={category.key === 'all' && activeCategory.key !== 'all'
+						? 'color: rgb(255, 244, 123);'
+						: ''}
+				>
+					{category.name}
+				</a>
+			{/each}
+		</div>
+	{/if}
 
 	<div
 		class="overflow-hidden sm:overflow-visible w-full sm:min-h-screen p-4 sm:p-0 bg-black {!$page
@@ -116,18 +118,22 @@
 		<div class="max-w-screen flex justify-between items-center mt-8">
 			<div class="w-full">
 				<div class="flex items-center">
-					<h1>
-						{#if activeCategory.title}
-							{activeCategory.title}
-						{:else if $page.params.stackId}
-							{activeCategory.key === 'all'
-								? `${activeStack.name} Startup Stack`
-								: `${activeCategory.name}`}
-						{:else}
-							{activeCategory.key === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
-							{activeCategory.noTools ? '' : 'Tools'}
-						{/if}
-					</h1>
+					{#if activeStack}
+						<h1>Tech tools used by {activeStack.name}</h1>
+					{:else}
+						<h1>
+							{#if activeCategory.title}
+								{activeCategory.title}
+							{:else if $page.params.stackId}
+								{activeCategory.key === 'all'
+									? `${activeStack.name} Startup Stack`
+									: `${activeCategory.name}`}
+							{:else}
+								{activeCategory.key === 'all' ? 'All Tools' : `Top ${activeCategory.name}`}
+								{activeCategory.noTools ? '' : 'Tools'}
+							{/if}
+						</h1>
+					{/if}
 					<div>
 						{#if tools
 							.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
@@ -142,7 +148,13 @@
 						{/if}
 					</div>
 				</div>
-				<h2 class="mt-2 max-w-[80%]">{activeCategory.description || ''}</h2>
+				{#if activeStack}
+					<h2 class="mt-2 max-w-[80%]">
+						No-code tools, developer tools, startup utilities and more
+					</h2>
+				{:else}
+					<h2 class="mt-2 max-w-[80%]">{activeCategory.description || ''}</h2>
+				{/if}
 			</div>
 
 			<button class="flex-shrink-0 hidden sm:flex items-center secondary whiteb" on:click={copyUrl}>
@@ -194,9 +206,7 @@
 
 						{#if activeCategory.key === 'all'}
 							<a
-								href={$page.params.stackId
-									? `@${$page.params.stackId}/cat/${tool.category?._id || tool.category}`
-									: `/cat/${tool.category?._id || tool.category}`}
+								href={`/cat/${tool.category?._id || tool.category}`}
 								class:disabled={!tool.url}
 								class="category-link section px-4 py-2 w-full opacity-80 bg-white/10"
 							>
