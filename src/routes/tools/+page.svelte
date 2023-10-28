@@ -17,7 +17,12 @@
 	let loadTools = async () => {
 		let { results } = await get('tools');
 
-		tools = results;
+		tools = results.map((t) => {
+			if (!t.category) {
+				t.category = { _id: '' };
+			}
+			return t;
+		});
 	};
 
 	loadTools();
@@ -44,11 +49,13 @@
 		<div class="w-full grid grid-cols-3 gap-2 mb-4">
 			<div>
 				<input class="w-full" placeholder="Tool Name" bind:value={tool.name} />
+
 				<div class="flex justify-between">
 					<input class="w-full" placeholder="tool.com" bind:value={tool.url} />
 
 					<Button class="secondary whiteb" onClick={() => fetchMeta({ tool })}>fetch</Button>
 				</div>
+				<input class="w-full" placeholder="Category" bind:value={tool.category._id} />
 			</div>
 			<div>
 				<textarea

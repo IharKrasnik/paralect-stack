@@ -22,7 +22,7 @@
 	});
 
 	let stackCategories = _.uniqBy(stackTools, (t) => t.category).map((st) => {
-		let category = allCategories.find((c) => c.key === st.category);
+		let category = allCategories.find((c) => c.key === (st.category?._id || st.category));
 
 		if (!category) {
 			return {

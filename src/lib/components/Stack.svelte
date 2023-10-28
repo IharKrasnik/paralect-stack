@@ -44,7 +44,8 @@
 		shuffleKey = +new Date();
 	};
 
-	let formatCategory = (categoryKey) => {
+	let formatCategory = (c) => {
+		let categoryKey = c?._id || c;
 		let category = categories.find((c) => c.key === categoryKey);
 		return category?.name || '';
 	};
@@ -194,8 +195,8 @@
 						{#if activeCategory.key === 'all'}
 							<a
 								href={$page.params.stackId
-									? `@${$page.params.stackId}/cat/${tool.category}`
-									: `/cat/${tool.category}`}
+									? `@${$page.params.stackId}/cat/${tool.category?._id || tool.category}`
+									: `/cat/${tool.category?._id || tool.category}`}
 								class:disabled={!tool.url}
 								class="category-link section px-4 py-2 w-full opacity-80 bg-white/10"
 							>
