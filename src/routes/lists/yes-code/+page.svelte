@@ -13,8 +13,8 @@
 				<div class="mx-auto bg-white" style="color:#00007e; font: bold;">Help Stack Pls ♥</div>
 			</div>
 			<div class="mt-8">
-				An error has occured! <br />
-				Dev stack is still in beta. <br /><br />
+				An error has occurred! <br />
+				Dev Stack is still in beta. <br /><br />
 
 				But you know what.. you can help us create the most decent modern tools library.<br /><br />
 				See, we don't want to add thousands of tools here. Tech comes and ago. We want to list only battle-tested
