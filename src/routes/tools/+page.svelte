@@ -19,10 +19,23 @@
 
 		tools = results;
 	};
+
 	loadTools();
 
 	let updateTool = async (tool) => {
 		let updatedTool = await put(`tools/${tool._id}`, tool);
+	};
+
+	let fetchMeta = async ({ tool }) => {
+		let { metatags } = await get('utils/fetch-meta-tags', {
+			url: tool.url
+		});
+
+		tool.description = metatags.title + ' ' + metatags.description;
+		tool.img = metatags.image;
+		tool.logo = metatags.favicon;
+
+		tools = [...tools];
 	};
 </script>
 
@@ -31,7 +44,11 @@
 		<div class="w-full grid grid-cols-3 gap-2 mb-4">
 			<div>
 				<input class="w-full" placeholder="Tool Name" bind:value={tool.name} />
-				<input class="w-full" placeholder="tool.com" bind:value={tool.url} />
+				<div class="flex justify-between">
+					<input class="w-full" placeholder="tool.com" bind:value={tool.url} />
+
+					<Button class="secondary whiteb" onClick={() => fetchMeta({ tool })}>fetch</Button>
+				</div>
 			</div>
 			<div>
 				<textarea
@@ -44,7 +61,9 @@
 			<div class="flex">
 				<div>
 					<FileInput placeholder="Background URL" bind:url={tool.img} />
-					<FileInput placeholder="Logo URL" bind:url={tool.logo} />
+					<div>
+						<FileInput placeholder="Logo URL" bind:url={tool.logo} />
+					</div>
 				</div>
 				<div class="p-2">
 					<Button class="secondary whiteb" onClick={() => updateTool(tool)}>Update</Button>
