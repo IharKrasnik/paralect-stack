@@ -12,7 +12,7 @@
 			<div class="flex justify-center">
 				<img
 					src={stack.logo}
-					class="object-cover border-white/20 mb-8"
+					class="object-cover border-2 border-white/50 mb-8"
 					style="width: 80px; height: 80px;"
 				/>
 			</div>
@@ -22,14 +22,21 @@
 		>
 			<div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
 				<div
-					class="_title underline"
+					class="relative _title flex"
 					style="font-size: 58px; font-weight: bold; text-align: center;"
 				>
-					{stack.name} — Startup Stack
+					{stack.name}
+					<span class="text-yellow-300/90 ml-4"> Startup Stack</span>
+
+					<img
+						class="absolute right-[130px] top-12 z-10"
+						style="width: 50px; height: 50px;"
+						src="https://static.vecteezy.com/system/resources/previews/011/720/952/original/simple-hand-cursor-free-png.png"
+					/>
 				</div>
 
 				{#if stack.description}
-					<div style="font-size: 35px;  text-align: center; margin-top: 32px; max-width: 95%;">
+					<div class="mt-4" style="font-size: 45px;  text-align: center; max-width: 90%;">
 						{stack.description}
 					</div>
 				{/if}
