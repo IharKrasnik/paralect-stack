@@ -1,11 +1,13 @@
 import categories from '$lib/data/categories';
 
+import { redirect } from '@sveltejs/kit';
+
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
 	let category = categories.find((c) => c.key === params.categoryKey);
 
 	if (!category) {
-		return {};
+		throw redirect(302, '/lists/yes-code');
 	}
 
 	return {

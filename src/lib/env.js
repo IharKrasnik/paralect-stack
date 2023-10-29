@@ -8,6 +8,8 @@ let isProduction = import.meta.env.VITE_APP_ENV === 'production';
 
 export let isDev = !isProduction;
 
+export const WEB_URL = isDev ? 'http://localhost:5191' : 'https://stack.paralect.com';
+
 export const API_URL = isDev
 	? 'https://ship-653bafe38ea85800129cdd11.paralect.net'
 	: 'https://ship-prod-653bafe38ea85800129cdd11.paralect.net';
