@@ -48,7 +48,9 @@
 							</div>
 						</div>
 
-						<div class="w-[278px] flex-shrink-0" style="aspect-ratio: 1.63;">
+						<div
+							class="relative overflow-hidden w-full sm:w-[278px] sm:aspect-[1.63] max-h-[200px] sm:max-h-auto flex-shrink-0"
+						>
 							<img
 								class="banner object-cover top-0 left-0 grayscale z-1 w-full h-full"
 								src={stack.img}
