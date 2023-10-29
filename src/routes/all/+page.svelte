@@ -29,14 +29,14 @@
 					class="stack-link relative block mb-8 border border-white/20 hover:border-yellow-200"
 					href="/@{stack.slug}"
 				>
-					<div class="flex justify-between w-full z-10">
+					<div class="flex flex-col-reverse sm:flex-row justify-between w-full z-10">
 						<div class="flex flex-col w-full justify-between">
 							<div class="p-4 pb-8">
 								<div class="text-lg font-bold">{stack.name}</div>
 								<div class="mt-2">{stack.description}</div>
 							</div>
 
-							<div class="w-full grid grid-cols-9 bg-[#111]" style="">
+							<div class="w-full grid grid-cols-9 sm:grid-cols-9 bg-[#111]" style="">
 								{#each _.take(_.shuffle(stack.tools), 9) as tool}
 									<a
 										href={`/cat/${tool.category?._id}?tool=${tool._id}`}
