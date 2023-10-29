@@ -178,7 +178,7 @@
 <svelte:window bind:scrollY />
 
 <div
-	class="relative flex items-center bg-zinc-900 overflow-hidden my-8 sm:mt-28"
+	class="relative flex items-center bg-zinc-900 overflow-hidden my-8 mt-24 sm:mt-28"
 	style="height: 480px"
 >
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">

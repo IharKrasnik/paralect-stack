@@ -80,11 +80,11 @@
 		>
 			{#if $page.url.pathname === '/' || $page.url.pathname === '/lists/yes-code'}
 				<div
-					class="absolute left-[50%] top-12 transition"
-					style="transform:translateX(-50%)"
+					class="absolute left-[50%] transition top-[70px] sm:top-[50px]"
+					style="transform:translateX(-50%);"
 					class:opacity-50={$page.url.pathname === '/' && !$isImagesLoaded}
 				>
-					<div class="grid grid-cols-3 justify-center">
+					<div class="grid grid-cols-3 justify-center w-[250px]">
 						<div class:opacity-50={isYesCode} class="transition p-1">No-Code</div>
 						<div class="w-full h-full flex justify-center items-center">
 							<Switch
@@ -107,10 +107,10 @@
 				</div>
 			{/if}
 
-			<div>
-				<div class="flex items-center">
-					<a href="/" class="block w-[110px]">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1431 443" fill="none"
+			<div class="w-full sm:w-auto">
+				<div class="flex items-center justify-between sm:justify-start">
+					<a href="/" class="flex items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 1431 443" fill="none"
 							><script xmlns=""></script>
 							<path
 								fill-rule="evenodd"
@@ -123,10 +123,11 @@
 								fill="white"
 							/>
 						</svg>
+						<a href="/" style="font-family: VT323;"
+							><span class="mr-2 ml-4 font-bold text-xl">Stack</span></a
+						>
 					</a>
-					<div class="ml-4 flex items-center text-xl" style="font-family: VT323;">
-						<a href="/"><span class="ml-2 mr-2 font-bold text-xl">Stack</span></a>
-
+					<div class="flex items-center text-xl" style="font-family: VT323;">
 						{#if $page.params.stackId}
 							<a class="flex" href="/@{$page.params.stackId}">
 								<span class="opacity-30 mx-2">/</span>
@@ -159,7 +160,7 @@
 				<a href="/about"
 					><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
 				>
-				<a href="/publish" class={$page.params.stackId ? 'hidden sm:block' : ''}>
+				<a href="/publish" class="hidden sm:block">
 					<button class="rotated">Publish My Stack</button>
 				</a>
 			</div>
