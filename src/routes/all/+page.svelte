@@ -48,11 +48,12 @@
 							</div>
 						</div>
 
-						<img
-							style="aspect-ratio: 1.63;"
-							class="banner w-[278px] object-cover top-0 left-0 grayscale z-1"
-							src={stack.img}
-						/>
+						<div class="w-[278px] flex-shrink-0" style="aspect-ratio: 1.63;">
+							<img
+								class="banner object-cover top-0 left-0 grayscale z-1 w-full h-full"
+								src={stack.img}
+							/>
+						</div>
 					</div>
 				</a>
 			{/each}

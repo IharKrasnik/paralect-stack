@@ -58,7 +58,7 @@
 			src={activeStack.img}
 		/>
 
-		{#if $currentUser && $currentUser._id === activeStack.user?._id}
+		{#if $currentUser && ($currentUser.isAdmin || $currentUser._id === activeStack.user?._id)}
 			<a href="/edit/@{activeStack.slug}">
 				<button class="absolute top-8 right-8 rotated secondary">Edit Stack</button>
 			</a>
@@ -215,7 +215,7 @@
 						{/if}
 					</div>
 
-					{#if activeCategory.key === 'all' && i === 1}
+					{#if activeCategory.key === 'all' && !$currentUser && (activeStack ? i === activeStack.tools.length - 1 : i === 1)}
 						<a
 							href="/publish"
 							style="border: 1px rgb(255, 244, 123) solid;"
