@@ -2,22 +2,29 @@
 	export let stack;
 </script>
 
-<div style="display: flex; flex-direction: column;">
-	<div style="display:flex;">
-		<!-- <img
-			src="https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698605334464-image.png"
-		/> -->
-	</div>
+<div style="display: flex; flex-direction: column; background-color: #111; color: #fff; ">
 	<div style="font-weight: bold; font-size: 32px; background-color: #111; color: #fff; ">
 		{stack.name}
 	</div>
 
 	<div class="og">
+		{#if stack.logo}
+			<div class="flex justify-center">
+				<img
+					src={stack.logo}
+					class="object-cover border-white/20 mb-8"
+					style="width: 80px; height: 80px;"
+				/>
+			</div>
+		{/if}
 		<div
 			style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 245px;"
 		>
 			<div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-				<div class="_title" style="font-size: 58px; font-weight: bold; text-align: center;">
+				<div
+					class="_title underline"
+					style="font-size: 58px; font-weight: bold; text-align: center;"
+				>
 					{stack.name} — Startup Stack
 				</div>
 
