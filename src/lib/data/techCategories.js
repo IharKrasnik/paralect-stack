@@ -7,6 +7,11 @@ export default [
 		noTools: true
 	},
 	{
+		key: 'auth',
+		name: 'Auth',
+		description: 'Libraries and platforms for user Auth'
+	},
+	{
 		key: 'databases',
 		name: 'Databases',
 		descriptions: 'Cloud based modern scalable databases'
