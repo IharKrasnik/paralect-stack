@@ -21,6 +21,7 @@ export const GET = async ({ url }) => {
 
 	const name = url.searchParams.get('name') ?? undefined;
 	const description = url.searchParams.get('description') ?? undefined;
+	const logo = url.searchParams.get('logo') ?? undefined;
 
 	let componentResult;
 
@@ -31,7 +32,8 @@ export const GET = async ({ url }) => {
 	} else {
 		stack = {
 			name,
-			description
+			description,
+			logo
 		};
 	}
 

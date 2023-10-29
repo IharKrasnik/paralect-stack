@@ -13,7 +13,9 @@ export async function load({ params }) {
 			stack.ogImage ||
 			`${WEB_URL}/stack-og.png?name=${encodeURIComponent(
 				stack.name
-			)}&description=${encodeURIComponent(stack.description)}`,
+			)}&description=${encodeURIComponent(stack.description)}&logo=${encodeURIComponent(
+				stack.logo
+			)}`,
 		stack
 	};
 }
