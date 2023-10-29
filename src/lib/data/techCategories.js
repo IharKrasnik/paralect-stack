@@ -43,6 +43,10 @@ export default [
 		name: 'Frontend Libraries'
 	},
 	{
+		key: 'backend-libraries',
+		name: 'Backend Libraries'
+	},
+	{
 		key: 'dev-utils',
 		name: 'Dev Utils'
 	},
