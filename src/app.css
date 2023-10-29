@@ -51,9 +51,10 @@ body {
 
 button,
 button[type='submit'] {
+	color: var(--color-brand-text);
 	background-color: var(--color-brand);
 	outline: 2px var(--color-brand) solid;
-	@apply flex items-center justify-center py-2 px-4 text-black;
+	@apply flex items-center justify-center py-2 px-4;
 }
 
 button.rotated {
@@ -65,8 +66,14 @@ button.rotated:hover {
 	transform: none;
 }
 
+.shadow-brand {
+	@apply shadow-yellow-500/40;
+	box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px var(--shadow-color),
+		0 4px 6px -4px var(--shadow-color);
+}
+
 button:not(:disabled):hover {
-	@apply shadow shadow-yellow-500/40 shadow-lg text-black transition;
+	@apply shadow shadow-brand shadow-lg transition;
 }
 
 button.secondary {

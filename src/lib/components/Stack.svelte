@@ -49,14 +49,12 @@
 		let category = categories.find((c) => c.key === categoryKey);
 		return category?.name || '';
 	};
-
-	debugger;
 </script>
 
 {#if $page.params.stackId}
 	<div class="relative py-16 w-full bg-[#111] flex justify-center items-center mt-8 sm:mt-[-64px]">
 		<img
-			class="absolute left-0 top-0 w-full h-full grayscale opacity-20 z-1 object-cover"
+			class="absolute left-0 top-0 w-full h-full grayscale brightness-50 opacity-20 z-1 object-cover"
 			src={activeStack.img}
 		/>
 
@@ -217,7 +215,7 @@
 						{/if}
 					</div>
 
-					{#if activeCategory.key === 'all' && i === 1 && !isCurrentUserLoading && !$currentUser}
+					{#if activeCategory.key === 'all' && i === 1}
 						<a
 							href="/publish"
 							style="border: 1px rgb(255, 244, 123) solid;"

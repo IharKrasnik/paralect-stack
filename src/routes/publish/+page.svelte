@@ -150,9 +150,9 @@
 	}
 </script>
 
-<div class="min-h-screen px-4 sm:px-0">
+<div class="min-h-screen">
 	{#if browser}
-		<div class="max-w-[700px] mx-auto">
+		<div class="max-w-[700px] mx-auto mt-4 p-4">
 			<div>
 				<h1>Publish Your Startup Stack</h1>
 				<h2 class="mt-2">

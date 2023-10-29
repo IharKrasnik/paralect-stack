@@ -11,7 +11,7 @@
 	import Stack from '$lib/components/Stack.svelte';
 	import Image from '$lib/components/Image.svelte';
 
-	let startIcons = _.shuffle([
+	let icons = _.shuffle([
 		'airtable',
 		'apollo',
 		'beehiiv',
@@ -23,10 +23,8 @@
 		'linear',
 		'mercury',
 		'miro',
-		'retool'
-	]);
+		'retool',
 
-	let endIcons = _.shuffle([
 		'senja',
 		'slack',
 		'stripe_atlas',
@@ -41,10 +39,11 @@
 		'semrush'
 	]);
 
-	let middleLeftIcons = [startIcons.pop(), startIcons.pop()];
-	let middleRightIcons = [endIcons.pop(), endIcons.pop()];
+	let startIcons = _.take(icons, 10);
+	let endIcons = _.takeRight(icons, 10);
 
-	let icons;
+	let middleLeftIcons = [icons[10], icons[11]];
+	let middleRightIcons = [icons[12], icons[13]];
 
 	let createIcons = () => {
 		icons = [
@@ -151,6 +150,8 @@
 		});
 	};
 
+	let isFastTransition = false;
+
 	setTimeout(() => {
 		icons = icons.map((icon) => {
 			return {
@@ -158,7 +159,12 @@
 				isHighlighted: false
 			};
 		});
+
 		$isImagesLoaded = true;
+
+		setTimeout(() => {
+			isFastTransition = true;
+		}, 0);
 	}, 1500);
 
 	if (isMobile()) {
@@ -172,7 +178,7 @@
 <svelte:window bind:scrollY />
 
 <div
-	class="relative flex items-center bg-zinc-900 overflow-hidden my-8 sm:mt-0 sm:mt-24"
+	class="relative flex items-center bg-zinc-900 overflow-hidden my-8 sm:mt-28"
 	style="height: 480px"
 >
 	<div class="flex items-center w-[80%] mx-auto" style="height: 240px">
@@ -231,7 +237,7 @@
 							<div
 								class="shrink-0 aspect-square w-[120px] hover:grayscale-0 hover:opacity-100 hover:transition cursor-pointer"
 								class:transition={$isImagesLoaded}
-								class:slowtransition={!icon.isHighlighted}
+								class:slowtransition={!isFastTransition && !icon.isHighlighted}
 								class:grayscale={!icon.isHighlighted &&
 									activeCategory !== 'all' &&
 									activeCategory !== icon.category}

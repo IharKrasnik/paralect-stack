@@ -1,12 +1,12 @@
 export default [
-	{
-		category: 'paas',
-		key: 'vercel',
-		url: 'https://vercel.com/',
-		name: 'Vercel',
-		img: 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/d2a3db0b85b3a8ae3df41e7357840ef5/og.png',
-		description: 'Popular scalable and fast developer cloud'
-	},
+	// {
+	// 	category: 'paas',
+	// 	key: 'vercel',
+	// 	url: 'https://vercel.com/',
+	// 	name: 'Vercel',
+	// 	img: 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/d2a3db0b85b3a8ae3df41e7357840ef5/og.png',
+	// 	description: 'Popular scalable and fast developer cloud'
+	// },
 	{
 		category: 'databases',
 		key: 'supabase',
@@ -259,15 +259,15 @@ export default [
 		description: '600+ Tailwind CSS components designed in Figma',
 		img: 'https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/29293/flowbite-vue.jpg'
 	},
-	{
-		key: 'sveltekit',
-		name: 'SvelteKit',
-		category: 'full-stack-frameworks',
-		url: 'https://kit.svelte.dev/',
-		favicon: 'https://kit.svelte.dev/favicon.png',
-		img: 'https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8',
-		description: 'Server-side framework based on Svelte'
-	},
+	// {
+	// 	key: 'sveltekit',
+	// 	name: 'SvelteKit',
+	// 	category: 'full-stack-frameworks',
+	// 	url: 'https://kit.svelte.dev/',
+	// 	favicon: 'https://kit.svelte.dev/favicon.png',
+	// 	img: 'https://repository-images.githubusercontent.com/398741015/1e5a13a9-35c1-4373-8eeb-0bbeda88a7d8',
+	// 	description: 'Server-side framework based on Svelte'
+	// },
 	{
 		key: 'plasmo',
 		name: 'Plasmo',

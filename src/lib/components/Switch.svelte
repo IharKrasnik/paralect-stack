@@ -68,7 +68,6 @@
 
 <style>
 	:root {
-		--accent-color: yellow;
 		--gray: #222;
 	}
 	/* Inner Design Option */
@@ -90,7 +89,7 @@
 	}
 
 	.s--inner button:focus {
-		outline: var(--accent-color) solid 1px;
+		outline: var(--color-brand) solid 1px;
 	}
 
 	/* Slider Design Option */
@@ -121,7 +120,7 @@
 	}
 
 	.s--slider button[aria-checked='true'] {
-		background-color: var(--accent-color);
+		background-color: var(--color-brand);
 	}
 
 	.s--slider button[aria-checked='true']::before {
@@ -130,7 +129,7 @@
 	}
 
 	.s--slider button:focus {
-		box-shadow: 0 0px 0px 1px var(--accent-color);
+		box-shadow: 0 0px 0px 1px var(--color-brand);
 	}
 
 	/* Multi Design Option */
@@ -172,7 +171,7 @@
 	}
 
 	.s--multi:focus-within label:first-of-type:after {
-		box-shadow: 0 0px 8px var(--accent-color);
+		box-shadow: 0 0px 8px var(--color-brand);
 		border-radius: 1.5em;
 	}
 
@@ -200,7 +199,7 @@
 	}
 
 	.s--multi label:first-of-type:after {
-		background: var(--accent-color);
+		background: var(--color-brand);
 		border-radius: 1em;
 		margin: 0 1em;
 		transition: background 0.2s ease-in-out;
@@ -221,7 +220,7 @@
 	}
 
 	.s--multi input:focus {
-		box-shadow: 0 0px 8px var(--accent-color);
+		box-shadow: 0 0px 8px var(--color-brand);
 		border-radius: 1.5em;
 	}
 
@@ -231,12 +230,12 @@
 	[role='switch'][aria-checked='true'] :first-child,
 	[role='switch'][aria-checked='false'] :last-child {
 		border-radius: 0.25em;
-		background: var(--accent-color);
+		background: var(--color-brand);
 		display: inline-block;
 	}
 
 	.s--inner button:focus {
-		box-shadow: 0 0px 8px var(--accent-color);
+		box-shadow: 0 0px 8px var(--color-brand);
 		border-radius: 0.1em;
 	}
 
@@ -250,7 +249,7 @@
 	}
 
 	.s--slider button:focus {
-		box-shadow: 0 0px 8px var(--accent-color);
+		box-shadow: 0 0px 8px var(--color-brand);
 		border-radius: 1.5em;
 	}
 </style>
