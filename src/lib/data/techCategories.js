@@ -12,6 +12,11 @@ export default [
 		description: 'Libraries and platforms for user Auth'
 	},
 	{
+		key: 'monitoring',
+		name: 'Monitoring',
+		description: 'Libraries and platforms for user Auth'
+	},
+	{
 		key: 'databases',
 		name: 'Databases',
 		descriptions: 'Cloud based modern scalable databases'
