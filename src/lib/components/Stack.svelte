@@ -49,6 +49,8 @@
 		let category = categories.find((c) => c.key === categoryKey);
 		return category?.name || '';
 	};
+
+	debugger;
 </script>
 
 {#if $page.params.stackId}
