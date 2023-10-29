@@ -169,14 +169,15 @@
 
 	<div
 		class="container mx-auto h-full max-w-[1200px] mb-16 z-10 relative {$page.params.categoryKey
-			? 'mt-8'
-			: ''} sm:mt-24"
+			? ''
+			: ''} mt-16 sm:mt-24"
 	>
 		<slot />
 	</div>
 
 	<div class="bg-zinc-900 w-full p-4 sm:hidden">
-		<div class="font-bold text-xl mb-4">Tools Categories</div>
+		<div class="font-bold text-2xl mb-4">Stack Categories</div>
+
 		{#each categories as category}
 			<a
 				href="/cat/{category.key}"
