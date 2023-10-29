@@ -170,7 +170,7 @@ export default [
 		name: 'Crisp',
 		url: 'https://crisp.chat/',
 		img: 'https://crisp.chat/static/images/og/home.en.min.png',
-		description: 'Chat platform with Knowledge Base, robust analytics and tones of plugins',
+		description: 'Chat platform with Knowledge Base, robust analytics and tons of plugins',
 		favicon: 'https://crisp.chat/favicon.png'
 	},
 	{
@@ -218,7 +218,7 @@ export default [
 		url: 'https://slack.com/',
 		img: 'https://a.slack-edge.com/b211f31/marketing/img/homepage/true-prospects/unfurl/slack-e2e-homepage-unfurl.jpg',
 		description:
-			'Most common startup chat software. Tones of integrations and plugins, easy connection with other companies',
+			'Most common startup chat software. Tons of integrations and plugins, easy connection with other companies',
 		favicon: 'https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png'
 	},
 	{
