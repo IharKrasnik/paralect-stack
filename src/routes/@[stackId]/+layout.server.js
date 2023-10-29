@@ -9,13 +9,7 @@ export async function load({ params }) {
 	return {
 		ogTitle: `${stack.name} Startup Stack — Paralect Stack`,
 		ogDescription: stack.description,
-		ogImage:
-			stack.ogImage ||
-			`${WEB_URL}/stack-og.png?name=${encodeURIComponent(
-				stack.name
-			)}&description=${encodeURIComponent(stack.description)}&logo=${encodeURIComponent(
-				stack.logo
-			)}`,
+		ogImage: stack.ogImage || `${WEB_URL}/stack-og.png?stackSlug=${stack.slug}`,
 		stack
 	};
 }
