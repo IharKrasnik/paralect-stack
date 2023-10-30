@@ -258,7 +258,7 @@
 			{/if}
 		{/key}
 
-		<div class="grid sm:grid-cols-2 gap-4 mt-24 mb-8">
+		<div class="grid {$currentUser ? '' : 'sm:grid-cols-2'} gap-4 mt-24 mb-8">
 			<a href="/publish" class="block w-full">
 				<button
 					class="category-link block z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
@@ -270,15 +270,17 @@
 				</button>
 			</a>
 
-			<a href="/subscribe" class="w-full block">
-				<button
-					class="block category-link z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
-					in:fly={{ y: -50 }}
-				>
-					<div class="font-bold">Subscribe To Stack</div>
-					<div class="text-sm">Get useful content on startup building and growth</div>
-				</button>
-			</a>
+			{#if !$currentUser}
+				<a href="/subscribe" class="w-full block">
+					<button
+						class="block category-link z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+						in:fly={{ y: -50 }}
+					>
+						<div class="font-bold">Subscribe To Stack</div>
+						<div class="text-sm">Get useful content on startup building and growth</div>
+					</button>
+				</a>
+			{/if}
 		</div>
 
 		<a href="/about" class="block mt-8 mb-8">

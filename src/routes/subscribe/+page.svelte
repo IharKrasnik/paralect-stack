@@ -18,7 +18,7 @@
 				<h1>
 					Hey, {$currentUser.fullName.split(' ')[0]} 👋
 				</h1>
-				<h2 class="mt-4">Thank you for subscribing to Stack</h2>
+				<h2 class="mt-4">You subscribed to Stack. Thank you!</h2>
 			{:else}
 				<LoginButton />
 			{/if}
