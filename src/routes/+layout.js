@@ -9,8 +9,8 @@ export async function load({ url, params, session, cookies }) {
 		...authData,
 		ogTitle: 'Paralect Stack',
 		ogDescription:
-			'Curated list of startup tools (No-Code and Full Code) from landing page and user acquisition to company exit.',
+			'Curated list of best battle-tested startup tech tools. No-Code and Yes-Code. Only useful tools to grow your startup from an idea to the exit.',
 		ogImage:
-			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698066749325-telegram-cloud-photo-size-2-5312258333765389946-y.jpg'
+			'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/rec4sLfwGXzHxLy54/1698685764387-main_og.png'
 	};
 }
