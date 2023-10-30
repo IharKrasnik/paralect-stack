@@ -109,7 +109,7 @@ export default [
 		description: 'Get funding for your startup, buy and sell companies'
 	},
 	{
-		key: 'startup-community',
+		key: 'startup-communities',
 		name: 'Startup Communities',
 		noTools: true,
 		description: 'Active founder communities to learn and network'

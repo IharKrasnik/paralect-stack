@@ -1190,7 +1190,7 @@ export default [
 		favicon: '/favicon-32x32.png?v=67578bfc454efc4eee525a3b92778838'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'genzvc',
 		name: 'GenzVC',
 		url: 'https://genzvcs.com/',
@@ -1200,7 +1200,7 @@ export default [
 		favicon: 'https://assets.squarespace.com/universal/default-favicon.ico'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'indiehackers',
 		name: 'IndieHackers',
 		url: 'https://indiehackers.com/',
@@ -1209,7 +1209,7 @@ export default [
 		favicon: '/images/favicons/favicon--192x192.png'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'indieworldwide',
 		name: 'IndieWorldwide',
 		url: 'https://indieworldwide.com/',
@@ -1220,7 +1220,7 @@ export default [
 		favicon: 'assets/images/favicon.png?v=6930e506'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'nano',
 		name: 'Nano',
 		url: 'https://nanohq.co/',
@@ -1230,7 +1230,7 @@ export default [
 		favicon: './nano.png'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'thehiveindex',
 		name: 'HiveIndex',
 		url: 'https://thehiveindex.com/',
@@ -1239,7 +1239,7 @@ export default [
 		favicon: '/favicon-32x32.png?v=6f9a721ed54860c63211350929d004b7'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'r-startups',
 		name: 'r/startups',
 		url: 'https://reddit.com/r/startups',
@@ -1248,7 +1248,7 @@ export default [
 		favicon: 'https://www.redditstatic.com/desktop2x/img/favicon/favicon-16x16.png'
 	},
 	{
-		category: 'startup-community',
+		category: 'startup-communities',
 		key: 'r-entrepreuner',
 		name: 'r/entrepreuner',
 		url: 'https://reddit.com/r/entrepreuner',
