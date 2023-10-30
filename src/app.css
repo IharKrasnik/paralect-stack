@@ -216,3 +216,11 @@ h3 {
 .category-link.disabled {
 	cursor: default !important;
 }
+
+.gscale {
+	@apply grayscale transition;
+}
+
+.gscale:hover {
+	@apply grayscale-0;
+}

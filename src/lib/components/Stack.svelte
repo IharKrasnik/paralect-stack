@@ -258,16 +258,28 @@
 			{/if}
 		{/key}
 
-		<a href="/publish" class="block mt-24">
-			<button
-				class="category-link block z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
-				style={$page.url.pathname === '/' ? '' : ''}
-				in:fly={{ y: -50 }}
-			>
-				<div>Publish Your Stack</div>
-				<div class="text-sm">It will take less than 1 minute</div>
-			</button>
-		</a>
+		<div class="grid sm:grid-cols-2 gap-4 mt-24 mb-8">
+			<a href="/publish" class="block w-full">
+				<button
+					class="category-link block z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+					style={$page.url.pathname === '/' ? '' : ''}
+					in:fly={{ y: -50 }}
+				>
+					<div class="font-bold">Publish Your Stack</div>
+					<div class="text-sm">It will take less than 1 minute</div>
+				</button>
+			</a>
+
+			<a href="/subscribe" class="w-full block">
+				<button
+					class="block category-link z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+					in:fly={{ y: -50 }}
+				>
+					<div class="font-bold">Subscribe To Stack</div>
+					<div class="text-sm">Get useful content on startup building and growth</div>
+				</button>
+			</a>
+		</div>
 
 		<a href="/about" class="block mt-8 mb-8">
 			<button
