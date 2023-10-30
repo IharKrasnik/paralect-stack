@@ -89,8 +89,7 @@ export default [
 	{
 		key: 'domains',
 		name: 'DNS & Domains',
-		description: 'Register your website domain and manage DNS records',
-		noTools: true
+		description: 'Register your website domain and manage DNS records'
 	},
 	{
 		key: 'banking-accounting',
