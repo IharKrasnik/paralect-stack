@@ -1,6 +1,7 @@
 import categories from '$lib/data/categories';
 
 import { redirect } from '@sveltejs/kit';
+import { WEB_URL } from '$lib/env';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
@@ -15,6 +16,8 @@ export async function load({ params }) {
 			category.key === 'all'
 				? 'Top Tools To Grow Startups From An Idea To The Exit'
 				: `Top ${category.name}${category.noTools ? '' : ' Tools'} — Paralect Stack`,
-		ogDescription: category.description
+		ogDescription: category.description,
+		ogImage:
+			category.ogImage || `${WEB_URL}/category-og.png?categorySlug=${category._id || category.key}`
 	};
 }
