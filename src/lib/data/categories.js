@@ -7,13 +7,13 @@ export default [
 		noTools: true
 	},
 	{
-		key: 'landing-page',
+		key: 'landing-page-builders',
 		name: 'Landing Page Builders',
 		description: 'Build marketing websites with no code',
 		noTools: true
 	},
 	{
-		key: 'forms-data',
+		key: 'forms-databases',
 		name: 'Forms & Databases',
 		description: 'Collect and manage data from your leads and customers'
 	},
@@ -25,7 +25,7 @@ export default [
 	{
 		key: 'design',
 		name: 'Design & Creator Tools',
-		description: 'Create nice visual content with ease',
+		description: 'Create beautiful visual content with friendly creator tools',
 		noTools: true
 	},
 

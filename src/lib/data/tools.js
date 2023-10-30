@@ -1,6 +1,6 @@
 export default [
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'webflow',
 		name: 'Webflow',
 		url: 'https://webflow.com/',
@@ -10,7 +10,7 @@ export default [
 			'https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/6515a6d5f30daec433d0ac0f_wf_favicon.png'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'framer',
 		name: 'Framer',
 		url: 'https://framer.com/',
@@ -28,7 +28,7 @@ export default [
 		description: 'Simple ladning page builder and scalable newsletter targeting creators'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'carrd',
 		name: 'Carrd',
 		url: 'https://carrd.co/',
@@ -37,7 +37,7 @@ export default [
 			'A super-simple builder. Mostly fits one-page websites, has templates to start with'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'readymag',
 		name: 'Readymag',
 		url: 'https://readymag.com/',
@@ -46,7 +46,7 @@ export default [
 		favicon: '/dist/img/favicons/favicon.ico'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'tilda',
 		name: 'Tilda',
 		url: 'https://tilda.cc/',
@@ -56,7 +56,7 @@ export default [
 			'https://static.tildacdn.com/tild3435-6532-4565-b865-666139353136/6210favicon_48_48_.ico'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'momentum-page',
 		name: 'Momentum Page',
 		url: 'https://page.mmntm.build/',
@@ -65,7 +65,7 @@ export default [
 		favicon: 'logo.svg'
 	},
 	{
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		key: 'super',
 		name: 'Super',
 		url: 'https://super.so/',
@@ -75,7 +75,7 @@ export default [
 			'https://assets.super.so/186f4256-f467-4f79-8d6f-40defe12b9b4/uploads/favicon/54a7f247-1005-4b2b-a424-8669cdda7a7f.png'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'tally',
 		name: 'Tally',
 		url: 'https://tally.so/',
@@ -84,7 +84,7 @@ export default [
 		favicon: 'https://tally.so/favicon.ico'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'typeform',
 		name: 'TypeForm',
 		url: 'https://typeform.com/',
@@ -93,7 +93,7 @@ export default [
 		favicon: '/favicon-16x16.png'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'jotform',
 		name: 'Jotform',
 		url: 'https://jotform.com/',
@@ -102,7 +102,7 @@ export default [
 		favicon: 'https://cdn.jotfor.ms/assets/img/favicons/favicon-2021-dark.ico'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'airtable',
 		name: 'Airtable',
 		url: 'https://airtable.com/',
@@ -111,7 +111,7 @@ export default [
 		favicon: '/favicon.ico'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'rows',
 		name: 'Rows',
 		url: 'https://row.com/',
@@ -119,7 +119,7 @@ export default [
 		description: 'Database-like editor with built-in functions to fetch and transform data'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'strapi',
 		name: 'Strapi',
 		url: 'https://strapi.com/',
@@ -129,7 +129,7 @@ export default [
 		favicon: '/assets/favicon-96x96.png'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'videoask',
 		name: 'VideoAsk',
 		url: 'https://videoask.com/',
@@ -139,7 +139,7 @@ export default [
 		favicon: '/static/icons/android-icon-192x192.png'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'vidyard',
 		name: 'Vidyard',
 		url: 'https://vidyard.com/',
@@ -148,7 +148,7 @@ export default [
 		favicon: '/wp-content/uploads/fbrfg/favicon-16x16.png'
 	},
 	{
-		category: 'forms-data',
+		category: 'forms-databases',
 		key: 'bonjoro',
 		name: 'Bonjoro',
 		url: 'https://bonjoro.com/',
@@ -157,7 +157,7 @@ export default [
 			'Bonjoro lets you send quick personal videos to new leads and customers, to stand out, build trust, and make more sales'
 	},
 	// {
-	// 	category: 'forms-data',
+	// 	category: 'forms-databases',
 	// 	key: 'algolia',
 	// 	name: 'Algolia',
 	// 	url: 'https://algolia.com/',
@@ -1393,7 +1393,7 @@ export default [
 	{
 		key: 'elementor',
 		name: 'Elementor',
-		category: 'landing-page',
+		category: 'landing-page-builders',
 		url: 'https://elementor.com',
 		favicon: 'https://elementor.com/wp-content/uploads/2021/04/elementor-favicon-512.png',
 		img: 'https://elementor.com/wp-content/uploads/2022/02/HP.png',
