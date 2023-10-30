@@ -190,9 +190,9 @@
 			>
 				Discover the best startup tools <span class="transition">
 					to <a
-						href="cat/landing-page"
+						href="cat/landing-page-builders"
 						class:white={!$isImagesLoaded}
-						on:mouseover={() => setCategory('landing-page')}
+						on:mouseover={() => setCategory('landing-page-builders')}
 						on:mouseleave={() => setCategory(null)}>Launch Websites</a
 					>,
 
