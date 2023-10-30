@@ -71,11 +71,11 @@
 <div style={globalCss}>
 	<SvelteToast />
 
-	<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px] transition">
+	<div class="relative container mx-auto lg:mt-8 h-full max-w-[1200px] transition z-10">
 		<div
 			class=" {!$page.params.stackId && $page.params.categoryKey
-				? 'sm:fixed'
-				: ''} top-0 transition sm:mt-8 w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
+				? 'sm:pt-8 sm:pb-4 sm:fixed bg-black'
+				: ''} top-0 transition w-full max-w-[1200px] flex justify-between p-4 sm:p-0 mb-8 z-10"
 			style="margin-bottom: -32px;"
 		>
 			{#if $page.url.pathname === '/' || $page.url.pathname === '/lists/yes-code'}
@@ -127,6 +127,7 @@
 							><span class="mr-2 ml-4 font-bold text-xl">Stack</span></a
 						>
 					</a>
+
 					<div class="flex items-center text-xl" style="font-family: VT323;">
 						{#if $page.params.stackId}
 							<a class="flex" href="/@{$page.params.stackId}">
@@ -168,7 +169,7 @@
 	</div>
 
 	<div
-		class="container mx-auto h-full max-w-[1200px] mb-16 z-10 relative {$page.params.categoryKey
+		class="container mx-auto h-full max-w-[1200px] mb-8 z-1 relative {$page.params.categoryKey
 			? ''
 			: ''} mt-16 sm:mt-24"
 	>
@@ -188,11 +189,12 @@
 			</a>
 		{/each}
 	</div>
-
+	<!-- 
 	{#if !$page.url.pathname.includes('/about')}
 		<a href="/about">
 			<button
-				class="sticky z-10 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+				class="sticky z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+				style={'background-color: #111; color: white; outline: none;'}
 				in:fly={{ y: -50 }}
 			>
 				Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
@@ -207,6 +209,20 @@
 				Browse Tools
 			</div>
 		</a>{/if}
+
+	{#if !$page.url.pathname.includes('/publish')}
+		<a href="/publish">
+			<button
+				class="sticky z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+				style={$page.url.pathname === '/'
+					? 'background-color: #111; color: white; outline: none;'
+					: ''}
+				in:fly={{ y: -50 }}
+			>
+				Publish My Stack
+			</button>
+		</a>
+	{/if} -->
 </div>
 
 <style>

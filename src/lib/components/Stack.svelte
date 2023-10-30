@@ -84,7 +84,7 @@
 	</div>
 {/if}
 
-<div class="relative flex mb-8 items-start" id="tools">
+<div class="relative flex mb-8 items-start z-1" id="tools">
 	{#if !activeStack}
 		<div
 			class=" top-24 bottom-4 w-[256px] mt-8 p-4 section flex-shrink-0 mr-8 hidden sm:block overflow-y-auto opacity-80 hover:opacity-100 transition"
@@ -164,20 +164,22 @@
 
 		{#key categoryKey + shuffleKey}
 			<div
-				class="overflow-x-auto flex sm:grid auto-rows-fr {activeCategory.key === 'all'
+				class="overflow-x-auto {$page.url.pathname === '/'
+					? 'grid'
+					: 'flex'} sm:grid auto-rows-fr {activeCategory.key === 'all'
 					? 'sm:grid-cols-3'
 					: 'sm:grid-cols-2 items-stretch'} mt-8 gap-4"
 				in:fly={{ duration: 150, y: 50 }}
 			>
-				{#each _.shuffle(tools)
-					.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
-					.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key)
-					.sort((a, b) => {
-						if (a.key === selectedTool) {
-							return -1;
-						}
-						return 1;
-					}) as tool, i}
+				{#each _.take( _.shuffle(tools)
+						.filter((t) => ($page.params.stackId ? true : !t.isUnlisted))
+						.filter((t) => activeCategory.key === 'all' || t.category === activeCategory.key)
+						.sort((a, b) => {
+							if (a.key === selectedTool) {
+								return -1;
+							}
+							return 1;
+						}), $page.url.pathname === '/' ? 8 : tools.length ) as tool, i}
 					<div class="h-full flex flex-col justify-between">
 						<a
 							class="h-full section block card min-w-[80vw] sm:min-w-0"
@@ -208,7 +210,7 @@
 							<a
 								href={`/cat/${tool.category?._id || tool.category}`}
 								class:disabled={!tool.url}
-								class="category-link section px-4 py-2 w-full opacity-80 bg-white/10"
+								class="category-link section px-4 py-2 w-full opacity-80"
 							>
 								{formatCategory(tool.category)}
 							</a>
@@ -241,12 +243,41 @@
 					{/if}
 				{/each}
 			</div>
-			<div class="sm:hidden flex items-center justify-between mt-12 sm:mt-0">
-				<div class="block sm:hidden w-full text-lg">Scroll Right</div>
-				<div class="flex-shrink-0">→→→</div>
-			</div>
-			<hr class="border border-white/20 my-4 mt-8 sm:hidden" />
+			{#if $page.url.pathname === '/'}
+				<a href="/cat/all"
+					><button class="w-full py-12 mt-16 text-lg"
+						>Browse All {tools.length} Startup Tools</button
+					></a
+				>
+			{:else}
+				<div class="sm:hidden flex items-center justify-between mt-12 sm:mt-0">
+					<div class="block sm:hidden w-full text-lg">Scroll Right</div>
+					<div class="flex-shrink-0">→→→</div>
+				</div>
+				<hr class="border border-white/20 my-4 mt-8 sm:hidden" />
+			{/if}
 		{/key}
+
+		<a href="/publish" class="block mt-24">
+			<button
+				class="category-link block z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+				style={$page.url.pathname === '/' ? '' : ''}
+				in:fly={{ y: -50 }}
+			>
+				<div>Publish Your Stack</div>
+				<div class="text-sm">It will take less than 1 minute</div>
+			</button>
+		</a>
+
+		<a href="/about" class="block mt-8 mb-8">
+			<button
+				class="category-link z-10 px-4 py-4 w-full text-center opacity-70 hover:opacity-100 transition"
+				in:fly={{ y: -50 }}
+			>
+				Paralect Stack is an opinionated list of battle-tested tools, platforms and resources for
+				startup growth.
+			</button>
+		</a>
 	</div>
 </div>
 
@@ -278,15 +309,6 @@
 	.submitstack:hover .divider {
 		border-color: #666;
 		@apply transition;
-	}
-
-	.category-link:not(.disabled):hover {
-		background: rgb(255, 244, 123);
-		color: #111;
-	}
-
-	.category-link.disabled {
-		cursor: default !important;
 	}
 
 	.card:not(.disabled):hover {

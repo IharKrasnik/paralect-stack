@@ -200,3 +200,19 @@ h3 {
 .svgicon.active .fill-color {
 	fill: #ffffff;
 }
+
+.category-link {
+	transition: none;
+	@apply bg-white/10 text-white;
+	border: none;
+	outline: none;
+}
+
+.category-link:not(.disabled):hover {
+	background: rgb(255, 244, 123);
+	color: #111;
+}
+
+.category-link.disabled {
+	cursor: default !important;
+}
