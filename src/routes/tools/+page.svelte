@@ -15,14 +15,16 @@
 	let tools;
 
 	let loadTools = async () => {
-		let { results } = await get('tools');
+		try {
+			let { results } = await get('tools');
 
-		tools = results.map((t) => {
-			if (!t.category) {
-				t.category = { _id: '' };
-			}
-			return t;
-		});
+			tools = results.map((t) => {
+				if (!t.category) {
+					t.category = { _id: '' };
+				}
+				return t;
+			});
+		} catch (err) {}
 	};
 
 	loadTools();
