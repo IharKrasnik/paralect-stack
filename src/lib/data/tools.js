@@ -1234,7 +1234,7 @@ export default [
 		key: 'thehiveindex',
 		name: 'HiveIndex',
 		url: 'https://thehiveindex.com/',
-		img: 'https://thehiveindex.com/static/share-card-80285a4dc41c3cc75a114258129f732c.png',
+		img: 'https://ship-app-assets.fra1.digitaloceanspaces.com/stream/653c0297e7048f00142cb489/1698681863140-image.png',
 		description: 'Discover best startup communities',
 		favicon: '/favicon-32x32.png?v=6f9a721ed54860c63211350929d004b7'
 	},
