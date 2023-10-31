@@ -161,8 +161,8 @@
 				<a href="/about"
 					><div class="mr-8 hidden sm:block opacity-80 hover:opacity-100">About Stack</div></a
 				>
-				<a href="/publish" class="hidden sm:block">
-					<button class="rotated">Publish My Stack</button>
+				<a href="https://www.paralect.com" target="_blank" class="hidden sm:block">
+					<button class="rotated">Build My Product</button>
 				</a>
 			</div>
 		</div>
