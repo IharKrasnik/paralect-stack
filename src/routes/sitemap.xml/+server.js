@@ -1,5 +1,6 @@
 import moment from 'moment';
 import allCategories from '$lib/data/allCategories';
+import { get } from '$lib/api';
 
 let getXml = ({
 	sitemap,
@@ -15,6 +16,8 @@ ${sitemap.rules
 </urlset>`;
 
 export const GET = async ({ url, params, session, cookies }) => {
+	let dynamicSitemap = await get('sitemaps');
+
 	let sitemap = {
 		rules: [
 			{
@@ -39,10 +42,7 @@ export const GET = async ({ url, params, session, cookies }) => {
 			{
 				loc: '/subscribe'
 			},
-			...allCategories.map((cat) => ({
-				loc: `/cat/${cat.key}`,
-				lastmod: cat.lastUpdatedOn
-			}))
+			...(dynamicSitemap?.rules || [])
 		]
 	};
 	return new Response(getXml({ sitemap, currentDomain: 'stack.paralect.com' }), {
