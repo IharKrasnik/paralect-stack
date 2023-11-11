@@ -40,7 +40,7 @@ export const GET = async ({ url, params, session, cookies }) => {
 				loc: '/subscribe'
 			},
 			...allCategories.map((cat) => ({
-				loc: `cat/${cat.key}`,
+				loc: `/cat/${cat.key}`,
 				lastmod: cat.lastUpdatedOn
 			}))
 		]
